@@ -15,7 +15,7 @@ $(document).ready(function(){
 });
 $(window).on("load", function(){
 
-	introPhotoFlow();
+	//introPhotoFlow();
 	mainVisualSlider();
 	brandVisualSlider();
 	AOS.init({
@@ -258,8 +258,8 @@ function introPhotoFlow(){
 	let first = 1;
 	let last;
 	let imgCnt = 0;
-	const $img = $(".main-intro-slider img");
-	const $slider = $(".main-intro-slider");
+	const $img = $(".scroller-row picture");
+	const $slider = $(".scroller-row ");
 	let $first;
 	let $last;
 	let firstImgWidth;
@@ -344,19 +344,11 @@ function introPhotoFlow(){
 
 var main = {		
 	introduction : {
-		container : null,
-		//controller : null,
-			
+		container : null,			
 		init : function(){
-			var _this = this;
-			this.container = $('.main-introduction');
-			//this.controller = new ScrollMagic.Controller();		
+			this.container = $('.main-introduction');		
 			var outDuration = 60;
 			var overDuration = 160;
-			
-			var itemElement = this.container.find('.scroller-group')[0].outerHTML;
-			this.container.find('.main-platform-wrap').append('<div class="scroller-row row-2"></div>');
-			//console.log(itemElement);
 			
 			var firstElement , firstElementDom , secondElement , secondElementDom, thirdElement , thirdElementDom;
 			
@@ -366,27 +358,28 @@ var main = {
 			this.container.find('.scroller-group').find('picture').each(function(){				
 				if($(this).hasClass('nav-1') || $(this).hasClass('nav-3')){
 					firstElementDom += $(this)[0].outerHTML;
+					
 				}else if($(this).hasClass('nav-2') || $(this).hasClass('nav-4')){
 					secondElementDom += $(this)[0].outerHTML;					
 				}else {
 					thirdElementDom += $(this)[0].outerHTML;
 				};
 			});
-			
+
 			firstElement = '<div class="scroller-group">' + firstElementDom + '</div>';			
 			secondElement = '<div class="scroller-group">' + secondElementDom + '</div>';
-			thirdElement = '<div class="scroller-group">' + secondElementDom + '</div>';
-			this.container.find('.main-introduction .row-1').html('');
+			thirdElement = '<div class="scroller-group">' + thirdElementDom + '</div>';
+			this.container.find('.main-introduction-data .row-1').html('');
 			
 			for(var i = 0; i < 3; i ++){
-				this.container.find('.main-introduction .row-1').append(firstElement);
+				this.container.find('.main-introduction-data .row-1').append(firstElement);
 			};
 			for(var k = 0; k < 3; k++){
-				this.container.find('.main-introduction .row-2').append(secondElement);
+				this.container.find('.main-introduction-data .row-2').append(secondElement);
 			};	
-			for(var k = 0; k < 3; k++){
-				this.container.find('.main-introduction .row-3').append(secondElement);
-			};			
+			for(var j = 0; j < 3; j++){
+				this.container.find('.main-introduction-data .row-3').append(thirdElement);
+			};				
 		
 			
 			var timeline1 = gsap.timeline({repeat : -1, duration : 1});
@@ -429,26 +422,7 @@ var main = {
 				}else{
 					timeline3.duration	(outDuration);							
 				};
-			});
-			
-			
-			
-			// var headerArea = new ScrollMagic.Scene({ 
-			// 	triggerElement :  this.container[0] ,
-			// 	triggerHook : 0
-			// })
-			//.addIndicators({name : 'data'})
-			//.addTo(_this.controller);		
-			// headerArea.duration(this.container.height());
-			
-			// headerArea.on('enter' , function(event){
-			// 	$('#dHead').removeClass('light').addClass('dark');
-			// });
-			
-			// headerArea.on('leave' , function(event){
-			// 	//_this.container.removeClass('actived');
-			// });
-				
+			});				
 		}
 	},	
 
