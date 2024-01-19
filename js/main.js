@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	mainFullpage();
 
+	main.introduction.init();
+
 	const $mainPop = $("#layer-popup-pr");
 	if($mainPop.hasClass('show')){
 		popupAction();
@@ -61,7 +63,7 @@ function mainFullpage(){
 	let iscrollTimeout;
 
 	$("#fullpage").fullpage({
-		anchors: ['page1', 'page2', 'page3', 'page4', 'page5','page6'],
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
 		verticalCentered: true,
 		scrollOverflow: isPc,
 		scrollOverflowReset: false,
@@ -336,3 +338,119 @@ function introPhotoFlow(){
 		}, 10);
 	}
 };
+
+
+
+
+var main = {		
+	introduction : {
+		container : null,
+		//controller : null,
+			
+		init : function(){
+			var _this = this;
+			this.container = $('.main-introduction');
+			//this.controller = new ScrollMagic.Controller();		
+			var outDuration = 60;
+			var overDuration = 160;
+			
+			var itemElement = this.container.find('.scroller-group')[0].outerHTML;
+			this.container.find('.main-platform-wrap').append('<div class="scroller-row row-2"></div>');
+			//console.log(itemElement);
+			
+			var firstElement , firstElementDom , secondElement , secondElementDom, thirdElement , thirdElementDom;
+			
+			firstElementDom = '';
+			secondElementDom = '';
+			thirdElementDom = '';
+			this.container.find('.scroller-group').find('picture').each(function(){				
+				if($(this).hasClass('nav-1') || $(this).hasClass('nav-3')){
+					firstElementDom += $(this)[0].outerHTML;
+				}else if($(this).hasClass('nav-2') || $(this).hasClass('nav-4')){
+					secondElementDom += $(this)[0].outerHTML;					
+				}else {
+					thirdElementDom += $(this)[0].outerHTML;
+				};
+			});
+			
+			firstElement = '<div class="scroller-group">' + firstElementDom + '</div>';			
+			secondElement = '<div class="scroller-group">' + secondElementDom + '</div>';
+			thirdElement = '<div class="scroller-group">' + secondElementDom + '</div>';
+			this.container.find('.main-introduction .row-1').html('');
+			
+			for(var i = 0; i < 3; i ++){
+				this.container.find('.main-introduction .row-1').append(firstElement);
+			};
+			for(var k = 0; k < 3; k++){
+				this.container.find('.main-introduction .row-2').append(secondElement);
+			};	
+			for(var k = 0; k < 3; k++){
+				this.container.find('.main-introduction .row-3').append(secondElement);
+			};			
+		
+			
+			var timeline1 = gsap.timeline({repeat : -1, duration : 1});
+			
+			timeline1.to( this.container.find('.row-1 .scroller-group').eq(0) , { x : ' -100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			timeline1.to( this.container.find('.row-1 .scroller-group').eq(1) , { x : ' -100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			timeline1.to( this.container.find('.row-1 .scroller-group').eq(2) , { x : ' -100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			
+			$(document).on('mouseenter mouseleave' , '.main-introduction .row-1' , function(e){
+				if(e.type == 'mouseenter'){
+					timeline1.duration	(overDuration);		
+				}else{
+					timeline1.duration	(outDuration);							
+				};
+			});
+			
+			var timeline2 = gsap.timeline({repeat : -1, duration : 1});
+			
+			timeline2.to( this.container.find('.row-2 .scroller-group').eq(0) , { x : ' 100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			timeline2.to( this.container.find('.row-2 .scroller-group').eq(1) , { x : ' 100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			timeline2.to( this.container.find('.row-2 .scroller-group').eq(2) , { x : ' 100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			
+			$(document).on('mouseenter mouseleave' , '.main-introduction .row-2' , function(e){
+				if(e.type == 'mouseenter'){
+					timeline2.duration	(overDuration);		
+				}else{
+					timeline2.duration	(outDuration);							
+				};
+			});
+
+			var timeline3 = gsap.timeline({repeat : -1, duration : 1});
+			
+			timeline3.to( this.container.find('.row-3 .scroller-group').eq(0) , { x : ' -100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			timeline3.to( this.container.find('.row-3 .scroller-group').eq(1) , { x : ' -100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			timeline3.to( this.container.find('.row-3 .scroller-group').eq(2) , { x : ' -100%' , duration : outDuration , ease:Linear.easeNone } , 0);		
+			
+			$(document).on('mouseenter mouseleave' , '.main-introduction .row-3' , function(e){
+				if(e.type == 'mouseenter'){
+					timeline3.duration	(overDuration);		
+				}else{
+					timeline3.duration	(outDuration);							
+				};
+			});
+			
+			
+			
+			// var headerArea = new ScrollMagic.Scene({ 
+			// 	triggerElement :  this.container[0] ,
+			// 	triggerHook : 0
+			// })
+			//.addIndicators({name : 'data'})
+			//.addTo(_this.controller);		
+			// headerArea.duration(this.container.height());
+			
+			// headerArea.on('enter' , function(event){
+			// 	$('#dHead').removeClass('light').addClass('dark');
+			// });
+			
+			// headerArea.on('leave' , function(event){
+			// 	//_this.container.removeClass('actived');
+			// });
+				
+		}
+	},	
+
+};
+

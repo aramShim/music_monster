@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.mont {font-family: 'Montserrat', sans-serif;}
 /* skip nav */
 .skip-nav { position:absolute; left:0; top:-50px; z-index:9999; }
 .skip-nav li {width:200px;}
@@ -87,23 +89,22 @@
 
 
 /* footer */
-#footer{background-color:#fff; border-top:1px solid var(--color-gray9); padding:50px 0; box-sizing:border-box;}
+#footer{background-color:#f6f6f6; border-top:1px solid var(--color-gray9); padding:50px 0; box-sizing:border-box;}
 .footer-inner{max-width:1200px; margin:0 auto; position:relative;}
 
-.f-info{display:flex; align-items:center; margin-bottom:24px; flex-wrap: wrap;}
-.f-info li{position:relative; font-weight: 600;}
-.f-info li + li {margin-left:10px; padding-left: 10px; }
-.f-info li + li:before {content:'/'; position: absolute; top: 50%; left: -5px; transform: translateY(-50%);}
-.f-info li a{font-size:16px; line-height:24px; font-weight:700;}
-.f-info li a:hover{color:var(--color-blue1);}
+.f-link {display:flex; align-items:center; margin-bottom:24px; flex-wrap: wrap;}
+.f-link li {position:relative;}
+.f-link li + li {margin-left:20px; padding-left: 20px; }
+.f-link li + li:before {content:''; position: absolute; top: 50%; left: 0px; transform: translateY(-50%); display: inline-block; width: 1px; height: 16px; background-color: var(--color-gray8)}
+.f-link li a {font-size:16px; line-height:24px;}
+.f-link li a:hover{color:var(--color-blue1);}
 
-.f-contact{display:flex; align-items:center; flex-wrap:wrap; font-size:14px; line-height:24px; color:var(--color-gray6); margin-bottom:24px; width: 80%;}
-.f-contact li {position: relative;}
-.f-contact li + li{margin-left:6px; padding-left: 6px;}
-.f-contact li + li:before {content:'/'; position: absolute; top: 50%; left: -3px; transform: translateY(-50%);}
+.f-contact {display:flex; align-items:center; flex-wrap:wrap; font-size:14px; line-height:24px; color:var(--color-gray6); width: 80%;}
+.f-contact li {position: relative; padding-right: 16px;}
+.f-contact li span {opacity: .8; display: inline-block; padding-right: 5px;}
 
 
-.f-copyright{font-size:14px; line-height:24px; color:var(--color-gray6);}
+.f-copyright{font-size:14px; line-height:24px; color:var(--color-gray6); margin-top:24px;}
 
 .f-outer-link {position:absolute;right:0;bottom:0;top:0; display:flex; flex-wrap:wrap;}
 .f-family-site {height:28px; position:relative; display:inline-block; vertical-align:top;}

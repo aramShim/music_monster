@@ -28,14 +28,21 @@
     <!-- content script -->
 
     <!-- content script -->
-    <link rel="stylesheet" href="css/aos.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery.fullpage.min.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/aos.css" type="text/css">    
 
     <script src="js/aos.js"></script>
     <script src="js/scrolloverflow.js"></script>
+    <script src="js/gsap.min.js"></script>
+    
+
+    <!--index.html 에서만 적용되게 해주세요-->
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
     <script src="js/jquery.fullpage.min.js"></script>
     <script src="js/main.js"></script>
+    <!--//index.html 에서만 적용되게 해주세요-->
+
 </head>
 <body>
     <div id="wrap" class="main">
@@ -101,10 +108,8 @@
                                     <img alt="" src="img/main-bg1.png" id="banner1">
                                 </picture>
                                 <div class="visual-copy">
-                                    <p class="main-copy">
-                                        <b><span class="opacity-06">아티스트와 음악이</span></b>
-                                        <p><b>빛날 수 있도록.</b></p>
-                                    </p>
+                                    <p class="main-copy"><span class="opacity-06">아티스트와 음악이</span></p>
+                                    <p><b>빛날 수 있도록.</b></p>
                                 </div>
                             </div>
 
@@ -114,10 +119,19 @@
                                     <img alt="" src="img/main-bg2.png" id="banner1">
                                 </picture>
                                 <div class="visual-copy">
-                                    <p class="main-copy">
-                                        <b>대한민국 Commerce</b>의 <br>과거와 현재, <br class="only-mobile"><b>그리고 미래2</b>
-                                        <p><b>COOL&COOL</b> Group</p>
-                                    </p>
+                                    <p class="main-copy"><span class="opacity-06">아티스트와 음악이</span></p>
+                                    <p><b>빛날 수 있도록.</b></p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="" type="image/sebp">
+                                    <img alt="" src="img/main-bg3.png" id="banner1">
+                                </picture>
+                                <div class="visual-copy">
+                                    <p class="main-copy"><span class="opacity-06">아티스트와 음악이</span></p>
+                                    <p><b>빛날 수 있도록.</b></p>
                                 </div>
                             </div>
                         </div>
@@ -135,179 +149,172 @@
                         <div class="arr-down"><a href="#section2" tabindex="-1"><i class="icon-arrow20"></i></a></div>
                     </div>
                 </section>
-                <section id="section02" class="section main-section sec-intro">
+
+                <section id="section02" class="section main-section main-sec02">
                     <div class="main-inner">
                         <div class="intro-title flex">
                             <div class="intro-title-txt">
-                                <h2 class="main-title aos-init" data-aos="fade-up" data-aos-delay="300"><b>브랜드</b>를 위한 <b>커머스 리더</b></h2>
-                                <p class="main-title-sub aos-init" data-aos="fade-up" data-aos-delay="400">대한민국 온라인 시장을 이끌어 가는 <br>국내 대표 Commerce 기업</p>
-                            </div>
-                            <a href="" class="go-more aos-init" data-aos="fade-up" data-aos-delay="500" >회사소개 <span class="i-go"><i class="icon-arrow30"></i></span></a>                            
+                                <p class="main-title-top">아티스트를 위한 음원 발매 솔루션</p>
+                                <h2 class="main-title aos-init" data-aos="fade-up" data-aos-delay="300">
+                                    <b>MUSIC MONSTER</b>에서 <br>자신만의 빛을 담은 음원을 발매해 보세요.
+                                </h2>
+                                <p class="main-title-sub aos-init" data-aos="fade-up" data-aos-delay="400">가지각색의 빛을 내뿜는 아티스트들이 모여 전세계에 하나의 큰 오로라를 띄울 수 있도록 전문화된 프로모션과 큐레이션서비스를 제공하며, 국내외의 다양한 음악플랫폼과 함께 아티스트가 전세계로 뻗어나갈 통로가 되어 드립니다.</p>
+                            </div>                           
                         </div>
-                        <div class="main-intro-slider aos-init" data-aos="fade-up" data-aos-delay="600" data-aos-duration="8000">
-                            <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo1.webp" type="image/sebp">
-                                <img alt="" src="img/intro_photo1.jpg" id="banner1">
-                            </picture>
-                            <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo2.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo2.jpg" id="banner2">
-                              </picture>
-                              <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo3.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo3.jpg" id="banner3">
-                              </picture>
-                              <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo4.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo4.jpg" id="banner4">
-                              </picture>
-                              <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo5.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo5.jpg" id="banner5">
-                              </picture>
-                              <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo6.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo6.jpg" id="banner6">
-                              </picture>
-                              <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo7.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo7.jpg" id="banner7">
-                              </picture>
-                              <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo8.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo8.jpg" id="banner8">
-                              </picture>
-                              <picture>
-                                <source srcset="https://rlhezzw2e.toastcdn.net/images/main/intro_photo9.webp" type="image/webp">
-                                <img alt="" src="img/intro_photo9.jpg" id="banner9">
-                              </picture>
+                        <div class="main-content-wrap">
+                            <dl class="aos-init" data-aos="fade-up" data-aos-delay="800">
+                                <dt>뮤직몬스터를 통해 <b>발매된 음원</b></dt>
+                                <dd><b class="mont">726,556</b></dd>
+                            </dl>
+                            <dl class="aos-init" data-aos="fade-up" data-aos-delay="1000">
+                                <dt>뮤직몬스터와 함께하는 <b>아티스트</b></dt>
+                                <dd><b class="mont">86,327</b></dd>
+                            </dl>
                         </div>
+                        
                     </div>
                     
                 </section>
-                <section id="section03" class="section main-section sec-service">
+                <section id="section03" class="section main-section main-sec03 main-introduction">
                     <div class="main-inner">
                         <div class="intro-title">
                             <div class="intro-title-txt">
-                                <h2 class="main-title aos-init" data-aos="fade-up" data-aos-delay="300"><b>커머스</b>를 <b>가장 잘 아는</b>회사 <br><b>커머스</b>를 <b>가장 잘 하는</b>회사</h2>
-                                <p class="main-title-sub aos-init" data-aos="fade-up" data-aos-delay="400">2002년부터 20여년간 이커머스만을 연구한 <br>Commerce 전문 그룹</p>
-                            </div>
-                            <a href="" class="go-more aos-init" data-aos="fade-up" data-aos-delay="500" >사업분야 <span class="i-go"><i class="icon-arrow30"></i></span></a>                            
-                        </div>
-                        <ul class="main-service-list">
-                            <li class="service-item contents aos-init" data-aos="fade-up" data-aos-delay="600">
-                                <a href="" tabindex="-1"><span class="s-name en">CONTENTS</span></a>
-                            </li>
-                            <li class="service-item sales aos-init" data-aos="fade-up" data-aos-delay="600">
-                                <a href="" tabindex="-1"><span class="s-name en">SALES</span></a>
-                            </li>
-                            <li class="service-item solution aos-init" data-aos="fade-up" data-aos-delay="600">
-                                <a href="" tabindex="-1"><span class="s-name en">SOLUTION</span></a>
-                            </li>
-                            <li class="service-item logitics aos-init" data-aos="fade-up" data-aos-delay="600">
-                                <a href="" tabindex="-1"><span class="s-name en">LOGISTICS</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section id="section04" class="section main-section sec-brand">
-                    <div class="brand-title">
-                        <h2 class="main-title aos-init" data-aos="fade-up" data-aos-delay="300"><b>Brands</b></h2>
-                        <p class="main-title-sub aos-init" data-aos="fade-up" data-aos-delay="400">브랜드와 세상을 연결합니다!</p>
-                        <div class="visual-swiper-control">
-                            <button class="btn-swiper-prev" type="button" tabindex="-1">이전배너</button>
-                            <button class="btn-swiper-next" type="button" tabindex="-1">다음배너</button>
+                                <h2 class="main-title aos-init" data-aos="fade-up" data-aos-delay="300">
+                                    <b>MUSIC MONSTER</b>는 <br>세계적인 음악 플랫폼과 함께 합니다.
+                                </h2>
+                                <p class="main-title-sub aos-init" data-aos="fade-up" data-aos-delay="400">뮤직몬스터는 전 세계 음악 플랫폼들과의 파트너십을 통해 아티스트의 음악에 무한한 가능성을 제공합니다.</p>
+                            </div>                         
                         </div>                        
                     </div>
-                    <div class="brand-visual">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/brand1.png" alt="">
-                            </div>
+                    <div class="aos-init main-platform-wrap" data-aos="fade-up" data-aos-delay="600" data-aos-duration="8000">
+                        <div class="scroller-row row-1">
+                            <div class="scroller-group">
+                                <picture class="nav-1">
+                                    <img alt="" src="img/logos/logo1.png" id="">
+                                </picture>
+                                <picture class="nav-3">
+                                    <img alt="" src="img/logos/logo2.png" id="">
+                                </picture>
+                                <picture class="nav-1">
+                                    <img alt="" src="img/logos/logo3.png" id="">
+                                </picture>
+                            
+                                <picture class="nav-3">
+                                    <img alt="" src="img/logos/logo4.png" id="">
+                                </picture>
+                                <picture class="nav-1">
+                                    <img alt="" src="img/logos/logo5.png" id="">
+                                </picture>
+                                <picture class="nav-3">
+                                    <img alt="" src="img/logos/logo6.png" id="">
+                                </picture>
+                            
+                                <picture class="nav-1">
+                                    <img alt="" src="img/logos/logo7.png" id="">
+                                </picture>
+                                <picture class="nav-3">
+                                    <img alt="" src="img/logos/logo8.png" id="">
+                                </picture>   
+                            </div>                           
+                        </div>
+                        <div class="scroller-row row-2">
+                            <div class="scroller-group">
+                                <picture class="nav-2">
+                                    <img alt="" src="img/logos/logo9.png" id="">
+                                </picture>
+                                <picture class="nav-4">
+                                    <img alt="" src="img/logos/logo10.png" id="">
+                                </picture>
+                                <picture class="nav-2">
+                                    <img alt="" src="img/logos/logo11.png" id="">
+                                </picture>
+    
+                                <picture class="nav-4">
+                                    <img alt="" src="img/logos/logo12.png" id="">
+                                </picture>
+                                <picture class="nav-2">
+                                    <img alt="" src="img/logos/logo13.png" id="">
+                                </picture>
+                                <picture class="nav-4">
+                                    <img alt="" src="img/logos/logo14.png" id="">
+                                </picture>
+
+                                <picture class="nav-2">
+                                    <img alt="" src="img/logos/logo15.png" id="">
+                                </picture>
+                                <picture class="nav-4">
+                                    <img alt="" src="img/logos/logo16.png" id="">
+                                </picture>
+                            </div>                         
+                        </div>
+                        <div class="scroller-row row-3">
+                            <div class="scroller-group">
+                                <picture class="nav-5">
+                                    <img alt="" src="img/logos/logo17.png" id="">
+                                </picture>
+                                <picture class="nav-6">
+                                    <img alt="" src="img/logos/logo18.png" id="">
+                                </picture>
+                                <picture class="nav-5">
+                                    <img alt="" src="img/logos/logo19.png" id="">
+                                </picture>
+
+                                <picture class="nav-6">
+                                    <img alt="" src="img/logos/logo20.png" id="">
+                                </picture>
+                                <picture class="nav-5">
+                                    <img alt="" src="img/logos/logo21.png" id="">
+                                </picture>
+                                <picture class="nav-6">
+                                    <img alt="" src="img/logos/logo22.png" id="">
+                                </picture>
+
+                                <picture class="nav-5">
+                                    <img alt="" src="img/logos/logo23.png" id="">
+                                </picture>
+                                <picture class="nav-6">
+                                    <img alt="" src="img/logos/logo24.png" id="">
+                                </picture>   
+                            </div>                           
                         </div>
                     </div>
                 </section>
-                <section id="section05" class="section main-section">
+                
+                <section id="section04" class="section main-section main-sec04">
                     <div class="main-inner">
                         <div class="intro-title flex">
                             <div class="intro-title-txt">
-                                <h2 class="main-title aos-init" data-aos="fade-up" data-aos-delay="300"><b>새로운 소식</b></h2>
+                                <h2 class="main-title aos-init" data-aos="fade-up" data-aos-delay="300">
+                                    <b>성공으로 가는 첫 걸음, 뮤직몬스터와 함께</b>
+                                </h2>
+                                <p class="main-title-sub aos-init" data-aos="fade-up" data-aos-delay="400">뮤직몬스터는 전 세계 음악 플랫폼들과의 파트너십을 통해 아티스트의 음악에 무한한 가능성을 제공합니다.</p>
                             </div>
-                            <a href="" class="go-more aos-init" data-aos="fade-up" data-aos-delay="500" ><span class="i-go"><i class="icon-arrow30"></i></span></a>                            
+                            <!--로그인이 되었으면 앨범발매로, 아니면 로그인화면으로 이동-->
+                            <a href="" class="btn blue aos-init" data-aos="fade-up" data-aos-delay="500" >뮤직몬스터와 함께하기 <i class="icon-arrow50"></i></a>                            
                         </div>
-                        <div class="main-news-list">
-                            <ul>
-                                <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
-                                    <a href="">
-                                        <div class="photo">
-                                            <img src="img/test/news1.webp" alt="">
-                                        </div>
-                                        <p class="date">2023.09</p>
-                                        <p class="title">R&D 정부지원과제 선정 E-커머스 물류유통 재고 관리를 위한 AI 기반 대량 이미지처리 RPA 솔루션 개발</p>
-                                    </a>
-                                </li>
-                                <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
-                                    <a href="">
-                                        <div class="photo">
-                                            <img src="img/test/news2.png" alt="">
-                                        </div>
-                                        <p class="date">2023.09</p>
-                                        <p class="title">(주)유한양행 공식 커머스 파트너 계약 체결</p>
-                                    </a>
-                                </li>
-                                <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
-                                    <a href="">
-                                        <div class="photo">
-                                            <img src="img/test/news3.jpg" alt="">
-                                        </div>
-                                        <p class="date">2023.09</p>
-                                        <p class="title">레고 주문/정산/통계 프로그램 개발 완료</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </section>
-                <section id="section06" class="section sec-footer  fp-auto-height-responsive fp-auto-height" >
+                <section id="section05" class="section sec-footer  fp-auto-height-responsive fp-auto-height" >
                     <footer id="footer">
                         <div class="footer-inner">
                             <div class="f-container">
-                                <ul class="f-info">
-                                    <li>T.1688-0186</li>
-                                    <li>A.서울특별시 서초구 강남대로51길 1 (서초동) 511 TOWER 4층</li>
-                                    <li>E. help@coolncool.com</li>
-                                    <li>F. 02-3474-7679</li>
+                                <ul class="f-link">
+                                    <li><a href=""><b>개인정보 처리방침</b></a></li>
+                                    <li><a href="">서비스이용약관</a></li>
                                 </ul>                                
                                 <ul class="f-contact">
-                                    <li class="name">(주)쿨앤쿨</li>
-                                    <li>대표이사 : 곽상준</li>
-                                    <li>사업자 번호 : 116-81-6768</li>
-                                    <li>소프트웨어사업자 : 제 818-146851호</li>
-                                    <li>통신판매업 : 제 2012-서울서초-1278호</li>
-                                    <li>건강기능식품판매업 : 서초구청 수지 505호</li>
-                                    <li>의료기기판매업 : 서초구 보건소 3505호</li>
-                                    <li>서비스표 등록 : 특허청 제 41-0095786호</li>
+                                    <li><span>상호</span>뮤직몬스터</li>
+                                    <li><span>대표이사</span>홍길동</li>
+                                    <li><span>사업자번호</span>123-45-67890</li>
+                                    <li><span>통신판매신고번호</span>2023-서울-0123</li>                    
                                 </ul>
-
-                                <div class="f-outer-link">
-                                    <div class="f-family-site">
-                                        <button type="button">FAMILY SITE <i class="icon-sign01"></i></button>
-                                        <div class="family-site-list">
-                                            <ul>
-                                                <li><a href="" target="_blank">파워샵</a></li>
-                                                <li><a href="" target="_blank">비주얼리스트</a></li>
-                                                <li><a href="" target="_blank">디마인드</a></li>
-                                                <li><a href="" target="_blank">디마인드 공식스토어</a></li>
-                                                <li><a href="" target="_blank">애경 공식스토어</a></li>
-                                                <li><a href="" target="_blank">피죤 공식스토어</a></li>
-                                                <li><a href="" target="_blank">남양 공식스토어</a></li>
-                                                <li><a href="" target="_blank">비비안 공식스토어</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <p class="f-copyright en">COPYRIGHT ⓒ 1998-2023 COOL&COOL. ALL RIGHTS RESERVED.</p>
+                                <ul class="f-contact">
+                                    <li><span>주소</span>12345 서울특별시 종로구 황새울로 326 512타워 4층</li>
+                                    <li><span>대표번호</span>02-123-4567</li>
+                                    <li><span>고객문의</span>helpmusic@monster.co.kr</li>       
+                                </ul>
+                                <p class="f-copyright en">ⓒ2024 MUSIC MONSTER.Co.,Ltd. All rights reserved.</p>
                             </div>
                         </div>
                     </footer>
