@@ -55,8 +55,17 @@
                     </ul>
                 </nav> 
                 <div class="header-util">
+                    <!--로그인 전-->
                     <div class="login-hd">
-                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>
+                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>                        
+                    </div>
+                    <!--로그인 완료 후-->
+                    <div class="mypage-hd" style="display: none">
+                        <button type="button" class="btn-my"><i class="icon-person13"></i></button>
+                        <ul class="mypage-options">
+                            <li><a href="../mypage/mypage.html">마이페이지</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
                     </div>
                     <div class="lang-wrap">
                       <button class="btn-lang" type="button">외국어</button>
@@ -88,13 +97,13 @@
                       
         </header>
         <div id="container" class="sub-container">
-            <h2 class="blind">회원가입</h2>
+            <h2 class="blind">패스워드 찾기</h2>
                 <div class="sub-contents">
                 <!-- 내용시작 -->
                     <div class="sub-section sub-sec-pr">
                         <div class="inner">
                             <div class="sec-title">
-                                <h3 class="con-title">회원가입</h3>
+                                <h3 class="con-title">패스워드 찾기</h3>
                             </div>
                             <div class="page-body">
                                 <div class="join-wrap">
@@ -106,7 +115,7 @@
                                             <div class="item-body grid">
                                                 <div class="item-detail">
                                                     <div class="input-value cover">
-                                                        <input type="text" name="" id="" title="아이디(이메일)" placeholder="아이디로 사용하실 이메일을 입력하세요." class="form-input form-vaildity" maxlength="50">
+                                                        <input type="text" name="" id="" title="아이디(이메일)" placeholder="이메일을 입력하세요." class="form-input form-vaildity" maxlength="50">
                                                     </div>                                              
                                                     <div class="input-ui">
                                                         <button type="button" id="" class="btn-basic btn-500 btn-circle-100 btn-size-xs">인증번호 전송</button>
@@ -144,66 +153,13 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="form-input-items vertical">
-                                            <div class="item-header">
-                                                <div class="item-header-label"><div class="form-input-label">패스워드<em class="font-color-util-needs">필수</em></div></div>
-                                            </div>
-                                            <div class="item-body grid">
-                                                <div class="item-detail">
-                                                    <div class="input-value cover">
-                                                        <input type="text" name="" id="" title="패스워드" placeholder="패스워드를 입력하세요" class="form-input form-vaildity" maxlength="50">
-                                                    </div>
-                                                    <div class="input-value cover" style="margin-top: 5px;">
-                                                        <input type="text" name="" id="" title="패스워드 확인" placeholder="확인을 위해 패스워드를 다시 한번 입력하세요" class="form-input form-vaildity" maxlength="50">
-                                                    </div>
-                                                </div>
-                                                <div class="item-detail-info ">
-                                                    <div class="item-left">
-                                                        <div class="item-input-valid">
-                                                            <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>패스워드를 다시 확인하시고 입력하세요.</div></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-
-
-                                    </div>
-
-                                    <div class="join-agreement">
-                                        <div class="form-input-items vertical">
-                                            <div class="item-header">
-                                                <div class="item-header-label"><div class="form-input-label">약관동의<em class="font-color-util-needs">필수</em></div></div>
-                                            </div>
-                                            <div class="item-body">
-                                                <div class="item-detail">
-                                                    <label class="form-check-box check" for="allAgree">
-                                                        <input type="checkbox" id="allAgree" name=""  title="전체 동의" class="fill">
-                                                        <span class="form-check-icon">
-                                                            <em>뮤직몬스터 이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</em>
-                                                        </span>
-                                                    </label>
-                                                </div>
-
-                                                <div class="item-detail">
-                                                    <label class="form-check-box check" for="ageAgree"><input type="checkbox" id="ageAgree" name=""  title="만 14세 이상 여부 확인" class="fill"><span class="form-check-icon"><em><b class="red">(필수)</b>만 14세 이상입니다.</em></span></label>
-                                                </div>
-                                                <div class="item-detail">
-                                                    <label class="form-check-box check" for="serviceAgree"><input type="checkbox" id="serviceAgree" name=""  title="서비스 이용약관 동의 여부" class="fill"><span class="form-check-icon"><em><b class="red">(필수)</b><a href="serviceterm.html" class="underline" target="_blank">서비스 이용약관에 동의합니다.</a></em></span></label>
-                                                </div>
-                                                <div class="item-detail">
-                                                    <label class="form-check-box check" for="personalAgree"><input type="checkbox" id="personalAgree" name=""  title="개인정보 수집/이용 동의 여부" class="fill"><span class="form-check-icon"><em><b class="red">(필수)</b><a href="personal.html" class="underline" target="_blank">개인정보 수집/이용에 동의합니다.</a></em></span></label>
-                                                </div>
-
-                                            </div>
-                                        </div>
                                     </div>
 
                                     <div class="btn-join">
-                                        <button type="button" onclick="location.href='join_success.html'" class="btn btn-size-100 ">가입하기</button>
+                                        <button type="button" onclick="alert('메일로 임시 비밀번호 보내드렸습니다. 메일을 확인해주세요.')" class="btn btn-size-100 ">다음</button>
                                     </div>
+
+                                    <div class="find-notice"><i class="icon-sign49"></i> <span>아이디(이메일) 분실 및 로그인이 안되는 경우 <a href="" class="underline">musicmonster@help.co.kr</a>로 문의 주세요.</span></div>
                                 </div>
                             </div>
                         </div>
@@ -214,8 +170,8 @@
                 <div class="footer-inner">
                     <div class="f-container">
                         <ul class="f-link">
-                            <li><a href="personal.html"><b>개인정보 처리방침</b></a></li>
-                            <li><a href="serviceterm.html">서비스이용약관</a></li>
+                            <li><a href=""><b>개인정보 처리방침</b></a></li>
+                            <li><a href="">서비스이용약관</a></li>
                         </ul>                                
                         <ul class="f-contact">
                             <li><span>상호</span>뮤직몬스터</li>

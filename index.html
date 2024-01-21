@@ -41,7 +41,6 @@
 
     <script src="js/jquery.fullpage.min.js"></script>
     <script src="js/main.js"></script>
-    <!--//index.html 에서만 적용되게 해주세요-->
 
 </head>
 <body>
@@ -59,17 +58,26 @@
                 
                 <nav id="gnav">
                     <ul class="gnav-list">
-                        <li><a href="">앨범발매</a></li>
-                        <li><a href="">공지사항</a></li>
-                        <li><a href="">서비스</a></li>
+                        <li><a href="pages/distribution/apply.html">앨범발매</a></li>
+                        <li><a href="pages/board/list.html">공지사항</a></li>
+                        <li><a href="#">서비스</a></li>
                     </ul>
                 </nav> 
                 <div class="header-util">
+                    <!--로그인 전-->
                     <div class="login-hd">
-                        <a href="" class="btn btn-outline btn-login">로그인</a>
+                        <a href="pages/login/login.html" class="btn btn-outline btn-login">로그인</a>                        
+                    </div>
+                    <!--로그인 완료 후-->
+                    <div class="mypage-hd" style="display: none">
+                        <button type="button" class="btn-my"><i class="icon-person13"></i></button>
+                        <ul class="mypage-options">
+                            <li><a href="pages/mypage/mypage.html">마이페이지</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
                     </div>
                     <div class="lang-wrap">
-                      <button class="btn-lang" type="button">외국어</button>
+                      <button type="button" class="btn-lang">외국어</button>
                       <ul class="lang-options">
                         <li><a class="selected" href="/?lang=ko">한국어</a></li>
                         <li><a href="/?lang=en">English</a></li>
@@ -87,9 +95,9 @@
                 <h1><a href="">뮤직몬스터</a></h1>                
                 <nav class="m-gnav">
                     <ul class="m-gnav-list">
-                        <li><a href="">앨범발매</a></li>
-                        <li><a href="">공지사항</a></li>
-                        <li><a href="">서비스</a></li>
+                        <li><a href="pages/distribution/apply.html">앨범발매</a></li>
+                        <li><a href="pages/board/list.html">공지사항</a></li>
+                        <li><a href="#">서비스</a></li>
                     </ul>
                 </nav>  
                 <button class="btn-menu-close" type="button" title="메뉴닫기"><i class="icon-sign03"></i></button>
@@ -320,7 +328,8 @@
                     </footer>
                 </section>
             </div>
-        </div>        
+        </div> 
+        <a class="go-top on" href="#wrap">TOP</a>       
         
     </div>
 </body>

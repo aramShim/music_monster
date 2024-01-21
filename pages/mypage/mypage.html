@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <!--네이버 서치어드바이저-->
+    <meta content="" name="naver-site-verification">
+
+    <meta property="og:url" content="">
+    <meta property="og:title" content="MusicMonster">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="description" content="">  
+  
+    <title>뮤직몬스터</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/icon.css" type="text/css">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../../css/layout.css" type="text/css">
+
+    <!-- JS -->
+    <script src="../../js/jquery-3.6.4.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <!-- content script -->
+
+    <!-- content script -->
+    <link rel="stylesheet" href="../../css/aos.css" type="text/css">    
+
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/scrolloverflow.js"></script>
+    <script src="../../js/gsap.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="skip-nav">
+            <ul>
+                <li><a href="#container">본문 바로가기</a></li>
+                <li><a href="#gnav">주메뉴 바로가기</a></li>
+                <li><a href="#footer">푸터 바로가기</a></li>
+            </ul>
+        </div>
+        <header id="header">
+            <div class="header-inner">
+                <h1><a href="">뮤직몬스터</a></h1>
+                
+                <nav id="gnav">
+                    <ul class="gnav-list">
+                        <li><a href="">앨범발매</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav> 
+                <div class="header-util">
+                    <!--로그인 전-->
+                    <div class="login-hd" style="display: none">
+                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>                        
+                    </div>
+                    <!--로그인 완료 후-->
+                    <div class="mypage-hd">
+                        <button type="button" class="btn-my"><i class="icon-person13"></i></button>
+                        <ul class="mypage-options">
+                            <li><a href="mypage.html">마이페이지</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang-wrap">
+                      <button class="btn-lang" type="button">외국어</button>
+                      <ul class="lang-options">
+                        <li><a class="selected" href="/?lang=ko">한국어</a></li>
+                        <li><a href="/?lang=en">English</a></li>
+                      </ul>
+                    </div>
+                    <div class="m-menu">                    
+                        <div id="js-toggle" class="toggle-menu">
+                            <div class="menu-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-gnav">
+                <h1><a href="">뮤직몬스터</a></h1>                
+                <nav class="m-gnav">
+                    <ul class="m-gnav-list">
+                        <li><a href="">앨범발매</a></li>
+                        <li><a href="list.html">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav>  
+                <button class="btn-menu-close" type="button" title="메뉴닫기"><i class="icon-sign03"></i></button>
+            </div>
+            
+                      
+        </header>
+        <div id="container" class="sub-container">
+            <h2 class="blind">마이페이지</h2>
+                <div class="sub-contents">
+                <!-- 내용시작 -->
+                    <div class="sub-section sub-sec-pr">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h3 class="con-title">마이페이지</h3>
+                            </div>
+                            <div class="page-body">
+                                <div class="mypage-wrap">
+                                    <div class="mypage-data-wrap">
+                                        <div class="mypage-title">
+                                            <p><b>(주)에이티씨미디어</b>님 안녕하세요😀</p>
+                                            <a href="create.html" class="btn-create"><i class="icon-business08"></i></a>
+                                        </div>
+                                        <div class="mypage-info-wrap">
+                                            <dl class="mypage-info">
+                                                <dt class="mypage-section-title">
+                                                    <span>12월 정산금</span>
+                                                    <a href="" class="btn-arrow" title="더보기"><i class="icon-arrow30"></i></a>
+                                                </dt>
+                                                <dd><span class="mont">17,597</span>원</dd>
+                                            </dl>
+                                            <dl class="mypage-info">
+                                                <dt class="mypage-section-title">
+                                                    <span>12월 결제내역</span>
+                                                    <a href="" class="btn-arrow" title="더보기"><i class="icon-arrow30"></i></a>
+                                                </dt>
+                                                <dd><span class="mont">17,597</span>원</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="mypage-section-wrap">
+                                            <div class="mypage-section-title">
+                                                <span>음원 발매 현황</span>
+                                                <a href="" class="btn-arrow" title="더보기"><i class="icon-arrow30"></i></a>
+                                            </div>
+                                            <div class="mypage-section-content">
+                                                <!--값이 있으면 색 변화-->
+                                                <span><p class="mont">0</p><p>신청앨범</p></span>
+                                                <span><p class="mont color">21</p><p>발매앨범</p></span>
+                                                <span><p class="mont">0</p><p>대기앨범</p></span>
+                                            </div>
+                                        </div>
+                                        <div class="board-list">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 80%;">
+                                                    <col style="width: 20%;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">발매 앨범 순위</th>
+                                                        <th scope="col">누적 정산금</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">                                                            
+                                                            <span class="td-col aleft"><img src="../../img/test-album1.jpg" alt=""> 집에 가자</span>
+                                                        </td>
+                                                        <td><span class="td-col">41,230</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">                                                            
+                                                            <span class="td-col aleft"><img src="../../img/test-album1.jpg" alt=""> 집에 가자</span>
+                                                        </td>
+                                                        <td><span class="td-col">41,230</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">                                                            
+                                                            <span class="td-col aleft"><img src="../../img/test-album1.jpg" alt=""> 집에 가자</span>
+                                                        </td>
+                                                        <td><span class="td-col">41,230</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">                                                            
+                                                            <span class="td-col aleft"><img src="../../img/test-album1.jpg" alt=""> 집에 가자</span>
+                                                        </td>
+                                                        <td><span class="td-col">41,230</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">                                                            
+                                                            <span class="td-col aleft"><img src="../../img/test-album1.jpg" alt=""> 집에 가자</span>
+                                                        </td>
+                                                        <td><span class="td-col">41,230</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <footer id="footer">
+                <div class="footer-inner">
+                    <div class="f-container">
+                        <ul class="f-link">
+                            <li><a href="personal.html"><b>개인정보 처리방침</b></a></li>
+                            <li><a href="serviceterm.html">서비스이용약관</a></li>
+                        </ul>                                
+                        <ul class="f-contact">
+                            <li><span>상호</span>뮤직몬스터</li>
+                            <li><span>대표이사</span>홍길동</li>
+                            <li><span>사업자번호</span>123-45-67890</li>
+                            <li><span>통신판매신고번호</span>2023-서울-0123</li>                    
+                        </ul>
+                        <ul class="f-contact">
+                            <li><span>주소</span>12345 서울특별시 종로구 황새울로 326 512타워 4층</li>
+                            <li><span>대표번호</span>02-123-4567</li>
+                            <li><span>고객문의</span>helpmusic@monster.co.kr</li>       
+                        </ul>
+                        <p class="f-copyright en">ⓒ2024 MUSIC MONSTER.Co.,Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div> 
+        <a class="go-top on" href="#wrap">TOP</a>       
+        
+    </div>
+</body>
+</html>

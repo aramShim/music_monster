@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <!--네이버 서치어드바이저-->
+    <meta content="" name="naver-site-verification">
+
+    <meta property="og:url" content="">
+    <meta property="og:title" content="MusicMonster">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="description" content="">  
+  
+    <title>뮤직몬스터</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/icon.css" type="text/css">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../../css/layout.css" type="text/css">
+
+    <!-- JS -->
+    <script src="../../js/jquery-3.6.4.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <!-- content script -->
+
+    <!-- content script -->
+    <link rel="stylesheet" href="../../css/aos.css" type="text/css">    
+
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/scrolloverflow.js"></script>
+    <script src="../../js/gsap.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="skip-nav">
+            <ul>
+                <li><a href="#container">본문 바로가기</a></li>
+                <li><a href="#gnav">주메뉴 바로가기</a></li>
+                <li><a href="#footer">푸터 바로가기</a></li>
+            </ul>
+        </div>
+        <header id="header">
+            <div class="header-inner">
+                <h1><a href="">뮤직몬스터</a></h1>
+                
+                <nav id="gnav">
+                    <ul class="gnav-list">
+                        <li><a href="">앨범발매</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav> 
+                <div class="header-util">
+                    <!--로그인 전-->
+                    <div class="login-hd" style="display: none">
+                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>                        
+                    </div>
+                    <!--로그인 완료 후-->
+                    <div class="mypage-hd">
+                        <button type="button" class="btn-my"><i class="icon-person13"></i></button>
+                        <ul class="mypage-options">
+                            <li><a href="mypage.html">마이페이지</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang-wrap">
+                      <button class="btn-lang" type="button">외국어</button>
+                      <ul class="lang-options">
+                        <li><a class="selected" href="/?lang=ko">한국어</a></li>
+                        <li><a href="/?lang=en">English</a></li>
+                      </ul>
+                    </div>
+                    <div class="m-menu">                    
+                        <div id="js-toggle" class="toggle-menu">
+                            <div class="menu-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-gnav">
+                <h1><a href="">뮤직몬스터</a></h1>                
+                <nav class="m-gnav">
+                    <ul class="m-gnav-list">
+                        <li><a href="">앨범발매</a></li>
+                        <li><a href="list.html">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav>  
+                <button class="btn-menu-close" type="button" title="메뉴닫기"><i class="icon-sign03"></i></button>
+            </div>
+            
+                      
+        </header>
+        <div id="container" class="sub-container">
+            <h2 class="blind">정보관리</h2>
+                <div class="sub-contents">
+                <!-- 내용시작 -->
+                    <div class="sub-section sub-sec-pr">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h3 class="con-title">정보관리</h3>
+                            </div>
+                            <div class="page-body">
+                                <div class="mypate-create-wrap">
+                                    <div class="mypage-create-section">
+                                        <div class="mypage-section-title">
+                                            <span>기본 정보</span>
+                                            <a href="#pwModify" class="btn btn-outline">비밀번호 변경</a>
+                                        </div>
+                                        <div class="create-content">
+                                            <dl>
+                                                <dt>ID</dt>
+                                                <dd>nayaseo@gmail.com</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>대표명</dt>
+                                                <dd>(주)에이티씨미디어</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>회원 유형</dt>
+                                                <dd>사업자</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사업자등록번호</dt>
+                                                <dd>2208876965</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>국가</dt>
+                                                <dd>대한민국</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>과세유형</dt>
+                                                <dd>일반</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>관리사명</dt>
+                                                <dd>(주)에이티씨미디어</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="mypage-create-section">
+                                        <div class="mypage-section-title">
+                                            <span>추가 정보</span>
+                                            <a href="" class="btn btn-outline">정보 수정</a>
+                                        </div>
+                                        <div class="create-content">
+                                            <dl>
+                                                <dt>이메일</dt>
+                                                <dd><input type="text" value="nayaseo@gmail.com" class="input-text"></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>연락처</dt>
+                                                <dd><input type="text" value="010-1234-5678" class="input-text"></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>주소</dt>
+                                                <dd>
+                                                    <button type="button">주소찾기</button>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>상세주소</dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="mypage-create-section">
+                                        <div class="mypage-section-title">
+                                            <span>계좌 정보</span>
+                                        </div>
+                                        <div class="create-content">
+                                            <dl>
+                                                <dt>예금주</dt>
+                                                <dd>홍길동</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>은행명</dt>
+                                                <dd>신한은행</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>계좌번호</dt>
+                                                <dd>7579*****7104</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--비밀번호 변경-->
+                            <div id="pwModify" class="modal">
+                                <div class="modal-bg"></div>
+                                <div class="modal-wrap">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p>비밀번호 변경</p>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="">                                                
+                                                <div class="form-input-wrap">
+                                                    <div class="form-input">
+                                                        <p>현재 비밀번호</p>
+                                                        <input type="password" placeholder="비밀번호" class="input-text">
+                                                    </div>
+                                                    <div class="form-input">
+                                                        <p>새 비밀번호</p>
+                                                        <input type="password" placeholder="새로운 비밀번호" class="input-text">
+                                                        <img src="../../img/layout/lock.png" alt="" class="lock">
+                                                    </div>
+                                                    <div class="form-input">
+                                                        <p>비밀번호 확인</p>
+                                                        <input type="password" placeholder="비밀번호 다시 입력" class="input-text">
+                                                        <img src="../../img/layout/lock.png" alt="" class="lock">
+                                                    </div>
+                                                </div>
+                                                <div class="form-submit-wrap">
+                                                    <button type="button" class="btn btn-outline btn-sm">취소</button>
+                                                    <button type="button" class="btn btn-sm">변경</button>
+                                                </div> 
+                                            </form>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                                                      
+                        </div>
+                    </div>
+                </div>
+            
+            <footer id="footer">
+                <div class="footer-inner">
+                    <div class="f-container">
+                        <ul class="f-link">
+                            <li><a href="personal.html"><b>개인정보 처리방침</b></a></li>
+                            <li><a href="serviceterm.html">서비스이용약관</a></li>
+                        </ul>                                
+                        <ul class="f-contact">
+                            <li><span>상호</span>뮤직몬스터</li>
+                            <li><span>대표이사</span>홍길동</li>
+                            <li><span>사업자번호</span>123-45-67890</li>
+                            <li><span>통신판매신고번호</span>2023-서울-0123</li>                    
+                        </ul>
+                        <ul class="f-contact">
+                            <li><span>주소</span>12345 서울특별시 종로구 황새울로 326 512타워 4층</li>
+                            <li><span>대표번호</span>02-123-4567</li>
+                            <li><span>고객문의</span>helpmusic@monster.co.kr</li>       
+                        </ul>
+                        <p class="f-copyright en">ⓒ2024 MUSIC MONSTER.Co.,Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div> 
+        <a class="go-top on" href="#wrap">TOP</a>       
+        
+    </div>
+</body>
+</html>

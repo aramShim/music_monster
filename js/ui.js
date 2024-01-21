@@ -13,6 +13,7 @@ $(document).ready(function () {
   goTopMove();
 
   langSelect();
+  mypageSelect();
   familySiteSelect();
   selectUi();
 });
@@ -117,6 +118,16 @@ function scrolled() {
 
 function langSelect() {
   const $langWrap = $(".lang-wrap");
+  $langWrap.children("button").on("click", function () {
+    $(this).parent().toggleClass("active");
+  });
+  $langWrap.on("mouseleave", function () {
+    $(this).removeClass("active");
+  });
+}
+
+function mypageSelect() {
+  const $langWrap = $(".mypage-hd");
   $langWrap.children("button").on("click", function () {
     $(this).parent().toggleClass("active");
   });

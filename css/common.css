@@ -174,6 +174,22 @@ input[type="password"]::-ms-reveal{display: none;}
 input[type="text"][readonly]{background-color:#f2f2f2;}
 
 button{margin:0; padding:0; border:none; background:none; cursor:pointer; border-radius:0; appearance: none; -webkit-appearance:none;}
+a.underline {text-decoration: underline;}
+/* 체크박스 & 라디오박스 */
+.form-check-box {position:relative; display:inline-flex; line-height:24px; padding:4px 0;}
+.form-check-box input {position:absolute; top:0; left:0; display:block; width:100%; height:100%; opacity:0; cursor:pointer;}
+.form-check-box .form-check-icon {position:relative; display:block;}
+.form-check-box .form-check-icon:before,
+.form-check-box .form-check-icon:after {content:''; position:absolute; top:0; left:0; display:block;}
+.form-check-box .form-check-icon:before {z-index:0;}
+.form-check-box .form-check-icon:after {z-index:1;}
+
+/* 체크박스 */
+.form-check-box.check input:checked + .form-check-icon:before{background:url(../img/layout/icon-input-checkbox-blue.png)center center no-repeat; background-size:auto 100%; border:0;}
+.form-check-box.check .form-check-icon {min-width:24px; min-height:24px;}
+.form-check-box.check .form-check-icon:before {width:24px; height:24px; border:2px solid #c9c9c9; border-radius:6px; background-color:#fff; box-sizing:border-box;}
+.form-check-box.check .form-check-icon em {display:inline-flex; padding-left:32px; font-size:16px; color:#252525; font-weight:400;}
+
 
 /* display */
 .blind{position:absolute;left:-9999em;height:0;overflow:hidden;}
@@ -224,7 +240,7 @@ a.btn {
 
     background: var(--color-blue) linear-gradient(to bottom, var(--color-blue), rgba(0,0,0,.02));
     border: 1px solid var(--color-blue);
-    border-radius: 5px;
+    border-radius: 8px;
     display: inline-flex;
     align-items: center;
     font-size: 16px;
@@ -341,6 +357,8 @@ a.btn-sm{font-size: 14px; padding: 10px;}
 .btn.btn-icon{padding: 1.2rem}
 .btn.btn-icon i[class*="icon-"]{padding-right: 0;}
 
+.btn-size-100 {width: 100%;}
+
 /* width */
 .w1{width:1%} .w2{width:2%} .w3{width:3%} .w4{width:4%} .w5{width:5%} .w6{width:6%} .w7{width:7%} .w8{width:8%} .w9{width:9%} .w10{width:10%}
 .w11{width:11%} .w12{width:12%} .w13{width:13%} .w14{width:14%} .w15{width:15%} .w16{width:16%} .w17{width:17%} .w18{width:18%} .w19{width:19%} .w20{width:20%}
@@ -361,6 +379,33 @@ a.btn-sm{font-size: 14px; padding: 10px;}
 .swiper-container-fade .swiper-slide{pointer-events:none;transition-property:opacity;}
 .swiper-container-fade .swiper-slide-active,
 .swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}
+
+/* 페이징 */
+.paging-wrap {position:relative; display:flex; justify-content:center;}
+.paging-content {position:relative; display:flex; align-items:center; justify-content:center; height:32px; text-align:center;}
+.paging-content > a {position:relative; display:block; min-width:18px; height:18px; font-size:0px; background-color:#fff;}
+.paging-content > a:after, .paging-content > a:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background-position:center center; background-size:18px auto; background-repeat:no-repeat;}
+.paging-content .btn-first:before {background-image:url(../img/layout/btn-paging-first.png);}
+.paging-content .btn-first:after {background-image:url(../img/layout/btn-paging-first-actived.png);}
+.paging-content .btn-prev:before {background-image:url(../img/layout/btn-paging-prev.png);}
+.paging-content .btn-prev:after {background-image:url(../img/layout/btn-paging-prev-actived.png);}
+.paging-content .btn-next:before {background-image:url(../img/layout/btn-paging-next.png);}
+.paging-content .btn-next:after {background-image:url(../img/layout/btn-paging-next-actived.png);}
+.paging-content .btn-last:before {background-image:url(../img/layout/btn-paging-last.png);}
+.paging-content .btn-last:after {background-image:url(../img/layout/btn-paging-last-actived.png);}
+.paging-content > a:before {opacity:1;}
+.paging-content > a:after {opacity:0;}
+.paging-content > a:hover:before {opacity:0;}
+.paging-content > a:hover:after {opacity:1;}
+
+.paging-content .paging-list {display:flex; align-items:center; margin:0 8px;}
+.paging-content .paging-list > li {display:inline-flex; align-items:center; justify-content:center; min-width:32px; padding:0 2px;}
+.paging-content .paging-list > li a {position:relative; display:block; padding:0 2px; height:32px; padding:0 10px; font-size:16px; font-weight:500; color:#4d4d4d; line-height:30px;  background-color:#fff; box-sizing:border-box;}
+.paging-content .paging-list > li a:after {content:''; position:absolute; bottom:0; left:50%; width:50%; height:2px; background-color:#3361cd; transform:translateX(-50%); opacity:0;}
+.paging-content .paging-list > li a:hover {color:#3361cd;}
+.paging-content .paging-list > li a:hover:after {opacity:1;}
+.paging-content .paging-list > li a.actived {color:#3361cd;}
+.paging-content .paging-list > li a.actived:after {opacity:1;}
 
 /* mobile ****************************************************************************************************************************************** */
 
