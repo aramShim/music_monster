@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <!--네이버 서치어드바이저-->
+    <meta content="" name="naver-site-verification">
+
+    <meta property="og:url" content="">
+    <meta property="og:title" content="MusicMonster">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="description" content="">  
+    
+    <title>뮤직몬스터</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/icon.css" type="text/css">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../../css/layout.css" type="text/css">
+
+    <!-- JS -->
+    <script src="../../js/jquery-3.6.4.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <!-- content script -->
+
+    <!-- content script -->
+    <link rel="stylesheet" href="../../css/aos.css" type="text/css">    
+
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/scrolloverflow.js"></script>
+    <script src="../../js/gsap.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="skip-nav">
+            <ul>
+                <li><a href="#container">본문 바로가기</a></li>
+                <li><a href="#gnav">주메뉴 바로가기</a></li>
+                <li><a href="#footer">푸터 바로가기</a></li>
+            </ul>
+        </div>
+        <header id="header">
+            <div class="header-inner">
+                <h1><a href="">뮤직몬스터</a></h1>
+                
+                <nav id="gnav">
+                    <ul class="gnav-list">
+                        <li><a href="">앨범발매</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav> 
+                <div class="header-util">
+                    <!--로그인 전-->
+                    <div class="login-hd" style="display: none">
+                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>                        
+                    </div>
+                    <!--로그인 완료 후-->
+                    <div class="mypage-hd">
+                        <button type="button" class="btn-my"><i class="icon-person13"></i></button>
+                        <ul class="mypage-options">
+                            <li><a href="mypage.html">마이페이지</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang-wrap">
+                        <button class="btn-lang" type="button">외국어</button>
+                        <ul class="lang-options">
+                        <li><a class="selected" href="/?lang=ko">한국어</a></li>
+                        <li><a href="/?lang=en">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-menu">                    
+                        <div id="js-toggle" class="toggle-menu">
+                            <div class="menu-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-gnav">
+                <h1><a href="">뮤직몬스터</a></h1>                
+                <nav class="m-gnav">
+                    <ul class="m-gnav-list">
+                        <li><a href="">앨범발매</a></li>
+                        <li><a href="list.html">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav>  
+                <button class="btn-menu-close" type="button" title="메뉴닫기"><i class="icon-sign03"></i></button>
+            </div>                        
+        </header>
+        <div id="container" class="sub-container">
+            <h2 class="blind">발매내역</h2>
+            <div class="sub-contents">
+                <!-- 내용시작 -->
+                <div class="sub-lnav-position"></div>
+                <nav class="sub-lnav" style="top: 79px;">
+                    <div class="lnav-inner scroll-tab">
+                        <ul class="lnav-list">
+                            <li><a href="apply.html">신청현황</a></li>
+                            <li class="active"><a href="released.html">발매내역</a></li>
+                            <li><a href="detail.html">정산내역</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="sub-section sub-sec-service">
+                    <div class="inner">
+                        <div class="sec-title">
+                            <h3 class="con-title">발매내역</h3>
+                        </div>
+                        <div class="page-body">
+                            
+                        </div>
+                        
+                                                    
+                    </div>
+                </div>
+            </div>
+            
+            <footer id="footer">
+                <div class="footer-inner">
+                    <div class="f-container">
+                        <ul class="f-link">
+                            <li><a href="personal.html"><b>개인정보 처리방침</b></a></li>
+                            <li><a href="serviceterm.html">서비스이용약관</a></li>
+                        </ul>                                
+                        <ul class="f-contact">
+                            <li><span>상호</span>뮤직몬스터</li>
+                            <li><span>대표이사</span>홍길동</li>
+                            <li><span>사업자번호</span>123-45-67890</li>
+                            <li><span>통신판매신고번호</span>2023-서울-0123</li>                    
+                        </ul>
+                        <ul class="f-contact">
+                            <li><span>주소</span>12345 서울특별시 종로구 황새울로 326 512타워 4층</li>
+                            <li><span>대표번호</span>02-123-4567</li>
+                            <li><span>고객문의</span>helpmusic@monster.co.kr</li>       
+                        </ul>
+                        <p class="f-copyright en">ⓒ2024 MUSIC MONSTER.Co.,Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div> 
+        <a class="go-top on" href="#wrap">TOP</a>       
+        
+    </div>
+</body>
+</html>

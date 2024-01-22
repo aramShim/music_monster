@@ -110,12 +110,16 @@
                                     <div class="mypage-create-section">
                                         <div class="mypage-section-title">
                                             <span>기본 정보</span>
-                                            <a href="#pwModify" class="btn btn-outline">비밀번호 변경</a>
+                                            
                                         </div>
                                         <div class="create-content">
                                             <dl>
                                                 <dt>ID</dt>
                                                 <dd>nayaseo@gmail.com</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>PW</dt>
+                                                <dd><a href="#pwModify" class="btn btn-outline modal-btn">비밀번호 변경</a></dd>
                                             </dl>
                                             <dl>
                                                 <dt>대표명</dt>
@@ -144,30 +148,33 @@
                                         </div>
                                     </div>
                                     <div class="mypage-create-section">
-                                        <div class="mypage-section-title">
-                                            <span>추가 정보</span>
-                                            <a href="" class="btn btn-outline">정보 수정</a>
-                                        </div>
-                                        <div class="create-content">
-                                            <dl>
-                                                <dt>이메일</dt>
-                                                <dd><input type="text" value="nayaseo@gmail.com" class="input-text"></dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>연락처</dt>
-                                                <dd><input type="text" value="010-1234-5678" class="input-text"></dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>주소</dt>
-                                                <dd>
-                                                    <button type="button">주소찾기</button>
-                                                </dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>상세주소</dt>
-                                                <dd></dd>
-                                            </dl>
-                                        </div>
+                                        <form action="">
+                                            <div class="mypage-section-title">
+                                                <span>추가 정보</span>
+                                                <button type="button" class="btn btn-outline infoModify">정보 수정</button>
+                                            </div>
+                                            <div class="create-content disabled">
+                                                <dl>
+                                                    <dt>이메일</dt>
+                                                    <dd><input type="text" value="nayaseo@gmail.com" class="input-text"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>연락처</dt>
+                                                    <dd><input type="text" value="010-1234-5678" class="input-text"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>주소</dt>
+                                                    <dd>
+                                                        <button type="button" class="btn btn-outline">주소찾기</button>
+                                                        <input type="text" value="" class="input-text">
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>상세주소</dt>
+                                                    <dd><input type="text" value="" class="input-text"></dd>
+                                                </dl>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="mypage-create-section">
                                         <div class="mypage-section-title">
@@ -217,7 +224,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-submit-wrap">
-                                                    <button type="button" class="btn btn-outline btn-sm">취소</button>
+                                                    <button type="button" class="btn btn-outline btn-sm modal-close">취소</button>
                                                     <button type="button" class="btn btn-sm">변경</button>
                                                 </div> 
                                             </form>

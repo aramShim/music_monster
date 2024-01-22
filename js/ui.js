@@ -16,6 +16,9 @@ $(document).ready(function () {
   mypageSelect();
   familySiteSelect();
   selectUi();
+
+  createInfoModify();
+  Modal()
 });
 
 $(window).on("load", function () {
@@ -136,6 +139,31 @@ function mypageSelect() {
   });
 }
 
+function createInfoModify(){
+  const $button = $('.infoModify');
+  const $creatCont = $('.infoModify').parents('.mypage-section-title').next('.create-content');
+  $button.click(function(){
+    if($creatCont.hasClass('disabled')){
+      $creatCont.removeClass('disabled');
+      $button.attr('type','submit');
+      $button.text('저장');
+    }
+  })
+}
+
+function Modal(){
+  const $modal = $('.modal');
+  const $modalBtn = $('.modal-btn');
+  const $modalClose = $('.modal-close');
+  $modalBtn.click(function(){
+    const $openModal = $(this).attr('href');
+    $($openModal).addClass('open');
+  });
+  $modalClose.click(function(){
+    $modal.removeClass('open');
+  })
+}
+
 function familySiteSelect() {
   const $siteWrap = $(".f-family-site");
   $siteWrap.children("button").on("click", function () {
@@ -146,6 +174,7 @@ function familySiteSelect() {
   });
 }
 
+// 사용X
 function topMenu() {
   const $ganvLi = $(".gnav-list > li");
   const activeNum = $(".gnav-list > li.active").index();
