@@ -95,6 +95,23 @@
 	--color-green: #0FD2D0;
 	--color-red: #FA2828;
 	--width-max: 1200px;
+
+	--color-bg : #ecf0f7;
+	--color-red: #ff2525;
+	--color-red-bg: #feeeee;
+	--color-red-border: #fedada;
+	--color-green : #40a56e;
+	--color-green-bg : #e8fff3;
+	--color-green-border : #50cd89;
+	--color-yellow : #ef9e05;
+	--color-yellow-bg : #fff6e5;
+	--color-yellow-border : #ffe5b4;
+	--color-blue : #3a75f9;
+	--color-blue-bg : #ebf2ff;
+	--color-blue-border : #d7e4f9;
+	--color-gray : #484848;
+	--color-gray-bg : #f3f3f3;
+	--color-gray-border : #ccc;
 }
 
 html, body{margin:0; padding:0; scroll-behavior: smooth; overscroll-behavior: contain;}
@@ -145,9 +162,9 @@ input[type="checkbox"]{width:18px; height:18px; padding:0; margin:0;}
 .checkbox:checked {border-color:var(--color-blue1);background: var(--color-blue1) url(../img/contents/i_checkbox_on.png) no-repeat center center;background-size:18px 18px;}
 .checkbox + label {cursor: pointer;padding-left:8px;vertical-align: -1px;}
 
-select{height:48px ; box-sizing:border-box; vertical-align:middle; border:none; cursor:pointer;}
+/* select{height:48px ; box-sizing:border-box; vertical-align:middle; border:none; cursor:pointer;} */
 
-.select {display:inline-block; height: 48px; cursor: pointer; position:relative; font-size:14px;}
+/* .select {display:inline-block; height: 48px; cursor: pointer; position:relative; font-size:14px;}
 .select .selected-label {display: flex; align-items:center; justify-content: space-between; line-height: 48px; padding:0;	position: relative;	text-align: left; width: 100%; z-index: 1;	overflow: hidden; box-sizing: border-box;}
 .select .selected-label:after {display: block; content:''; width:16px;height:16px; margin-left:8px; background:url(../img/contents/i_select.svg) 0 0 no-repeat;}
 .select .select-options{background-color: #fff; cursor: default; overflow: hidden; margin: 0; position: absolute;	left:-16px; min-width:calc(100% + 32px); top:100%; padding: 6px 0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:left; display:none;}
@@ -157,7 +174,35 @@ select{height:48px ; box-sizing:border-box; vertical-align:middle; border:none; 
 .select .select-options li:hover{background-color:var(--color-blue3);}
 .select .select-options input:checked + label{color:var(--color-blue1); font-weight:700;}
 .select.active .selected-label:after{background-position:-26px -52px;}
-.select.active .select-options{display:block;}
+.select.active .select-options{display:block;} */
+
+/* select */
+select {
+	position:relative;
+	display:inline-block;
+	min-width:120px;
+	width:100%;
+	height:56px;
+	padding:0 32px;
+	color:#a5a5a5;
+	font-weight:500;
+	font-size:16px;
+	line-height:54px; 
+	border:1px solid #C9C9C9;
+  border-radius:12px;
+	background-image:url('../img/layout/icon-form-select-arrow.png');
+	background-position:right 24px center;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	background-size:24px 24px;
+	box-sizing:border-box;
+	z-index:0;
+	appearance: none;
+}
+
+.select-size-md .select {width:240px; height:48px; padding:0 24px; line-height:46px; background-position:right 16px center;}
+.select-size-sm .select {width:auto; min-width:160px; height:48px; padding:0 24px; /*color:#4d4d4d;*/ line-height:46px; background-position:right 16px center;}
+select.form-vaildity.error {border-color: var(--color-200);}
 
 textarea{border:1px solid #dedede; padding:10px 15px; vertical-align:middle; box-sizing:border-box; resize: none;}
 
@@ -221,22 +266,6 @@ a.btn {
 	--color-txt-blueBold : #223cb5;
 	--color-txt-gray : #9a9a9a;
 
-	--color-bg : #ecf0f7;
-	--color-red: #ff2525;
-	--color-red-bg: #feeeee;
-	--color-red-border: #fedada;
-	--color-green : #40a56e;
-	--color-green-bg : #e8fff3;
-	--color-green-border : #50cd89;
-	--color-yellow : #ef9e05;
-	--color-yellow-bg : #fff6e5;
-	--color-yellow-border : #ffe5b4;
-	--color-blue : #3a75f9;
-	--color-blue-bg : #ebf2ff;
-	--color-blue-border : #d7e4f9;
-	--color-gray : #484848;
-	--color-gray-bg : #f3f3f3;
-	--color-gray-border : #ccc;
 
     background: var(--color-blue) linear-gradient(to bottom, var(--color-blue), rgba(0,0,0,.02));
     border: 1px solid var(--color-blue);

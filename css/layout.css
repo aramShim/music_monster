@@ -341,7 +341,34 @@
 .sub-sec-service .con-title {margin-bottom: 12px;}
 .sub-sec-service .sec-title .go-link {margin-top: 32px;}
 
+/* .contents-information-area {padding:40px 48px 40px 40px; border-radius:12px;} */
+.contents-information-area {padding:40px; color:#666666; border-radius:12px; background-color:#f2f5fc; text-align: left;}
+.contents-information-inner {display:flex;}
+.contents-information-inner .contents-left {flex:0 0 auto;}
+.contents-information-inner .contents-right {margin-left:auto;}
 
+
+.apply-data-wrap .data-sort-group.flex {justify-content: space-between; align-items: flex-end;}
+.apply-data-wrap .form-input-search .input-value {border-bottom: 2px solid #252525;}
+.apply-data-wrap .form-input-search .input-value input {border-bottom: 0;}
+
+.apply-data-wrap .board-list table > thead > tr > th:first-child {padding-left: 0;}
+.apply-data-wrap .board-list table > thead > tr > th:last-child {padding-right: 0;}
+.apply-data-wrap .board-list table > tbody > tr > td:first-child > .td-col {padding-left: 0;}
+.apply-data-wrap .board-list table > tbody > tr > td:last-child > .td-col {padding-right: 0;}
+.apply-data-wrap .board-list table > tbody > tr > td > .td-col {height: 110px;}
+
+.apply-data-wrap .album-artist .album-img {height: 100%; margin-right: 16px;}
+.apply-data-wrap .album-artist .album-img img {height: 100%;}
+.apply-data-wrap .album-artist .album-nm {display: flex; flex-flow: column; }
+
+/*status*/
+.status {display: inline-block; border-radius: 10px; font-size: 13px; font-weight: 600; vertical-align: middle; padding: 3px 0; text-align: center; width:70px }
+.status.red {color: var(--color-red); background-color: var(--color-red-bg); }
+.status.green {color: var(--color-green); background-color: var(--color-green-bg); }
+.status.yellow {color: var(--color-yellow); background-color: var(--color-yellow-bg); }
+.status.blue {color: var(--color-blue); background-color: var(--color-blue-bg); }
+.status.gray {color: var(--color-gray); background-color: var(--color-gray-bg); }
 
 
 
