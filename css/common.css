@@ -409,6 +409,55 @@ a.btn-sm{font-size: 14px; padding: 10px;}
 .swiper-container-fade .swiper-slide-active,
 .swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}
 
+
+/* 데이트 피커 */
+.form-range-group {display:flex; align-items:center;}
+.form-range-group .form-range-input input:read-only {background-color:#fff;}
+.form-range-group .form-cell-char {margin:0 4px;}
+
+.form-range-input {position:relative; display:flex; align-items:center;}
+.form-range-input > input {padding-right:50px;}
+.form-range-input > input:read-only {background-color:#fff; color:#666; border-color:#c9c9c9;}
+.form-range-input > img {position:absolute; top:0; right:0; width:24px; height:24px; margin:16px 16px 0 0; cursor:pointer; z-index:15;}
+.form-range-input > .input {position:relative; width:100%;}
+.form-range-input > input.v-datepicker{background:url(../images/icon/icon-datepicker-ui-thumb.png) right 13px top 13px no-repeat; background-size:24px auto;}
+.form-date-cell.form-date-sm {flex:0 0 auto; width:194px;}
+
+/* 데이트 피커 */
+.form-date-input {position:relative; display:flex; align-items:center;}
+.form-date-input > input {padding-right:50px;}
+.form-date-input > img {position:absolute; top:0; right:0; width:24px; height:24px; margin:13px 13px 0 0; cursor:pointer; z-index:15;}
+.form-date-input > .input {position:relative; width:100%;}
+.form-date-input > input.v-datepicker{background:url(../images/icon/icon-datepicker-ui-thumb.png) right 13px top 13px no-repeat; background-size:24px auto;}
+
+
+/* 데이트 피커 > small */
+.form-range-group.small .form-range-input > input {height:48px; padding:0 45px 0 25px;}
+.form-range-group.small .form-range-input > img {margin:12px 15px 0 0;}
+
+/* 달력 > 제이쿼리 > 입력박스형(기본) */
+.ui-widget {font-family:'Pretendard' , sans-serif;}
+.ui-datepicker {position:relative; min-width:264px; padding:70px 20px 20px; margin:8px 0 0; text-align:center; background:#fff;border:1px solid #C9C9C9; border-radius:12px; box-shadow:0px 8px 8px 0 rgba(0, 0, 0, 0.05); box-sizing:border-box; z-index:100 !important;}
+.ui-datepicker .ui-datepicker-header {position:absolute; top:0; left:0; display:flex; width:100%; height:56px; margin:0; padding:0 74px; border:none; border-bottom:2px solid #f6f6f6; background:none;  box-sizing:border-box;  border-radius:0;}
+.ui-datepicker .ui-datepicker-title {display:flex; align-items:center; justify-content:center; width:100%; margin:0; font-size:15px; color:#252525; font-weight:500; line-height:1.5;}
+.ui-datepicker .ui-datepicker-title .ui-datepicker-year,
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month {display:inline-flex;}
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year {width:auto; height:auto; padding:0 24px 0 0; margin:0; border:none; background-position:right center;}
+.ui-datepicker .ui-widget-header .ui-icon {background:none;font-size:0}
+.ui-datepicker .ui-datepicker-prev {position:absolute; top:0; left:0; width:74px; height:100%; display:flex; align-items:center; justify-content:center; background:none; outline:none; border:none;}
+.ui-datepicker .ui-datepicker-prev > .ui-icon {position:relative; top:auto; left:auto; right:auto; bottom:auto; display:block; margin:0; width:24px; height:24px; font-size:0; background:url(../images/icon/icon-datepicker-ui-prev.png) center center no-repeat; background-size:24px auto;}
+.ui-datepicker .ui-datepicker-next {position:absolute; top:0; right:0; width:74px; height:100%; display:flex; align-items:center; justify-content:center; background:none; outline:none; border:none;}
+.ui-datepicker .ui-datepicker-next > .ui-icon {position:relative; top:auto; left:auto; right:auto; bottom:auto; display:block; margin:0; width:24px; height:24px; font-size:0; background:url(../images/icon/icon-datepicker-ui-next.png) center center no-repeat; background-size:24px auto;}
+.ui-datepicker table.ui-datepicker-calendar {margin:0; font-size:0; table-layout:fixed;}
+.ui-datepicker table.ui-datepicker-calendar > thead + tbody {margin-top:8px;}
+.ui-datepicker table.ui-datepicker-calendar > thead > tr > th {padding:4px; height:24px; font-size:13px; font-weight:500; color:#252525; line-height:1; vertical-align:middle;}
+.ui-datepicker table.ui-datepicker-calendar > tbody > tr > td {padding:4px; height:24px; font-size:13px; font-weight:500; color:#000; line-height:1; vertical-align:middle;}
+.ui-datepicker .ui-state-disabled .ui-state-default {color:#A5A5A5; opacity:1;}
+.ui-datepicker .ui-state-default{display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; padding:0 !important; margin:auto; font-size:13px; color:#000; text-align:center !important; line-height:1; border-radius:50%; border:none !important; background:#fff !important;}
+.ui-datepicker table.ui-datepicker-calendar > tbody > tr:nth-of-type(1) > td > .ui-state-default {margin-top:8px;}
+.ui-datepicker .ui-datepicker-current-day .ui-state-default{background:#3361cd !important; color:#fff !important; font-weight:500 !important;}
+.ui-datepicker .ui-datepicker-today .ui-state-default{background:#f2f5fc !important; color:#000000 !important; font-weight:500 !important;}
+
 /* 페이징 */
 .paging-wrap {position:relative; display:flex; justify-content:center;}
 .paging-content {position:relative; display:flex; align-items:center; justify-content:center; height:32px; text-align:center;}

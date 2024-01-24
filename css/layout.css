@@ -2,6 +2,7 @@
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .mont {font-family: 'Montserrat', sans-serif;}
+.flex {display: flex;}
 /* skip nav */
 .skip-nav { position:absolute; left:0; top:-50px; z-index:9999; }
 .skip-nav li {width:200px;}
@@ -256,7 +257,7 @@
 .join-wrap {width:540px; margin:0 auto; }
 
 .font-color-util-needs {display:inline-flex; width:4px; height:4px; margin:5px 0 0 4px; font-size:0px; border-radius:50%; background-color:#ec5962;}
-.form-input-items + .form-input-items {margin-top: 16px;}
+.join-wrap .form-input-items + .form-input-items {margin-top: 16px;}
 .form-input-items .item-header {position: relative; display: flex;}
 .form-input-label {font-size: 18px; font-weight: 500; line-height: 28px; margin-bottom: 4px;}
 .join-wrap .form-input {width: 100%; height: 56px; padding: 0 24px; border-radius: 10px;}
@@ -346,8 +347,6 @@
 .contents-information-inner {display:flex;}
 .contents-information-inner .contents-left {flex:0 0 auto;}
 .contents-information-inner .contents-right {margin-left:auto;}
-
-
 .apply-data-wrap .data-sort-group.flex {justify-content: space-between; align-items: flex-end;}
 .apply-data-wrap .form-input-search .input-value {border-bottom: 2px solid #252525;}
 .apply-data-wrap .form-input-search .input-value input {border-bottom: 0;}
@@ -369,6 +368,19 @@
 .status.yellow {color: var(--color-yellow); background-color: var(--color-yellow-bg); }
 .status.blue {color: var(--color-blue); background-color: var(--color-blue-bg); }
 .status.gray {color: var(--color-gray); background-color: var(--color-gray-bg); }
+
+/*발매내역*/
+.grid2 {width: 50%;}
+.sub-sec-release.sub-section .sec-title {margin-bottom: 40px;}
+.board-search-wrap {padding:52px 48px; border:1px solid #c9c9c9; border-radius:12px; box-sizing:border-box; margin-bottom: 40px;}
+.board-search-wrap .form-group .grid-layout-inner {margin:-16px -24px;}
+.board-search-wrap .form-group .grid-layout-cell {padding:16px 24px; align-items: center;}
+.board-search-wrap .form-input-items {align-items: center;}
+.board-search-wrap .form-input-items .item-header {width:100px;}
+.board-search-wrap .form-input-items .item-body .input-value select {height:48px; line-height:46px;}
+.board-search-wrap .form-input-items.horizontal .form-btns-input {display:flex; align-items:center;}
+.board-search-wrap .form-input-items.horizontal .form-btns-input .input-value {flex:auto;}
+.board-search-wrap .form-input-items.horizontal .form-btns-input .input-value + .input-ui {flex:0 0 auto; margin-left:8px;}
 
 
 

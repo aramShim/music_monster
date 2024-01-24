@@ -12,8 +12,8 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
 
-    <meta name="description" content="">  
-    
+    <meta name="description" content="">
+
     <title>뮤직몬스터</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/icon.css" type="text/css">
@@ -28,11 +28,12 @@
     <!-- content script -->
 
     <!-- content script -->
-    <link rel="stylesheet" href="../../css/aos.css" type="text/css">    
+    <link rel="stylesheet" href="../../css/aos.css" type="text/css">
 
     <script src="../../js/aos.js"></script>
     <script src="../../js/scrolloverflow.js"></script>
     <script src="../../js/gsap.min.js"></script>
+
 </head>
 <body>
     <div id="wrap">
@@ -46,7 +47,6 @@
         <header id="header">
             <div class="header-inner">
                 <h1><a href="">뮤직몬스터</a></h1>
-                
                 <nav id="gnav">
                     <ul class="gnav-list">
                         <li><a href="">앨범발매</a></li>
@@ -57,7 +57,7 @@
                 <div class="header-util">
                     <!--로그인 전-->
                     <div class="login-hd" style="display: none">
-                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>                        
+                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>
                     </div>
                     <!--로그인 완료 후-->
                     <div class="mypage-hd">
@@ -74,7 +74,7 @@
                         <li><a href="/?lang=en">English</a></li>
                         </ul>
                     </div>
-                    <div class="m-menu">                    
+                    <div class="m-menu">
                         <div id="js-toggle" class="toggle-menu">
                             <div class="menu-line"></div>
                         </div>
@@ -83,16 +83,16 @@
             </div>
 
             <div class="m-gnav">
-                <h1><a href="">뮤직몬스터</a></h1>                
+                <h1><a href="">뮤직몬스터</a></h1>
                 <nav class="m-gnav">
                     <ul class="m-gnav-list">
                         <li><a href="">앨범발매</a></li>
                         <li><a href="list.html">공지사항</a></li>
                         <li><a href="">서비스</a></li>
                     </ul>
-                </nav>  
+                </nav>
                 <button class="btn-menu-close" type="button" title="메뉴닫기"><i class="icon-sign03"></i></button>
-            </div>                        
+            </div>
         </header>
         <div id="container" class="sub-container">
             <h2 class="blind">발매내역</h2>
@@ -107,45 +107,256 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="sub-section sub-sec-service">
+                <div class="sub-section sub-sec-release">
                     <div class="inner">
                         <div class="sec-title">
                             <h3 class="con-title">발매내역</h3>
                         </div>
                         <div class="page-body">
-                            
+                            <div class="released-wrap">
+                                <div class="apply-data-wrap">
+                                    <div class="board-search-wrap size-lg">
+                                        <div class="form-group">
+                                          <div class="grid-layout-inner">
+                                            <div class="grid-layout-cell flex">
+                                              <div class="flex form-input-items grid2">
+                                                <div class="item-header">
+                                                  <div class="form-input-label">서비스상태</div>
+                                                </div>
+                                                <div class="item-body">
+                                                  <div class="select-size-sm">
+                                                    <select name="" id="" class="select">
+                                                      <option value="">서비스상태</option>
+                                                      <option value="">발매대기</option>
+                                                      <option value="">서비스중</option>
+                                                      <option value="">권리종료</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="flex form-input-items grid2">
+                                                <div class="item-header">
+                                                  <div class="form-input-label">장르</div>
+                                                </div>
+                                                <div class="item-body">
+                                                  <div class="select-size-sm">
+                                                    <select name="" id="" class="select">
+                                                      <option value="">장르</option>
+                                                      <option value="">대중음악</option>
+                                                      <option value="">POP</option>
+                                                      <option value="">알앤비</option>
+                                                      <option value="">재즈</option>
+                                                      <option value="">OST</option>
+                                                      <option value="">어린이</option>
+                                                      <option value="">클래식</option>
+                                                      <option value="">종교음악</option>
+                                                      <option value="">일렉트로니카</option>
+                                                      <option value="">월드뮤직</option>
+                                                      <option value="">뉴에이지</option>
+                                                      <option value="">기타</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="grid-layout-cell flex">
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="data-sort-wrap">
+                                      <div class="data-sort-group flex">
+                                        <div class="sort-left">
+                                          <div class="select-size-sm">
+                                            <select name="" id="" class="select">
+                                              <option value="">15개보기</option>
+                                              <option value="">30개보기</option>
+                                              <option value="">70개보기</option>
+                                              <option value="">100개보기</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="sort-right">
+                                          <div class="form-input-search">
+                                            <div class="input-value">
+                                              <div class="select-size-sm">
+                                                <select name="" id="" class="select">
+                                                  <option value="">앨범명</option>
+                                                  <option value="">아티스트명</option>
+                                                  <option value="">레이블명</option>
+                                                </select>
+                                                <input type="text" placeholder="검색어를 입력해주세요."/>
+                                              </div>
+                                            </div>
+                                            <div class="input-ui">
+                                              <button type="button" class="btn-single-search">
+                                                <i class="icon-icon08"></i>
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="basic-data-group">
+                                      <div class="board-list-wrap">
+                                        <div class="board-list">
+                                          <table>
+                                            <colgroup>
+                                              <col style="width: 10%" />
+                                              <col style="width: 50%" />
+                                              <col style="width: 20%" />
+                                              <col style="width: 10%" />
+                                              <col style="width: 10%" />
+                                            </colgroup>
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">
+                                                    <label class="form-check-box check" for="applyselect1">
+                                                        <input type="checkbox" id="applyselect1" name="" title="선택" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                </th>
+                                                <th scope="col">앨범명/아티스트명</th>
+                                                <th scope="col">레이블명</th>
+                                                <th scope="col">등록일</th>
+                                                <th scope="col">상태</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="cursor-pointer-area">
+                                                <td>
+                                                  <span class="td-col">
+                                                    <label class="form-check-box check" for="applyselect2">
+                                                        <input type="checkbox" id="applyselect2" name="" title="선택" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                  </span>
+                                                </td>
+                                                <td>
+                                                  <div class="td-col aleft album-artist">
+                                                    <div class="album-img">
+                                                      <img src="../../img/test-album1.jpg" alt="테스트" />
+                                                    </div>
+                                                    <div class="album-nm">
+                                                      <strong class="al-title">사표를 던지다</strong>
+                                                      <span class="al-artist">강우경</span>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td><span class="td-col">칼라풀레코즈</span></td>
+                                                <td><span class="td-col al-date">2023.05.09</span></td>
+                                                <td>
+                                                  <span class="td-col"><span class="status gray">승인대기</span></span>
+                                                </td>
+                                              </tr>
+                                              <tr class="cursor-pointer-area">
+                                                <td>
+                                                  <span class="td-col">
+                                                    <label class="form-check-box check" for="applyselect3">
+                                                        <input type="checkbox" id="applyselect3" name="" title="선택" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                  </span>
+                                                </td>
+                                                <td>
+                                                  <div class="td-col aleft album-artist">
+                                                    <div class="album-img">
+                                                      <img src="../../img/test-album1.jpg" alt="테스트" />
+                                                    </div>
+                                                    <div class="album-nm">
+                                                      <strong class="al-title">사표를 던지다</strong>
+                                                      <span class="al-artist">강우경</span>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td><span class="td-col">칼라풀레코즈</span></td>
+                                                <td><span class="td-col al-date">2023.05.09</span></td>
+                                                <td>
+                                                  <span class="td-col"><span class="status red">승인보류</span></span>
+                                                </td>
+                                              </tr>
+                                              <tr class="cursor-pointer-area">
+                                                <td>
+                                                  <span class="td-col">
+                                                    <label class="form-check-box check" for="allAgree">
+                                                        <input type="checkbox" id="allAgree" name="" title="전체 동의" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                  </span>
+                                                </td>
+                                                <td>
+                                                  <div class="td-col aleft album-artist">
+                                                    <div class="album-img">
+                                                      <img src="../../img/test-album1.jpg" alt="테스트" />
+                                                    </div>
+                                                    <div class="album-nm">
+                                                      <strong class="al-title">사표를 던지다</strong>
+                                                      <span class="al-artist">강우경</span>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td><span class="td-col">칼라풀레코즈</span></td>
+                                                <td><span class="td-col al-date">2023.05.09</span></td>
+                                                <td>
+                                                  <span class="td-col"><span class="status blue">승인완료</span></span>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                      <div class="boarder-paging">
+                                        <div class="paging-wrap">
+                                          <div class="paging-content">
+                                            <a href="" class="btn-first">처음</a>
+                                            <a href="" class="btn-prev">이전</a>
+                                            <ol class="paging-list">
+                                              <li><a href="" class="actived">1</a></li>
+                                              <li><a href="">2</a></li>
+                                              <li><a href="">3</a></li>
+                                              <li><a href="">4</a></li>
+                                              <li><a href="">5</a></li>
+                                              <li><a href="">6</a></li>
+                                            </ol>
+                                            <a href="" class="btn-next">다음</a>
+                                            <a href="" class="btn-last">끝</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                                                    
                     </div>
                 </div>
             </div>
-            
             <footer id="footer">
                 <div class="footer-inner">
                     <div class="f-container">
                         <ul class="f-link">
                             <li><a href="personal.html"><b>개인정보 처리방침</b></a></li>
                             <li><a href="serviceterm.html">서비스이용약관</a></li>
-                        </ul>                                
+                        </ul>
                         <ul class="f-contact">
                             <li><span>상호</span>뮤직몬스터</li>
                             <li><span>대표이사</span>홍길동</li>
                             <li><span>사업자번호</span>123-45-67890</li>
-                            <li><span>통신판매신고번호</span>2023-서울-0123</li>                    
+                            <li><span>통신판매신고번호</span>2023-서울-0123</li>
                         </ul>
                         <ul class="f-contact">
                             <li><span>주소</span>12345 서울특별시 종로구 황새울로 326 512타워 4층</li>
                             <li><span>대표번호</span>02-123-4567</li>
-                            <li><span>고객문의</span>helpmusic@monster.co.kr</li>       
+                            <li><span>고객문의</span>helpmusic@monster.co.kr</li>
                         </ul>
                         <p class="f-copyright en">ⓒ2024 MUSIC MONSTER.Co.,Ltd. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
-        </div> 
-        <a class="go-top on" href="#wrap">TOP</a>       
-        
-    </div>
+        </div>
+        <a class="go-top on" href="#wrap">TOP</a>
+      </div>
+
 </body>
 </html>
