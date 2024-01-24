@@ -25,14 +25,20 @@
     <script src="../../js/swiper-bundle.min.js"></script>
     <script src="../../js/ui.js"></script>
 
-    <!-- content script -->
-
-    <!-- content script -->
     <link rel="stylesheet" href="../../css/aos.css" type="text/css">    
 
     <script src="../../js/aos.js"></script>
     <script src="../../js/scrolloverflow.js"></script>
     <script src="../../js/gsap.min.js"></script>
+
+     <!-- 정산내역 script -->
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <style>
+        .ui-datepicker-calendar {display: none; }
+        .ui-datepicker-buttonpane { display: none; }
+    </style>
+ 
 </head>
 <body>
     <div id="wrap">
@@ -113,10 +119,156 @@
                             <h3 class="con-title">정산내역</h3>
                         </div>
                         <div class="page-body">
-                            
-                        </div>
-                        
-                                                    
+                            <div class="detail-wrap">
+                                <div class="apply-data-wrap">
+                                    <div class="data-sort-wrap">
+                                      <div class="data-sort-group flex">
+                                        <div class="sort-left">
+                                            <div class="form-range-group">
+                                                <div class="form-range-input">
+                                                  <input type="text" id="month1" class="v-datepicker" placeholder="시작일" autocomplete="off">
+                                                </div>
+                                                <div class="form-cell-char">~</div>
+                                                <div class="form-range-input">
+                                                  <input type="text" id="month2" class="v-datepicker" placeholder="종료일" autocomplete="off">
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="sort-right">
+                                          <button type="button" class="btn">조회</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="basic-data-group">
+                                      <div class="board-list-wrap">
+                                        <div class="board-list">
+                                          <table>
+                                            <colgroup>
+                                              <col style="width: 10%" />
+                                              <col style="width: 50%" />
+                                              <col style="width: 20%" />
+                                              <col style="width: 10%" />
+                                              <col style="width: 10%" />
+                                            </colgroup>
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">
+                                                    <label class="form-check-box check" for="applyselect1">
+                                                        <input type="checkbox" id="applyselect1" name="" title="선택" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                </th>
+                                                <th scope="col">앨범명/아티스트명</th>
+                                                <th scope="col">레이블명</th>
+                                                <th scope="col">등록일</th>
+                                                <th scope="col">상태</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="cursor-pointer-area" onclick="location.href='released_view.html'">
+                                                <td>
+                                                  <span class="td-col">
+                                                    <label class="form-check-box check" for="applyselect2">
+                                                        <input type="checkbox" id="applyselect2" name="" title="선택" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                  </span>
+                                                </td>
+                                                <td>
+                                                  <div class="td-col aleft album-artist">
+                                                    <div class="album-img">
+                                                      <img src="../../img/test-album1.jpg" alt="테스트" />
+                                                    </div>
+                                                    <div class="album-nm">
+                                                      <strong class="al-title">사표를 던지다</strong>
+                                                      <span class="al-artist">강우경</span>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td><span class="td-col">칼라풀레코즈</span></td>
+                                                <td><span class="td-col al-date">2023.05.09</span></td>
+                                                <td>
+                                                  <span class="td-col"><span class="status gray">승인대기</span></span>
+                                                </td>
+                                              </tr>
+                                              <tr class="cursor-pointer-area">
+                                                <td>
+                                                  <span class="td-col">
+                                                    <label class="form-check-box check" for="applyselect3">
+                                                        <input type="checkbox" id="applyselect3" name="" title="선택" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                  </span>
+                                                </td>
+                                                <td>
+                                                  <div class="td-col aleft album-artist">
+                                                    <div class="album-img">
+                                                      <img src="../../img/test-album1.jpg" alt="테스트" />
+                                                    </div>
+                                                    <div class="album-nm">
+                                                      <strong class="al-title">사표를 던지다</strong>
+                                                      <span class="al-artist">강우경</span>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td><span class="td-col">칼라풀레코즈</span></td>
+                                                <td><span class="td-col al-date">2023.05.09</span></td>
+                                                <td>
+                                                  <span class="td-col"><span class="status red">승인보류</span></span>
+                                                </td>
+                                              </tr>
+                                              <tr class="cursor-pointer-area">
+                                                <td>
+                                                  <span class="td-col">
+                                                    <label class="form-check-box check" for="allAgree">
+                                                        <input type="checkbox" id="allAgree" name="" title="전체 동의" class="fill">
+                                                        <span class="form-check-icon"></span>
+                                                    </label>
+                                                  </span>
+                                                </td>
+                                                <td>
+                                                  <div class="td-col aleft album-artist">
+                                                    <div class="album-img">
+                                                      <img src="../../img/test-album1.jpg" alt="테스트" />
+                                                    </div>
+                                                    <div class="album-nm">
+                                                      <strong class="al-title">사표를 던지다</strong>
+                                                      <span class="al-artist">강우경</span>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td><span class="td-col">칼라풀레코즈</span></td>
+                                                <td><span class="td-col al-date">2023.05.09</span></td>
+                                                <td>
+                                                  <span class="td-col"><span class="status blue">승인완료</span></span>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                      <div class="boarder-paging">
+                                        <div class="paging-wrap">
+                                          <div class="paging-content">
+                                            <a href="" class="btn-first">처음</a>
+                                            <a href="" class="btn-prev">이전</a>
+                                            <ol class="paging-list">
+                                              <li><a href="" class="actived">1</a></li>
+                                              <li><a href="">2</a></li>
+                                              <li><a href="">3</a></li>
+                                              <li><a href="">4</a></li>
+                                              <li><a href="">5</a></li>
+                                              <li><a href="">6</a></li>
+                                            </ol>
+                                            <a href="" class="btn-next">다음</a>
+                                            <a href="" class="btn-last">끝</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                      
                     </div>
                 </div>
             </div>

@@ -18,13 +18,83 @@ $(document).ready(function () {
   selectUi();
 
   createInfoModify();
-  Modal()
+  Modal();
+  datePicker();
 });
 
 $(window).on("load", function () {
   scrollMove();
 });
-
+function datePicker(){
+  $("#datepicker1").datepicker({
+    dateFormat: 'yy.mm.dd' //달력 날짜 형태
+    ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+    ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
+    ,changeYear: true //option값 년 선택 가능
+    ,changeMonth: true //option값  월 선택 가능                
+    ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+    ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
+    ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
+    ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 Tooltip
+  });
+  $("#datepicker2").datepicker({
+    dateFormat: 'yy.mm.dd' //달력 날짜 형태
+    ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+    ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
+    ,changeYear: true //option값 년 선택 가능
+    ,changeMonth: true //option값  월 선택 가능                
+    ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+    ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
+    ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
+    ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 Tooltip
+  });
+  $("#month1").datepicker({
+    changeMonth: true,
+    changeYear: true,
+    showButtonPanel: true,
+    dateFormat: 'yy.mm',
+    showMonthAfterYear:true, // 월- 년 순서가아닌 년도 - 월 순서
+    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], //달력의 월 부분 텍스트
+    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], //달력의 월 부분 Tooltip
+    onClose: function(dateText, inst) { 
+        var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+        var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+        $(this).datepicker('setDate', new Date(year, month, 1));
+    },
+    beforeShow : function(input, inst) {
+        if ((datestr = $(this).val()).length > 0) {
+            actDate = datestr.split('-');
+            year = actDate[0];
+            month = actDate[1]-1;
+            $(this).datepicker('option', 'defaultDate', new Date(year, month));
+            $(this).datepicker('setDate', new Date(year, month));
+        }
+    }
+  });
+  $("#month2").datepicker({
+    changeMonth: true,
+    changeYear: true,
+    showButtonPanel: true,
+    dateFormat: 'yy.mm',
+    showMonthAfterYear:true, // 월- 년 순서가아닌 년도 - 월 순서
+    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], //달력의 월 부분 텍스트
+    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], //달력의 월 부분 Tooltip
+    onClose: function(dateText, inst) { 
+        var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+        var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+        $(this).datepicker('setDate', new Date(year, month, 1));
+    },
+    beforeShow : function(input, inst) {
+        if ((datestr = $(this).val()).length > 0) {
+            actDate = datestr.split('-');
+            year = actDate[0];
+            month = actDate[1]-1;
+            $(this).datepicker('option', 'defaultDate', new Date(year, month));
+            $(this).datepicker('setDate', new Date(year, month));
+        }
+    }
+  });  
+}
 function selectUi() {
   $(".select").each(function () {
     const $this = $(this);
@@ -139,13 +209,12 @@ function mypageSelect() {
   });
 }
 
-function createInfoModify(){
+function createInfoModify(e){
   const $button = $('.infoModify');
   const $creatCont = $('.infoModify').parents('.mypage-section-title').next('.create-content');
   $button.click(function(){
     if($creatCont.hasClass('disabled')){
       $creatCont.removeClass('disabled');
-      $button.attr('type','submit');
       $button.text('저장');
     }
   })

@@ -372,9 +372,9 @@
 /*발매내역*/
 .grid2 {width: 50%;}
 .sub-sec-release.sub-section .sec-title {margin-bottom: 40px;}
-.board-search-wrap {padding:52px 48px; border:1px solid #c9c9c9; border-radius:12px; box-sizing:border-box; margin-bottom: 40px;}
-.board-search-wrap .form-group .grid-layout-inner {margin:-16px -24px;}
-.board-search-wrap .form-group .grid-layout-cell {padding:16px 24px; align-items: center;}
+.board-search-wrap {padding:30px 32px; border:1px solid #c9c9c9; border-radius:12px; box-sizing:border-box; margin-bottom: 40px;}
+.board-search-wrap .form-group .grid-layout-cell {align-items: center; padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #efefef;}
+.board-search-wrap .form-group .grid-layout-cell:last-child {padding-bottom: 0; margin-bottom: 0; border-bottom: 0;}
 .board-search-wrap .form-input-items {align-items: center;}
 .board-search-wrap .form-input-items .item-header {width:100px;}
 .board-search-wrap .form-input-items .item-body .input-value select {height:48px; line-height:46px;}

@@ -25,14 +25,15 @@
     <script src="../../js/swiper-bundle.min.js"></script>
     <script src="../../js/ui.js"></script>
 
-    <!-- content script -->
-
-    <!-- content script -->
     <link rel="stylesheet" href="../../css/aos.css" type="text/css">
 
     <script src="../../js/aos.js"></script>
     <script src="../../js/scrolloverflow.js"></script>
     <script src="../../js/gsap.min.js"></script>
+
+    <!-- 발매일 script -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -115,7 +116,7 @@
                         <div class="page-body">
                             <div class="released-wrap">
                                 <div class="apply-data-wrap">
-                                    <div class="board-search-wrap size-lg">
+                                    <div class="board-search-wrap">
                                         <div class="form-group">
                                           <div class="grid-layout-inner">
                                             <div class="grid-layout-cell flex">
@@ -160,7 +161,29 @@
                                               </div>
                                             </div>
                                             <div class="grid-layout-cell flex">
-                                              
+                                              <div class="flex form-input-items">
+                                                <div class="item-header">
+                                                  <div class="form-input-label">날짜선택</div>
+                                                </div>
+                                                <div class="item-body flex">
+                                                  <div class="select-size-sm">
+                                                    <select name="" id="" class="select">
+                                                      <option value="">등록일</option>
+                                                      <option value="">발매일</option>
+                                                      <option value="">최종수정일</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="form-range-group">
+                                                    <div class="form-range-input">
+                                                      <input type="text" id="datepicker1" class="v-datepicker" placeholder="시작일" autocomplete="off">
+                                                    </div>
+                                                    <div class="form-cell-char">~</div>
+                                                    <div class="form-range-input">
+                                                      <input type="text" id="datepicker2" class="v-datepicker" placeholder="종료일" autocomplete="off">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                             </div>
                                           </div>
                                         </div>
@@ -225,7 +248,7 @@
                                               </tr>
                                             </thead>
                                             <tbody>
-                                              <tr class="cursor-pointer-area">
+                                              <tr class="cursor-pointer-area" onclick="location.href='released_view.html'">
                                                 <td>
                                                   <span class="td-col">
                                                     <label class="form-check-box check" for="applyselect2">
