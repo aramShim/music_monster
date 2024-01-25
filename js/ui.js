@@ -20,11 +20,20 @@ $(document).ready(function () {
   createInfoModify();
   Modal();
   datePicker();
+  trToggle();
 });
 
 $(window).on("load", function () {
   scrollMove();
 });
+
+function trToggle(){
+  $('.tr-toggle-btn').click(function(){
+    var $this = $(this);
+    $this.find('i').toggleClass('rotate');
+    $(this).closest('tr').next('tr.toggle-wrap').find('.toggle').slideToggle()
+  })
+}
 function datePicker(){
   $("#datepicker1").datepicker({
     dateFormat: 'yy.mm.dd' //달력 날짜 형태
@@ -160,7 +169,7 @@ function goTopMove() {
     btnPosition();
   });
 
-  function btnPosition() {
+function btnPosition() {
     vh = window.innerHeight * 0.01;
     window_height = vh * 100;
 
