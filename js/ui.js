@@ -102,7 +102,10 @@ function datePicker(){
             $(this).datepicker('setDate', new Date(year, month));
         }
     }
-  });  
+  });
+  $("#yearPicker").datepicker( {
+    dateFormat: 'yy'
+  });
 }
 function selectUi() {
   $(".select").each(function () {
