@@ -33,18 +33,9 @@
   <script src="../../js/scrolloverflow.js"></script>
   <script src="../../js/gsap.min.js"></script>
 
-  <!-- 정산내역 script -->
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <style>
-    .ui-datepicker-calendar {
-      display: none;
-    }
-
-    .ui-datepicker-buttonpane {
-      display: none;
-    }
-  </style>
+  <!-- datepicker script -->
+  <link  href="../../css/datepicker.min.css" rel="stylesheet">
+  <script src="../../js/datepicker.min.js"></script>
 
 </head>
 
@@ -344,26 +335,24 @@
 
                   </div>
 
-                  <div class="excel-download-wrap">
-                    <p>플랫폼 전체 상세정산 엑셀 다운로드</p>
-                    <div class="flex">
-                      <div class="year-calendar"><input type="text" id="yearPicker" autocomplete="off"></div>
-                      <div class="month-btn-wrap">
-                        <ul class="month-download">
-                          <li class="month-btn"><a href="">1월</a></li>
-                          <li class="month-btn"><a href="">2월</a></li>
-                          <li class="month-btn"><a href="">3월</a></li>
-                          <li class="month-btn"><a href="">4월</a></li>
-                          <li class="month-btn"><a href="">5월</a></li>
-                          <li class="month-btn"><a href="">6월</a></li>
-                          <li class="month-btn"><a href="">7월</a></li>
-                          <li class="month-btn"><a href="">8월</a></li>
-                          <li class="month-btn"><a href="">9월</a></li>
-                          <li class="month-btn"><a href="">10월</a></li>
-                          <li class="month-btn"><a href="">11월</a></li>
-                          <li class="month-btn"><a href="">12월</a></li>
-                        </ul>
-                      </div>
+                  <div class="basic-data-group excel-download-wrap">
+                    <p class="data-group-title">플랫폼 전체 상세정산 엑셀 다운로드</p>
+                    <div class="excel-download">
+                      <div class="year-calendar"><input type="text" class="v-datepicker" data-toggle="datepicker" autocomplete="off"></div>
+                      <ul class="month-btn-wrap flex">
+                        <li class="month-btn"><a href="" download class="download-btn">1월</a></li>
+                        <li class="month-btn"><a href="" download class="download-btn" >2월</a></li>
+                        <li class="month-btn"><a href="" download class="download-btn" >3월</a></li>
+                        <li class="month-btn"><a href="" download class="download-btn" >4월</a></li>
+                        <li class="month-btn"><span class="download-btn">5월</span></li>
+                        <li class="month-btn"><span class="download-btn">6월</span></li>
+                        <li class="month-btn"><span class="download-btn">7월</span></li>
+                        <li class="month-btn"><span class="download-btn">8월</span></li>
+                        <li class="month-btn"><a href="" download class="download-btn">9월</a></li>
+                        <li class="month-btn"><a href="" download class="download-btn">10월</a></li>
+                        <li class="month-btn"><a href="" download class="download-btn">11월</a></li>
+                        <li class="month-btn"><a href="" download class="download-btn">12월</a></li>
+                      </ul>
                     </div>
                   </div>
 

@@ -589,6 +589,13 @@ tr.toggle-wrap ul.flex li {flex: 1; text-align: center;padding: 16px 0;}
 .tr-toggle-btn i {position: absolute; top: 5px; right: -20px;font-size: .6em; color: #000; display: inline-block;transition: all .3s ease; transform: rotate(0);}
 .tr-toggle-btn i.rotate {transform: rotate(180deg); transition: all .3s ease; top: 3px;}
 
+.detail-wrap .excel-download-wrap {padding-top: 50px;}
+.data-group-title {font-size: 18px; font-weight: 700; padding: 10px 0;}
+.month-btn-wrap.flex {gap: 10px; margin-top: 10px;}
+.month-btn-wrap li {flex: 1;}
+.month-btn-wrap li .download-btn {display: block; padding: 16px 10px; text-align: center; background: #f1f1f1; border-radius: 12px;}
+.month-btn-wrap li a.download-btn {background: #e0e7f9;}
+
 
 
 /* mobile ******************************************************************* */

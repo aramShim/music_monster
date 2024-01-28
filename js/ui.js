@@ -19,8 +19,9 @@ $(document).ready(function () {
 
   createInfoModify();
   Modal();
-  datePicker();
+  //datePicker();
   trToggle();
+  $('[data-toggle="datepicker"]').datepicker();
 });
 
 $(window).on("load", function () {
