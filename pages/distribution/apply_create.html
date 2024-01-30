@@ -36,6 +36,10 @@
     <script src="../../js/aos.js"></script>
     <script src="../../js/scrolloverflow.js"></script>
     <script src="../../js/gsap.min.js"></script>
+
+    <!-- datepicker script -->
+    <link  href="../../css/datepicker.min.css" rel="stylesheet">
+    <script src="../../js/datepicker.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -52,17 +56,15 @@
 
           <nav id="gnav">
             <ul class="gnav-list">
-              <li><a href="">앨범발매</a></li>
-              <li><a href="">공지사항</a></li>
+              <li><a href="apply.html">앨범발매</a></li>
+              <li><a href="../board/list.html">공지사항</a></li>
               <li><a href="">서비스</a></li>
             </ul>
           </nav>
           <div class="header-util">
             <!--로그인 전-->
             <div class="login-hd" style="display: none">
-              <a href="../login/login.html" class="btn btn-outline btn-login"
-                >로그인</a
-              >
+              <a href="../login/login.html" class="btn btn-outline btn-login dark">로그인</a>
             </div>
             <!--로그인 완료 후-->
             <div class="mypage-hd">
@@ -70,7 +72,7 @@
                 <i class="icon-person13"></i>
               </button>
               <ul class="mypage-options">
-                <li><a href="mypage.html">마이페이지</a></li>
+                <li><a href="../mypage/mypage.html">마이페이지</a></li>
                 <li><a href="">로그아웃</a></li>
               </ul>
             </div>
@@ -138,22 +140,24 @@
                             <div class="th-info">아티스트와 역할을 확인하세요.</div>
                           </div>
                           <div class="data-input-td">
-                            <div class="flex flex-2">
-                              <div class="data-input-search">
-                                <span>아티스트명 검색</span>
-                                <i class="icon-icon08"></i>
-                              </div>
-                              <div class="data-input-select">
-                                <select name="" id="">
-                                  <option value="">역할 선택</option>
-                                  <option value="">메인 아티스트</option>
-                                  <option value="">피처링 아티스트</option>
-                                  <option value="">프로듀서</option>
-                                </select>
+                            <div class="data-btn-add">
+                              <div class="flex flex-2">
+                                <button type="button" class="data-input-search modal-btn" data-modal="#artistSearch">
+                                  <span>아티스트명 검색</span>
+                                  <i class="icon-icon08"></i>
+                                </button>
+                                <div class="data-input-select">
+                                  <select name="" id="">
+                                    <option value="">역할 선택</option>
+                                    <option value="">메인 아티스트</option>
+                                    <option value="">피처링 아티스트</option>
+                                    <option value="">프로듀서</option>
+                                  </select>
+                                </div>
                               </div>
                             </div>
                             <div class="artist-add">
-                              <button type="button" class="btn btn-outline"><i class="icon-sign21"></i> 추가</button>
+                              <button type="button" class="btn btn-outline btn-pos"><i class="icon-sign21"></i> 추가</button>
                             </div>
                           </div>
                         </div>
@@ -304,10 +308,15 @@
                         <div class="data-input-tr">
                           <div class="data-input-th">
                             <b>앨범이미지</b><span class="require red">*</span>
-                            <div class="th-info">이미지 3000*3000 jpg로 고정.</div>
+                            <div class="th-info">이미지 3000*3000 <br>jpg로 고정.</div>
                           </div>
                           <div class="data-input-td">
-                            <input type="file" class="file">
+                            <div class="file-custom" id="imguploadWrap">
+                              <label for="imageUpload" class="input-file-wrap">
+                                  <span class=""><i class="icon-sign05"></i></span>
+                                  <input id="imageUpload" type="file" accept="image/jpg, image/jpeg, image/png, image/bmp" name="files[]" multiple="" class="input-file">
+                              </label>                                    
+                            </div>
                           </div>
                         </div>
                         <!--앨범소개-->
@@ -355,26 +364,26 @@
                     </div>
 
                     <!--03.트랙정보 추가-->
-                    <div class="apply-create-data-wrap">
+                    <div class="apply-create-data-wrap track-info-wrap">
                       <div class="data-title flex">
                         <div><span class="mont blue">03</span><b>트랙정보 추가</b></div>
-                        <button type="button" class="btn btn-sm">CD추가하기+</button>
+                        <button type="button" class="btn btn-outline btn-sm" id="cdAdd"><i class="icon-sign21"></i> CD 추가하기</button>
                       </div>
                       <div class="data-input-wrap">
 
                         <!--CD1-->                        
                         <div class="basic-data-group cd-wrap">
-                          <div class="cd-title">CD1</div>
+                          <div class="cd-title"><span class="status blue">CD1</span></div>
                           <div class="board-list-wrap">
                             <div class="board-list">
                               <table>
                                 <colgroup>
+                                  <col width="10%"/>
                                   <col />
                                   <col />
                                   <col />
                                   <col />
-                                  <col />
-                                  <col />
+                                  <col width="12%"/>
                                 </colgroup>
                                 <thead>
                                   <tr>
@@ -394,9 +403,9 @@
                                     <td><div class="td-col">-</div></td>
                                     <td><div class="td-col">-</div></td>
                                     <td>
-                                      <div class="td-col">
-                                        <button type="button" class="btn-icon"><i class="icon-sign21"></i></button>
-                                        <button type="button" class="btn-icon red"><i class="icon-sign22"></i></button>
+                                      <div class="td-col" style="gap:5px;">
+                                        <button type="button" class="btn btn-outline btn-icon btn-sm modal-btn" data-modal="#trackAdd"><i class="icon-sign21"></i></button>
+                                        <button type="button" class="btn btn-outline btn-icon btn-sm red"><i class="icon-sign22"></i></button>
                                       </div>
                                     </td>
                                   </tr>      
@@ -408,45 +417,47 @@
 
                         <!--CD2-->                        
                         <div class="basic-data-group cd-wrap disabled">
-                          <div class="cd-title">CD2</div>
+                          <div class="cd-title"><span class="status blue">CD2</span></div>
                           <div class="board-list-wrap">
-                            <div class="board-list">
-                              <table>
-                                <colgroup>
-                                  <col />
-                                  <col />
-                                  <col />
-                                  <col />
-                                  <col />
-                                  <col />
-                                </colgroup>
-                                <thead>
-                                  <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">트랙명</th>
-                                    <th scope="col">아티스트명</th>
-                                    <th scope="col">ISRC</th>
-                                    <th scope="col">타이틀</th>
-                                    <th scope="col">관리</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><div class="td-col">1</div></td>
-                                    <td><div class="td-col">-</div></td>
-                                    <td><div class="td-col">-</div></td>
-                                    <td><div class="td-col">-</div></td>
-                                    <td><div class="td-col">-</div></td>
-                                    <td>
-                                      <div class="td-col">
-                                        <button type="button" class="btn-icon"><i class="icon-sign21"></i></button>
-                                        <button type="button" class="btn-icon red"><i class="icon-sign22"></i></button>
-                                      </div>
-                                    </td>
-                                  </tr>      
-                                </tbody>
-                              </table>
-                            </div>
+                            <div class="board-list-wrap">
+                              <div class="board-list">
+                                <table>
+                                  <colgroup>
+                                    <col width="10%"/>
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col width="12%"/>
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">번호</th>
+                                      <th scope="col">트랙명</th>
+                                      <th scope="col">아티스트명</th>
+                                      <th scope="col">ISRC</th>
+                                      <th scope="col">타이틀</th>
+                                      <th scope="col">관리</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><div class="td-col">1</div></td>
+                                      <td><div class="td-col">-</div></td>
+                                      <td><div class="td-col">-</div></td>
+                                      <td><div class="td-col">-</div></td>
+                                      <td><div class="td-col">-</div></td>
+                                      <td>
+                                        <div class="td-col" style="gap:5px;">
+                                          <button type="button" class="btn btn-outline btn-icon btn-sm"><i class="icon-sign21"></i></button>
+                                          <button type="button" class="btn btn-outline btn-icon btn-sm red"><i class="icon-sign22"></i></button>
+                                        </div>
+                                      </td>
+                                    </tr>      
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>  
                           </div>      
                         </div>                
 
@@ -458,22 +469,22 @@
                       <div class="data-title flex">
                         <div><span class="mont blue">04</span><b>발매 희망일</b></div>
                       </div>
-                      <div class="data-input-wrap">
-                        <p class="info-require"><i class="icon-sign49"></i> 최종 발매 일정은 당사의 일정에 따라 변동될 수 있음을 양해 부탁드립니다.</p>
+                      <p class="info-require"><i class="icon-sign49"></i> 최종 발매 일정은 당사의 일정에 따라 변동될 수 있음을 양해 부탁드립니다.</p>
+                      <div class="data-input-wrap">                        
                         <ul class="input-date-list">
                           <li>
                             <strong>1순위 <span class="data-require"><span class="red">*</span> 필수 입력 사항</span></strong>
-                            <input type="text" class="v-datepicker">
+                            <input type="text" class="v-datepicker" data-toggle="datepicker">
                             <span>12:00pm KST <i class="icon-clock04"></i></span>
                           </li>
                           <li>
                             <strong>2순위 <span class="data-require"><span class="red">*</span> 필수 입력 사항</span></strong>
-                            <input type="text" class="v-datepicker">
+                            <input type="text" class="v-datepicker" data-toggle="datepicker">
                             <span>12:00pm KST <i class="icon-clock04"></i></span>
                           </li>
                           <li>
                             <strong>3순위 <span class="data-require"><span class="red">*</span> 필수 입력 사항</span></strong>
-                            <input type="text" class="v-datepicker">
+                            <input type="text" class="v-datepicker" data-toggle="datepicker">
                             <span>12:00pm KST <i class="icon-clock04"></i></span>
                           </li>
                         </ul>
@@ -481,11 +492,100 @@
                     </div>
                     <!--저장, 신청 버튼-->
                     <div class="btn-center-wrap">
-                      <button type="button" class="btn btn-outline">저장</button>
-                      <button type="button" class="btn btn-pos">신청</button>
+                      <button type="button" class="btn btn-outline btn-lg">저장</button>
+                      <button type="button" class="btn btn-lg">신청</button>
                     </div>
+
                     
-                  </form>                  
+                  </form> 
+
+                </div>
+              </div>
+            </div>
+
+            <!--아티스트 검색 모달-->
+            <div id="artistSearch" class="modal">
+              <div class="modal-bg"></div>
+              <div class="modal-wrap">
+                <div class="modal-content">
+                  <div class="modal-header"><p>아티스트 검색</p></div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="form-input-search">
+                        <div class="input-value"><input type="text" placeholder="아티스트를 검색해주세요."></div>
+                        <div class="input-ui"><button type="button" class="btn-single-search"><i class="icon-icon08"></i></button></div>
+                      </div>
+                      <div class="artist-search-list">
+                        <ul>
+                          <li>
+                            <div class="artist-nm"><span>S17717</span><p>이규현</p></div>
+                            <div class="go-artist-link">
+                              <a href=""><img src="../../img/apple-music.svg" alt=""></a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="artist-nm"><span>S137082</span><p>유니크노트(이규현)</p></div>
+                            <div class="go-artist-link">
+                              <a href=""><img src="../../img/spotify.svg" alt=""></a>
+                              <a href=""><img src="../../img/apple-music.svg" alt=""></a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="artist-nm"><span>S178634</span><p>신규현, 진대호, 이종준, 조하민</p></div>
+                          </li>
+                          <li>
+                            <div class="artist-nm"><span>S102010</span><p>규현</p></div>
+                          </li>
+                          <li>
+                            <div class="artist-nm"><span>S159142</span><p>이규현</p></div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="form-submit-wrap">
+                        <button type="button" class="btn btn-outline btn-sm modal-close">닫기</button>
+                        <button type="button" class="btn btn-sm modal-close">신규 아티스트 추가</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--트랙정보추가 모달-->
+            <div id="trackAdd" class="modal">
+              <div class="modal-bg"></div>
+              <div class="modal-wrap">
+                <div class="modal-content">
+                  <div class="modal-header"><p>트랙상세</p></div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="form-input-search">
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>아티스트명</b><span class="require red">*</span>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="flex flex-2">
+                              
+                              <div class="data-input-select">
+                                <select name="" id="">
+                                  <option value="">역할 선택</option>
+                                  <option value="">메인 아티스트</option>
+                                  <option value="">피처링 아티스트</option>
+                                  <option value="">프로듀서</option>
+                                </select>
+                              </div>
+                            </div>
+                                                   
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-submit-wrap">
+                        <button type="button" class="btn btn-outline btn-sm modal-close">취소</button>
+                        <button type="button" class="btn btn-sm modal-close">저장</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
