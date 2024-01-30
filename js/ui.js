@@ -22,6 +22,9 @@ $(document).ready(function () {
   
 
   datePicker();
+  rangeDatePicker();
+  monthDatePicker();
+  yearDatePicker();
   trToggle();
   
   fileInsert();
@@ -44,6 +47,35 @@ function datePicker(){
   $('[data-toggle="datepicker"]').datepicker({
     format: 'yyyy.mm.dd'
   });
+}
+function rangeDatePicker(){
+  var $startDate = $('.start-date');
+  var $endDate = $('.end-date');
+
+  $startDate.datepicker({
+    autoHide: true,
+  });
+  $endDate.datepicker({
+    autoHide: true,
+    startDate: $startDate.datepicker('getDate'),
+  });
+
+  $startDate.on('change', function () {
+    $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+  });
+}
+function monthDatePicker(){
+  var $monthDate = $('.month-date');
+  $monthDate.datepicker({
+    format: 'yyyy.mm'
+  })
+}
+function yearDatePicker(){
+  var $yearDate = $('.year-date');
+  $yearDate.datepicker({
+    format: 'yyyy'
+  })
+  
 }
 function fileInsert(){
   $('#imageUpload').change(function(){			

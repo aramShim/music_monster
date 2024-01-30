@@ -305,7 +305,7 @@ a.btn-sm {font-size: 14px;padding: 10px; }
 .form-range-input>img {position: absolute;top: 0;right: 0;width: 24px;height: 24px;margin: 16px 16px 0 0;cursor: pointer;z-index: 15; } 
 .form-range-input>.input {position: relative;width: 100%; } 
 
-.form-range-input>input.v-datepicker[data-toggle="datepicker"] {background: url(../img/layout/icon-datepicker-ui-thumb.svg) right 13px top 13px no-repeat;background-size: 18px auto;height: 48px;border-color: #C9C9C9;border-radius: 12px;cursor: default; } 
+.form-range-input>input.v-datepicker {background: url(../img/layout/icon-datepicker-ui-thumb.svg) right 13px top 13px no-repeat;background-size: 18px auto;height: 48px;border-color: #C9C9C9;border-radius: 12px;cursor: default; } 
 .form-date-cell.form-date-sm {flex: 0 0 auto;width: 194px; } 
 
 /* 데이트 피커 */
@@ -313,7 +313,7 @@ a.btn-sm {font-size: 14px;padding: 10px; }
 .form-date-input>input {padding-right: 50px; } 
 .form-date-input>img {position: absolute;top: 0;right: 0;width: 24px;height: 24px;margin: 13px 13px 0 0;cursor: pointer;z-index: 15; } 
 .form-date-input>.input {position: relative;width: 100%; } 
-.v-datepicker[data-toggle="datepicker"] {background: url(../img/layout/icon-datepicker-ui-thumb.svg) right 13px top 13px no-repeat;background-size: 18px auto;height: 48px;border-color: #C9C9C9;border-radius: 12px; } 
+input.v-datepicker {background: url(../img/layout/icon-datepicker-ui-thumb.svg) right 13px top 13px no-repeat;background-size: 18px auto;height: 48px;border-color: #C9C9C9;border-radius: 12px; } 
 
 
 /* 데이트 피커 > small */
