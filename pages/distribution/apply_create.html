@@ -503,6 +503,273 @@
               </div>
             </div>
 
+            <!--트랙정보추가 모달-->
+            <div id="trackAdd" class="modal">
+              <div class="modal-bg"></div>
+              <div class="modal-wrap">
+                <div class="modal-content">
+                  <div class="modal-header"><p>트랙상세</p></div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="form-input-search">
+                        <!--아티스트-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>아티스트명</b><span class="require red">*</span>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="flex flex-3">
+                              <button type="button" class="data-input-search modal-btn" data-modal="#artistSearch">
+                                <span>아티스트명 검색</span>
+                                <i class="icon-icon08"></i>
+                              </button>
+                              <div class="data-input-select">
+                                <select name="" id="">
+                                  <option value="">역할 선택</option>
+                                  <option value="">메인 아티스트</option>
+                                  <option value="">피처링 아티스트</option>
+                                  <option value="">프로듀서</option>
+                                </select>
+                              </div>
+                              <div class="artist-add-btn-wrap">
+                                <button type="button" class="btn btn-icon btn-sm btn-outline artist-add-btn"><i class="icon-sign05"></i></button>
+                                <button type="button" class="btn btn-icon btn-sm btn-outline red artist-remove-btn"><i class="icon-sign06"></i></button>
+                              </div>
+                            </div>
+                                                   
+                          </div>
+                        </div>
+                        <!--참여 아티스트-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>참여 아티스트</b>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="flex flex-3">
+                              <button type="button" class="data-input-search modal-btn" data-modal="#artistSearch">
+                                <span>아티스트명 검색</span>
+                                <i class="icon-icon08"></i>
+                              </button>
+                              <div class="data-input-select">
+                                <select name="" id="">
+                                  <option value="">역할 선택</option>
+                                  <option value="">메인 아티스트</option>
+                                  <option value="">피처링 아티스트</option>
+                                  <option value="">프로듀서</option>
+                                </select>
+                              </div>
+                              <div class="artist-add-btn-wrap">
+                                <button type="button" class="btn btn-icon btn-sm btn-outline artist-add-btn"><i class="icon-sign05"></i></button>
+                                <button type="button" class="btn btn-icon btn-sm btn-outline red artist-remove-btn"><i class="icon-sign06"></i></button>
+                              </div>
+                            </div>
+                                                   
+                          </div>
+                        </div>
+
+                        <!--트랙명(KR)-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>트랙명(KR)</b><span class="require red">*</span>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="data-input-text">
+                              <input type="text" class="input-text" placeholder="트랙명(한글)을 입력해주세요.">                             
+                            </div>                                                    
+                          </div>
+                        </div>
+
+                        <!--트랙명(EN)-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>트랙명(EN)</b><span class="require red">*</span>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="data-input-text">
+                              <input type="text" class="input-text" placeholder="트랙명(영어)을 입력해주세요.">                             
+                            </div>                                                    
+                          </div>
+                        </div>
+
+                        <!--트랙장르-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>트랙장르</b><span class="require red">*</span>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="flex flex-2">
+                              <div class="data-input-select">
+                                <select name="" id="">
+                                  <option value="">선택</option>
+                                  <option value="">대중음악</option>
+                                  <option value="">POP</option>
+                                  <option value="">알앤비</option>
+                                  <option value="">재즈</option>
+                                  <option value="">OST</option>
+                                  <option value="">어린이</option>
+                                  <option value="">클래식</option>
+                                  <option value="">종교음악</option>
+                                  <option value="">일렉트로니카</option>
+                                  <option value="">월드뮤직</option>
+                                  <option value="">뉴에이지</option>
+                                  <option value="">기타</option>
+                                </select>
+                              </div>
+                              <div class="data-input-select">
+                                <select name="" id="">
+                                  <option value="">트로트</option>
+                                  <option value="">락</option>
+                                  <option value="">알앤비/소울</option>
+                                  <option value="">컨트리</option>
+                                  <option value="">케이팝</option>
+                                  <option value="">발라드</option>
+                                  <option value="">포크</option>
+                                  <option value="">랩/힙합</option>
+                                  <option value="">댄스</option>
+                                  <option value="">블루스</option>
+                                  <option value="">인디</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--트랙버전/대표언어-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>버전/대표언어</b>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="flex flex-2">
+                              <div class="data-input-select">
+                                <select name="" id="">
+                                  <option value="">선택</option>
+                                  <option value="">일반</option>
+                                  <option value="">디럭스</option>
+                                  <option value="">라이브</option>
+                                  <option value="">리마스터</option>
+                                  <option value="">리믹스</option>
+                                  <option value="">리패키지</option>
+                                  <option value="">기념앨범</option>
+                                </select>
+                              </div>
+                              <div class="data-input-select">
+                                <select name="" id="">
+                                  <option value="">선택</option>
+                                  <option value="">한국어</option>
+                                  <option value="">영어</option>
+                                  <option value="">일본어</option>
+                                  <option value="">중국어(번체)</option>
+                                  <option value="">중국어(간체)</option>                                  
+                                  <option value="">스페인어</option>
+                                  <option value="">프랑스어</option>
+                                  <option value="">독일어</option>
+                                  <option value="">없음</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--이용등급-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>이용등급</b>
+                          </div>
+                          <div class="data-input-td">
+                            <label class="form-check-box check" for="test1">
+                              <input type="checkbox" id="test1" name=""  title="19세 이하 서비스 금지" class="fill">
+                              <span class="form-check-icon">
+                                  <em>19세 이하 서비스 금지</em>
+                              </span>
+                            </label>
+                            <label class="form-check-box check" for="test2">
+                              <input type="checkbox" id="test2" name=""  title="타이틀 여부" class="fill">
+                              <span class="form-check-icon">
+                                  <em>타이틀 여부</em>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <!--노출구간-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>틱톡노출구간</b>
+                          </div>
+                          <div class="data-input-td">
+                            <div class="flex">
+                              <label class="form-check-box check" for="test3">
+                                <input type="checkbox" id="test3" name=""  title="노출구간 설정" class="fill">
+                                <span class="form-check-icon">
+                                    <em>노출구간 설정</em>
+                                </span>
+                              </label>
+                              <div class="form-range-group">
+                                <div class="form-range-input">
+                                  <input type="text" class="v-datepicker time-picker" placeholder="시작 시간" autocomplete="off">
+                                </div>
+                                <div class="form-cell-char">~</div>
+                                <div class="form-range-input">
+                                  <input type="text" class="v-datepicker time-picker" placeholder="종료 시간" autocomplete="off">
+                                </div>
+                              </div>
+                            </div>                            
+                          </div>
+                        </div>
+
+                        <!--음원정보-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>음원정보</b>
+                          </div>
+                          <div class="data-input-td">
+                            <ul class="file-list">
+                              <li class="flex">
+                                <span>MP3</span>
+                                <label for="uploadMp3" class="file-upload-label">
+                                  <div class="file-upload-text not-selected">
+                                    <span></span>
+                                    <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                                  </div>
+                                  <input type="file" class="file-upload-input input-file" id="uploadMp3">
+                                </label>
+                                
+                              </li>
+                              <li class="flex">
+                                <span>WAV</span>
+                                <input type="file" class="input-file" accept=".wav">
+                              </li>
+                              <li class="flex">
+                                <span>FLAC</span>
+                                <input type="file" class="input-file" accept=".flac">
+                              </li>
+                            </ul>                           
+                          </div>
+                        </div>
+
+                        <!--가사-->
+                        <div class="data-input-tr">
+                          <div class="data-input-th">
+                            <b>음원정보</b>
+                          </div>
+                          <div class="data-input-td">
+                            <input type="file" class="input-file" accept=".txt">                         
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                      <div class="form-submit-wrap">
+                        <button type="button" class="btn btn-outline btn-sm modal-close">취소</button>
+                        <button type="button" class="btn btn-sm modal-close">저장</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!--아티스트 검색 모달-->
             <div id="artistSearch" class="modal">
               <div class="modal-bg"></div>
@@ -515,6 +782,7 @@
                         <div class="input-value"><input type="text" placeholder="아티스트를 검색해주세요."></div>
                         <div class="input-ui"><button type="button" class="btn-single-search"><i class="icon-icon08"></i></button></div>
                       </div>
+                      <!--검색후 나오는 리스트-->
                       <div class="artist-search-list">
                         <ul>
                           <li>
@@ -550,45 +818,7 @@
                 </div>
               </div>
             </div>
-            <!--트랙정보추가 모달-->
-            <div id="trackAdd" class="modal">
-              <div class="modal-bg"></div>
-              <div class="modal-wrap">
-                <div class="modal-content">
-                  <div class="modal-header"><p>트랙상세</p></div>
-                  <div class="modal-body">
-                    <form action="">
-                      <div class="form-input-search">
-                        <div class="data-input-tr">
-                          <div class="data-input-th">
-                            <b>아티스트명</b><span class="require red">*</span>
-                          </div>
-                          <div class="data-input-td">
-                            <div class="flex flex-2">
-                              
-                              <div class="data-input-select">
-                                <select name="" id="">
-                                  <option value="">역할 선택</option>
-                                  <option value="">메인 아티스트</option>
-                                  <option value="">피처링 아티스트</option>
-                                  <option value="">프로듀서</option>
-                                </select>
-                              </div>
-                            </div>
-                                                   
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="form-submit-wrap">
-                        <button type="button" class="btn btn-outline btn-sm modal-close">취소</button>
-                        <button type="button" class="btn btn-sm modal-close">저장</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
 

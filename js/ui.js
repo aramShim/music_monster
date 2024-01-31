@@ -20,21 +20,42 @@ $(document).ready(function () {
   createInfoModify();
   Modal();
   
-
   datePicker();
   rangeDatePicker();
   monthDatePicker();
   yearDatePicker();
+
   trToggle();
   
-  fileInsert();
+  imgFileInsert();
   cdAdd();
+
+  customUploadButton();
 });
 
 $(window).on("load", function () {
   scrollMove();
 });
-
+function fileRemove(a){
+  $(a).parents('.file-upload-label .input-file').val('');
+  $(a).parents('.file-upload-label').removeClass('selected');
+  $(a).parents(".file-upload-text").addClass("not-selected");
+  $(a).parents(".file-upload-text span").text('');
+}
+function customUploadButton() {
+  $('.file-upload-input').on('change', function () {
+      var val = $(this).val().split(/(\\|\/)/g).pop();
+      if (val !== "") {
+          $('.file-upload-label').addClass('selected');
+          $(".file-upload-text span").text(val);
+          $(".file-upload-text").removeClass("not-selected");
+      } else {
+          $('.file-upload-label').removeClass('selected');
+          $(".file-upload-text span").text('');
+          $(".file-upload-text").addClass("not-selected");          
+      }
+  });
+}
 function cdAdd(){
   $('#cdAdd').click(function(){
     if($('.cd-wrap').eq(1).hasClass('disabled') == false){
@@ -43,6 +64,7 @@ function cdAdd(){
     $('.cd-wrap.disabled').removeClass('disabled');
   })
 }
+
 function datePicker(){
   $('[data-toggle="datepicker"]').datepicker({
     format: 'yyyy.mm.dd'
@@ -77,7 +99,7 @@ function yearDatePicker(){
   })
   
 }
-function fileInsert(){
+function imgFileInsert(){
   $('#imageUpload').change(function(){			
     readImgUrlAndPreview(this);
     function readImgUrlAndPreview(input){
@@ -308,15 +330,17 @@ function createInfoModify(e){
 }
 
 function Modal(){
-  const $modal = $('.modal');
+  //const $modal = $('.modal');
   const $modalBtn = $('.modal-btn');
   const $modalClose = $('.modal-close');
   $modalBtn.click(function(){
     const $openModal = $(this).data('modal');
+    $('body').addClass('open');
     $($openModal).addClass('open');
   });
   $modalClose.click(function(){
-    $modal.removeClass('open');
+    $('body').removeClass('open');
+    $(this).parents('.modal').removeClass('open');
   })  
 }
 
