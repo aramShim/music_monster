@@ -693,7 +693,7 @@
                         </div>
 
                         <!--노출구간-->
-                        <div class="data-input-tr">
+                        <!-- <div class="data-input-tr">
                           <div class="data-input-th">
                             <b>틱톡노출구간</b>
                           </div>
@@ -716,7 +716,7 @@
                               </div>
                             </div>                            
                           </div>
-                        </div>
+                        </div> -->
 
                         <!--음원정보-->
                         <div class="data-input-tr">
@@ -732,17 +732,28 @@
                                     <span></span>
                                     <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
                                   </div>
-                                  <input type="file" class="file-upload-input input-file" id="uploadMp3">
-                                </label>
-                                
+                                  <input type="file" accept=".mp3" class="file-upload-input input-file" id="uploadMp3">
+                                </label>                                
                               </li>
                               <li class="flex">
                                 <span>WAV</span>
-                                <input type="file" class="input-file" accept=".wav">
+                                <label for="uploadMp3" class="file-upload-label">
+                                  <div class="file-upload-text not-selected">
+                                    <span></span>
+                                    <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                                  </div>
+                                  <input type="file" accept=".wav" class="file-upload-input input-file" id="uploadMp3">
+                                </label>
                               </li>
                               <li class="flex">
                                 <span>FLAC</span>
-                                <input type="file" class="input-file" accept=".flac">
+                                <label for="uploadMp3" class="file-upload-label">
+                                  <div class="file-upload-text not-selected">
+                                    <span></span>
+                                    <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                                  </div>
+                                  <input type="file" accept=".flac" class="file-upload-input input-file" id="uploadMp3">
+                                </label>
                               </li>
                             </ul>                           
                           </div>
@@ -754,7 +765,13 @@
                             <b>음원정보</b>
                           </div>
                           <div class="data-input-td">
-                            <input type="file" class="input-file" accept=".txt">                         
+                            <label for="uploadMp3" class="file-upload-label">
+                              <div class="file-upload-text not-selected">
+                                <span></span>
+                                <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                              </div>
+                              <input type="file" accept=".txt" class="file-upload-input input-file" id="uploadMp3">
+                            </label>                         
                           </div>
                         </div>
 
