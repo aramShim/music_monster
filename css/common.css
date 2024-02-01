@@ -245,7 +245,7 @@ a.btn-sm {font-size: 14px;padding: 10px; }
 .btn[class*="btn-flat"].gray {border-color: var(--color-gray-border);background: transparent;color: var(--color-gray); } 
 
 .btn[class*="btn-outline"].dark,
-.btn[class*="btn-flat"].dark {background: transparent;color: var(--color-dark); } 
+.btn[class*="btn-flat"].dark {background: transparent;color: var(--color-dark); border-color: var(--color-border);} 
 
 .btn[class*="btn-outline"].white,
 .btn[class*="btn-flat"].white {color: var(--color-dark); } 

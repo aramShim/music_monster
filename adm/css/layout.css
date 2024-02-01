@@ -1,0 +1,44 @@
+@charset "utf-8";/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100; 200; 300; 400; 500; 600; 700; 800; 900&display=swap');
+
+* {box-sizing: border-box;}
+body {-webkit-overflow-scrolling: touch; -webkit-user-select: none; user-select: none;}
+::-webkit-scrollbar {display: none;}
+.mont {font-family: 'Montserrat', sans-serif; } 
+.flex {display: flex;}
+
+#adm-wrap {height: 100vh; isolation: isolate;}
+.layout-wrap.flex {flex-direction: column; height: 100%;}
+.header {position: relative; background: #fff; isolation: isolate; z-index: 1; height: 72px;border-bottom: 1px solid rgba(90,101,119,0.15); box-sizing: border-box; display: flex; align-items: center; justify-content: center;}
+
+.header .adm-logo {position: absolute; top: 50%; left: 50px; transform: translateY(-50%);}
+.header .adm-logo > a {display: block; width: 170px;}
+.header .adm-logo img {width: 100%;}
+
+.header .adm-nav-list a {padding: 10px 16px; margin: 0 16px;}
+
+.header-util {position: absolute;right: 50px;top: 20px;display: flex;align-items: center;box-sizing: border-box; } 
+.mypage-hd .btn-my {width: 40px;height: 40px; } 
+.mypage-hd .btn-my i {display: block;width: 20px;height: 20px;font-size: 20px;color: #252525; } 
+.mypage-hd .mypage-options {position: absolute;right: 0;top: 40px;background-color: #fff;border-radius: 8px;padding: 6px 0;width: 100px;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);display: none; } 
+.mypage-hd .mypage-options a {display: block;height: 40px;line-height: 40px;text-align: center;font-size: 14px; } 
+.mypage-hd .mypage-options a:hover {background-color: var(--color-blue4); } 
+.mypage-hd .mypage-options a.selected {color: var(--color-blue1);font-weight: 700; } 
+.mypage-hd.active .mypage-options {display: block; } 
+
+.container {flex: 1 1 0%; height: 0; display: flex; isolation: isolate; z-index: 0;}
+.left-btn-wrap {flex: 0 0  auto; height: 100%; isolation: isolate; z-index: 1;}
+.left-more-wrap {position: relative; height: 100%; display: flex;}
+.container .left-btn { width: 72px; height: 100%; border-right: 1px solid rgba(90,101,119,0.15); display: flex; flex-direction: column; justify-content: space-between; align-items: center; background-color:#fff; box-sizing: border-box; isolation: isolate;}
+.container .left-btn-list {padding: 4px 4px 0;  overflow: hidden auto; height: calc(100vh - 130px); }
+.container .left-btn-list::-webkit-scrollbar {display: none;}
+.container .left-btn ul {display: inline-flex; flex-direction: column; align-items: center;}
+.container .left-btn ul li button {display: flex; flex-flow: column; justify-content: center; align-items: center; width: 64px; height: 56px;}
+.container .left-btn ul li:not(:last-child) button {margin-bottom: 8px;}
+.container .left-btn ul li button span {font-size: 13px;}
+.left-close-wrap {display: flex; align-items: center; justify-content: center; height: 60px; border-top: 1px solid rgba(90,101,119,0.15); }
+
+.content-wrap {display: flex; width: 100%; flex-flow: column;}
+.content {width: 100%;}
+
+footer {background-color: #f9f9f9; margin-top: auto; text-align: center; padding: 10px 0; font-size: 12px; color: #808080;}
