@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.content .inner {max-width: 90%; margin: 0 auto; padding: 5% 0;}
+.dash-pending {display: flex; align-items: center; justify-content: space-between;}
+.profile-wrap {font-size: 22px; font-weight: 700;}
+
+.main-widget-wrap { padding: 20px 0;}
+.main-widget-wrap .flex.main-grid {flex-wrap: wrap; width: calc(100% + 20px); margin-left: -10px;}
+.main-widget-wrap .main-grid + .main-grid {margin-top: 20px;}
+.main-widget-wrap .main-grid .item {padding: 0 10px;}
+.main-widget-wrap .main-grid .item1 {width: calc(100% / 4);}
+.main-widget-wrap .main-grid .item2 {width: calc(100% / 2);}
+.main-widget-wrap .main-grid .item .item-inner {box-shadow: 0 0 3px rgba(0,0,0,.05); position :relative; background: linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 64.41%),rgba(255,255,255,.75); border-radius: 10px; padding: 18px; }
+
+.main-widget-wrap .main-grid .item:hover .item-inner {background: #fff;}
+
+.main-widget-wrap .item-header {border-bottom: 1px solid #f1f1f1; padding: 10px 0; align-items: center; justify-content: space-between;}
+.main-widget-wrap .item-header p {font-size: 18px; font-weight: 600}
+.main-widget-wrap .item-header a {font-size: .8em;}
+.main-number-wrap .item-body {text-align: right; padding-top: 18px;}
+.main-number-wrap .item-body .mont {font-size: 28px; font-weight: 600;}
