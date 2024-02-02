@@ -828,7 +828,7 @@
                       </div>
                       <div class="form-submit-wrap">
                         <button type="button" class="btn btn-outline btn-sm modal-close">닫기</button>
-                        <button type="button" class="btn btn-sm modal-close">신규 아티스트 추가</button>
+                        <button type="button" class="btn btn-sm modal-btn" data-modal="#newArtist">신규 아티스트 추가</button>
                       </div>
                     </form>
                   </div>
@@ -836,6 +836,307 @@
               </div>
             </div>
             
+            <!--신규아티스트 추가 모달-->
+            <div id="newArtist" class="modal">
+              <div class="modal-bg"></div>
+              <div class="modal-wrap">
+                <div class="modal-content">
+                  <div class="modal-header"><p>신규 아티스트 등록하기</p></div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="form-input-search">
+                        <div class="newartist-write flex">
+                          <!--아티스트 이미지-->
+                          <div class="newartist-img">
+                            <div class="data-input-tr">
+                              <div class="data-input-td">
+                                <div class="file-custom" id="imguploadWrap">
+                                  <label for="imageUpload" class="input-file-wrap">
+                                      <span class=""><i class="icon-sign05"></i></span>
+                                      <input id="imageUpload" type="file" accept="image/jpg, image/jpeg, image/png, image/bmp" name="files[]" multiple="" class="input-file">
+                                  </label>                                    
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--아티스트 내용-->
+                          <div class="newartist-info">
+                            <!--발매이력-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>발매이력</b><span class="require red">*</span>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-select">
+                                  <select name="" id="">
+                                    <option value="">이전 발매이력 있음</option>
+                                    <option value="">음원 최초 발매(신인)</option>
+                                  </select>
+                                </div>                                                    
+                              </div>
+                            </div>
+
+                            <!--발매정보-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>최초 앨범 발매정보</b><span class="require red">*</span>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="flex flex-2">
+                                  <div class="data-input-text">
+                                    <input type="text" class="v-datepicker" data-toggle="datepicker" placeholder="최초 앨범 발매일">
+                                  </div>
+                                  <div class="data-input-text">
+                                    <input type="text" class="input-text" placeholder="최초 발매 앨범명">                             
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--아티스트명(KOR)-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>아티스트명(KR)</b><span class="require red">*</span>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-text">
+                                  <input type="text" class="input-text" placeholder="아티스트명(한글)을 입력해주세요.">                             
+                                </div>                                                    
+                              </div>
+                            </div>
+                            <!--아티스트명(EN)-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>아티스트명(EN)</b><span class="require red">*</span>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-text">
+                                  <input type="text" class="input-text" placeholder="아티스트명(영어)을 입력해주세요.">                             
+                                </div>                                                    
+                              </div>
+                            </div>
+
+                            <!--아티스트 유형-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>아티스트 유형</b><span class="require red">*</span>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-select">
+                                  <select name="" id="">
+                                    <option value="">선택</option>
+                                    <option value="">남자 솔로</option>
+                                    <option value="">여자 솔로</option>
+                                    <option value="">남자 그룹</option>
+                                    <option value="">여자 그룹</option>
+                                    <option value="">혼성</option>
+                                    <option value="">참여아티스트</option>
+                                    <option value="">기타</option>
+                                  </select>
+                                </div>                                                    
+                              </div>
+                            </div>
+
+                            <!--기획사명(KR)-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>기획사명(KR)</b>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-text">
+                                  <input type="text" class="input-text" placeholder="기획사명(한글)을 입력해주세요.">                             
+                                </div>                                                    
+                              </div>
+                            </div>
+
+                            <!--기획사명(EN)-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>기획사명(EN)</b>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-text">
+                                  <input type="text" class="input-text" placeholder="기획사명(영어)을 입력해주세요.">                             
+                                </div>                                                    
+                              </div>
+                            </div>
+
+                            <!--국적-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>국적</b><span class="require red">*</span>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-select">
+                                  <select name="" id="">
+                                    <option value="">대한민국</option>
+                                    <option value="">가나</option>
+                                    <option value="">가봉</option>
+                                    <option value="">가이아나</option>
+                                    <option value="">감비아</option>
+                                    <option value="">과들루프</option>
+                                    <option value="">과테말라</option>
+                                    <option value="">괌</option>
+                                    <option value="">그레나다</option>
+                                    <option value="">그리스</option>
+                                    <option value="">그린란드</option>
+                                    <option value="">기니</option>
+                                    <option value="">기니비사우</option>
+                                    <option value="">나미비아</option>
+                                    <option value="">나우루</option>
+                                    <option value="">나이지리아</option>
+                                    <option value="">남수단</option>
+                                    <option value="">남아프리카 공화국</option>
+                                    <option value="">네덜란드</option>
+                                    <option value="">네팔</option>
+                                    <option value="">노르웨이</option>
+                                    <option value="">누벨칼레도니</option>
+                                    <option value="">뉴질랜드</option>
+                                    <option value="">니우에</option>
+                                    <option value="">니제르</option>
+                                    <option value="">니카라과</option>
+                                    <option value="">대만</option>
+                                    <option value="">대한민국</option>
+                                    <option value="">덴마크</option>
+                                    <option value="">도미니카 공화국</option>
+                                    <option value="">도미니카 연방</option>
+                                    <option value="">독일</option>
+                                    <option value="">동티모르</option>
+                                    <option value="">라오스</option>
+                                    <option value="">라이베리아</option>
+                                    <option value="">라트비아</option>
+                                    <option value="">러시아</option>
+                                    <option value="">레바논</option>
+                                    <option value="">레소토</option>
+                                    <option value="">레위니옹</option>
+                                    <option value="">루마니아</option>
+                                    <option value="">룩셈부르크</option>
+                                    <option value="">르완다</option>
+                                    <option value="">리비아</option>
+                                    <option value="">리투아니아</option>
+                                    <option value="">리히텐슈타인</option>
+                                    <option value="">마다가스카르</option>
+                                    <option value="">마르티니크</option>
+                                    <option value="">마셜제도</option>
+                                    <option value="">마요트</option>
+                                    <option value="">마카오</option>
+                                    <option value="">마케도니아 공화국</option>
+                                    <option value="">말라위</option>
+                                    <option value="">말레이시아</option>
+                                    <option value="">말리</option>
+                                    <option value="">맨섬</option>
+                                    <option value="">멕시코</option>
+                                    <option value="">모나코</option>
+                                    <option value="">모로코</option>
+                                    <option value="">모리셔스</option>
+                                    <option value="">모리타니</option>
+                                    <option value=""></option>
+
+                                  </select>
+                                </div>                                                    
+                              </div>
+                            </div>
+
+                            <!--아티스트 소개-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>아티스트 소개</b>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="data-input-textarea">
+                                  <textarea name="" id="" cols="30" rows="10" placeholder="아티스트 소개"></textarea>                        
+                                </div>                                                    
+                              </div>
+                            </div>
+
+                            <!--sns채널-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>sns채널</b>
+                              </div>
+                              <div class="data-input-td">
+                                <div class="flex flex-3">                                  
+                                  <div class="data-input-select">
+                                    <select name="" id="">
+                                      <option value="">선택</option>
+                                      <option value="">인스타그램</option>
+                                      <option value="">유튜브</option>
+                                      <option value="">페이스북</option>
+                                      <option value="">트위터</option>
+                                      <option value="">틱톡</option>
+                                      <option value="">기타</option>
+                                      <option value="">유튜브링크1</option>
+                                      <option value="">유튜브링크2</option>
+                                    </select>
+                                  </div>
+                                  <div class="data-input-text">
+                                    <input type="text" class="input-text" placeholder="">                             
+                                  </div> 
+                                  <div class="artist-add-btn-wrap">
+                                    <button type="button" class="btn btn-icon btn-sm btn-outline artist-add-btn"><i class="icon-sign05"></i></button>
+                                    <button type="button" class="btn btn-icon btn-sm btn-outline red artist-remove-btn"><i class="icon-sign06"></i></button>
+                                  </div>
+                                </div>
+                                                      
+                              </div>
+                            </div>
+
+                            <!--타플래폼 아티스트ID-->
+                            <div class="data-input-tr">
+                              <div class="data-input-th">
+                                <b>타플래폼 아티스트ID</b>
+                              </div>
+                              <div class="data-input-td">
+                                <ul class="file-list">
+                                  <li class="flex">
+                                    <span>Spotify</span>
+                                    <div class="data-input-text">
+                                      <input type="text" class="input-text" placeholder="">                             
+                                    </div>                                 
+                                  </li>
+                                  <li class="flex">
+                                    <span>Apple Music</span>
+                                    <div class="data-input-text">
+                                      <input type="text" class="input-text" placeholder="">                             
+                                    </div> 
+                                  </li>
+                                  <li class="flex">
+                                    <span>Deezer</span>
+                                    <div class="data-input-text">
+                                      <input type="text" class="input-text" placeholder="">                             
+                                    </div> 
+                                  </li>
+                                  <li class="flex">
+                                    <span>amazon music</span>
+                                    <div class="data-input-text">
+                                      <input type="text" class="input-text" placeholder="">                             
+                                    </div> 
+                                  </li>
+                                  <li class="flex">
+                                    <span>melon</span>
+                                    <div class="data-input-text">
+                                      <input type="text" class="input-text" placeholder="">                             
+                                    </div> 
+                                  </li>
+                                </ul>                           
+                              </div>
+                            </div>
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-submit-wrap">
+                        <button type="button" class="btn btn-outline btn-sm modal-close">취소</button>
+                        <button type="button" class="btn btn-sm">등록</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
