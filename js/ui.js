@@ -100,7 +100,9 @@ function yearDatePicker(){
   
 }
 function imgFileInsert(){
-  $('#imageUpload').change(function(){			
+  $('.imageUpload').change(function(){
+    var thisInput = $(this);
+    var imgPreview = $(this).parents('.file-custom');
     readImgUrlAndPreview(this);
     function readImgUrlAndPreview(input){
       console.log(input.files);
@@ -109,13 +111,14 @@ function imgFileInsert(){
         fileReader.onload = function (e) {	
           var file = e.target;
           var reader ='';
-          reader += '<div id="imagePreview"><img class=\"imageThumb\" src=\"' + e.target.result + '\" title=\"' + file.name + '\"/>';
-          reader += '<span class=\"remove-file\"><i class="icon-sign03"></i></span></div>';
-          $('#imguploadWrap').append(reader);
+          reader += '<div class="imagePreview"><img class=\"imageThumb\" src=\"' + e.target.result + '\" title=\"' + file.name + '\"/>';
+          reader += '<span class=\"remove-file\"><i class="icon-sign03"></i></span></div>';          
+          imgPreview.append(reader);
+
           $('.remove-file').click(function(){
-            $('#imagePreview').remove();
+            $(this).parents('.imagePreview').remove();
             // 초기화
-            $('#imageUpload').val('');
+            thisInput.val('');
           });
         }
         };
