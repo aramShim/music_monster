@@ -451,7 +451,7 @@ tr.toggle-wrap ul.flex li {flex: 1; text-align: center;padding: 16px 0;}
 #trackAdd .form-submit-wrap {text-align: center; position: sticky; bottom:0; left:0; background: #fff; padding-top: 20px; box-shadow: 0px -3px 3px rgba(0,0,0,.02);}
 
 /*신규아티스트 추가*/
-#newArtist.modal .modal-wrap {width: 100%; max-width: 55%}
+#newArtist.modal .modal-wrap {width: 100%; max-width: 56%; min-width: 1120px;}
 .newartist-write.flex .newartist-img {width: 220px;}
 .newartist-write.flex .newartist-img .data-input-td {border-bottom: 0;}
 #newArtist .data-input-th {width: 25%;}
