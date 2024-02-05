@@ -5,12 +5,12 @@
 .profile-wrap {font-size: 22px; font-weight: 700;}
 
 .main-widget-wrap { padding: 20px 0;}
-.main-widget-wrap .flex.main-grid {flex-wrap: wrap; width: calc(100% + 20px); margin-left: -10px;}
-.main-widget-wrap .main-grid + .main-grid {margin-top: 20px;}
-.main-widget-wrap .main-grid .item {padding: 0 10px;}
+.main-widget-wrap .flex.main-grid {flex-wrap: wrap; width: calc(100% + 30px); margin-left: -15px;}
+.main-widget-wrap .main-grid + .main-grid {margin-top: 30px;}
+.main-widget-wrap .main-grid .item {padding: 0 15px;}
 .main-widget-wrap .main-grid .item1 {width: calc(100% / 4);}
 .main-widget-wrap .main-grid .item2 {width: calc(100% / 2);}
-.main-widget-wrap .main-grid .item .item-inner {box-shadow: 0 0 3px rgba(0,0,0,.05); position :relative; background: linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 64.41%),rgba(255,255,255,.75); border-radius: 10px; padding: 18px; }
+.main-widget-wrap .main-grid .item .item-inner {box-shadow: 0 0 3px rgba(0,0,0,.05); position :relative; background: linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 64.41%),rgba(255,255,255,.75); border-radius: 10px; padding: 18px 36px; height: 100%;}
 
 .main-widget-wrap .main-grid .item:hover .item-inner {background: #fff;}
 
@@ -19,3 +19,20 @@
 .main-widget-wrap .item-header a {font-size: .8em;}
 .main-number-wrap .item-body {text-align: right; padding-top: 18px;}
 .main-number-wrap .item-body .mont {font-size: 28px; font-weight: 600;}
+
+.main-data-head {padding: 8px 16px;}
+.main-data-head span {color: var(--color-gray6);text-align: center; display: inline-block; }
+.main-data-body ul li a {display: flex; align-items: center; padding: 8px 16px; border-radius: 5px;}
+.main-data-body ul li a:hover {background: #f8f8f8;}
+.main-data-body ul li a span {display: inline-block;}
+
+.main-notice .notice-title { width: 90%;}
+.main-notice .notice-date {text-align: center; width: 10%;}
+
+.main-album-board .album-img {width: 5%;}
+.main-album-board .album-name {width: 60%;}
+.main-album-board .album-artist {width: 15%; text-align: center;}
+.main-album-board .album-service {width: 10%; text-align: center;}
+.main-album-board .album-date {width: 10%; text-align: center;}
+
+.main-album-board .album-img img {width: 80%;}

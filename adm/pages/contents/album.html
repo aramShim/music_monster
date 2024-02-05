@@ -98,7 +98,152 @@
         <div class="content-wrap">
           <div class="content">
             <div class="inner">
-              <h2>앨범관리</h2>
+              <div class="content-title flex">
+                <h2>발매앨범 리스트</h2>
+                <div class="content-btn-wrap flex">
+                  <a href="" class="btn btn-sm btn-outline">신규등록</a>
+                  <div class="excelupload">
+                    <input type="file" class="input_file" id="excelupload" accept=".xlsx" onchange="">
+                    <label for="excelupload" class="btn btn-outline green btn-sm"><i class="icon-arrow86"></i> 일괄 엑셀업로드
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!--top search-->
+              <section class="ly-section">
+                <form id="search_frm" method="GET">
+                <input type="hidden" name="orderby_column" id="orderby_column" value="">
+                <input type="hidden" name="orderby_status" id="orderby_status" value="">
+                  <div class="list-search flex">
+                    <div class="search-wrap">
+                      <dl class="search-items">
+                        <dt>서비스상태</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">전체</option>
+                            <option value="">발매대기</option>
+                            <option value="">서비스중</option>
+                            <option value="">권리종료</option>                                              
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>날짜검색</dt>
+                        <dd class="flex">
+                          <div>
+                            <select name="shop" id="shop" class="adm-select">
+                              <option value="all">날짜 검색</option>
+                              <option value="">발매일</option>
+                              <option value="">등록일</option>
+                              <option value="">최종수정일</option>
+                            </select>
+                          </div>
+                          <input type="text" name="date" id="date" class="v-datepicker datepicker-period adm-v-datepicker" autocomplete="off">
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>장르</dt>
+                        <dd>
+                          <select name="shop" id="shop" class="adm-select">
+                            <option value="all">전체</option>
+                          </select>
+                        </dd>
+                      </dl>                      
+                      <dl class="search-items">
+                        <dt>검색조건</dt>
+                        <dd class="flex">
+                          <select name="search_status" id="search_status" class="adm-select">
+                            <option value="">앨범명</option>
+                            <option value="">트랙명</option>
+                            <option value="">가수명</option>
+                            <option value="">기획사명</option>
+                          </select>
+                          <input type="text" name="word" id="word" class="input-text adm-input-text wid400" placeholder="검색어를 입력하세요." value="">
+                        </dd>
+                      </dl>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn btn-sm"> 검색</button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+
+              <!--board-list-->
+              <div class="board-list">
+                <div class="board-list-top">
+                  <div class="board-list-num">
+                    <select name="" id="" class="adm-select">
+                      <option value="">30개보기</option>
+                      <option value="">50개보기</option>
+                      <option value="">100개보기</option>
+                      <option value="">300개보기</option>
+                    </select>
+                  </div>
+                </div>
+                <table>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>
+                        <label class="form-check-box check" for="allSelect">
+                          <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </th>
+                      <th>앨범코드</th>
+                      <th>자켓</th>
+                      <th>앨범명</th>
+                      <th>아티스트</th>
+                      <th>기획사</th>
+                      <th>장르</th>
+                      <th>발매일</th>
+                      <th>등록일</th>
+                      <th>서비스상태</th>
+                      <th>DDEX 상태</th>
+                      <th>공지상태</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td>A1000006</td>
+                      <td>
+                        <img src="../../../img/test-album1.jpg" alt="">
+                      </td>
+                      <td>No Space Just a place 6</td>
+                      <td>스페이스잼</td>
+                      <td>더하기미디어</td>
+                      <td>사운드트랙</td>
+                      <td>2021.10.10</td>
+                      <td>2021.09.15</td>
+                      <td>발매대기</td>
+                      <td>미전송</td>
+                      <td>미전송</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+
             </div>
           </div>
           <!--footer-->
