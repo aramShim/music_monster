@@ -141,12 +141,13 @@ dl.date-items dd b {font-size: 1.2em; vertical-align: middle;}
 
 
 /*table*/
-.board-list-top {text-align: right; padding: 10px 0;}
-.board-list-top .board-list-num {display: inline-block;}
+.board-list-top { padding: 10px 0;}
+.board-list-top.flex {align-items: baseline; justify-content: space-between;}
+.board-list-top .board-list-num {text-align: right; display: inline-block;}
 .board-list table{width:100%; table-layout:fixed; border-top:2px solid var(--color-gray1);}
 .board-list table tr.tr-end-red {background: var(--color-red-bg);}
 .board-list thead th{height:52px; box-sizing:border-box; padding:13px 20px; text-align:center; border-bottom:1px solid var(--color-gray8); font-weight:700; color:var(--color-gray1); font-size:14px; line-height:1.71em;}
-.board-list td{height:60px; box-sizing:border-box; padding:18px 20px; text-align:center; border-bottom:1px solid var(--color-gray9); font-size:15px; line-height:1.71em;}
+.board-list td{ box-sizing:border-box; padding:18px 20px; text-align:center; border-bottom:1px solid var(--color-gray9); font-size:15px; line-height:1.71em;}
 .board-list th.no,.board-list td.no,
 .board-list td.album-img {padding: 18px 0;}
 .board-list td.align-left {text-align: left;}
