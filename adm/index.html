@@ -31,8 +31,9 @@
     <script src="../js/datepicker.min.js"></script>
 
     <!--chart-->
-    <script src="js/apexcharts.min.js"></script>
-    <script src="css/apexcharts.css"></script>    
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.2/Chart.bundle.min.js" integrity="sha512-tfUKXWiumDwVqF4iHKYkA8Gh3fOGm2ODD5qHUqQ1dydLGnbau+FJhqliyf5je+zXt+FAuZXNhtlNyGC3Vcxblg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.2/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/layout.css" type="text/css">
     <script src="js/ui.js"></script>
@@ -129,13 +130,34 @@
                 <!--차트-->
                 <ul class="flex main-grid">
                   <li class="item item1">
-                    <div class="item-inner">파이 차트</div>
+                    <div class="item-inner">
+                      <div class="item-header center">
+                        <p>2021년 10월 판매사별 판매현황 TOP5</p>
+                      </div>
+                      <div class="item-body">
+                        <canvas id="piechart1"></canvas>
+                      </div>
+                    </div>
                   </li>
                   <li class="item item1">
-                    <div class="item-inner">파이 차트</div>
+                    <div class="item-inner">
+                      <div class="item-header center">
+                        <p>2021년 10월 앨범별 판매현황 TOP5</p>
+                      </div>
+                      <div class="item-body">
+                        <canvas id="piechart2"></canvas>
+                      </div>
+                    </div>
                   </li>
                   <li class="item item2">
-                    <div class="item-inner">막대 그래프</div>
+                    <div class="item-inner">
+                      <div class="item-header center">
+                        <p>최근 6개월 판매금액</p>
+                      </div>
+                      <div class="item-body">
+                        <canvas id="barchart1" width="400" height="100" aria-label="판매금액" role="img"></canvas>
+                      </div>
+                    </div>
                   </li>
                 </ul>
                 <!--board-->
@@ -218,7 +240,7 @@
                                   <span class="album-img"><img src="../img/test-album1.jpg" alt=""></span>
                                   <span class="album-name">No Space Just a Place 6</span>
                                   <span class="album-artist">스페이스잼</span>
-                                  <span class="album-service"><span class="status">서비스중</span></span>
+                                  <span class="album-service"><span class="status green">서비스중</span></span>
                                   <span class="album-date">2021.10.07</span>
                                 </a>
                               </li>
@@ -227,7 +249,7 @@
                                   <span class="album-img"><img src="../img/test-album1.jpg" alt=""></span>
                                   <span class="album-name">No Space Just a Place 6</span>
                                   <span class="album-artist">스페이스잼</span>
-                                  <span class="album-service"><span class="status">서비스중</span></span>
+                                  <span class="album-service"><span class="status green">서비스중</span></span>
                                   <span class="album-date">2021.10.07</span>
                                 </a>
                               </li>
@@ -236,7 +258,7 @@
                                   <span class="album-img"><img src="../img/test-album1.jpg" alt=""></span>
                                   <span class="album-name">No Space Just a Place 6</span>
                                   <span class="album-artist">스페이스잼</span>
-                                  <span class="album-service"><span class="status">서비스중</span></span>
+                                  <span class="album-service"><span class="status green">서비스중</span></span>
                                   <span class="album-date">2021.10.07</span>
                                 </a>
                               </li>
@@ -245,7 +267,7 @@
                                   <span class="album-img"><img src="../img/test-album1.jpg" alt=""></span>
                                   <span class="album-name">No Space Just a Place 6</span>
                                   <span class="album-artist">스페이스잼</span>
-                                  <span class="album-service"><span class="status">서비스중</span></span>
+                                  <span class="album-service"><span class="status green">서비스중</span></span>
                                   <span class="album-date">2021.10.07</span>
                                 </a>
                               </li>
@@ -254,7 +276,7 @@
                                   <span class="album-img"><img src="../img/test-album1.jpg" alt=""></span>
                                   <span class="album-name">No Space Just a Place 6</span>
                                   <span class="album-artist">스페이스잼</span>
-                                  <span class="album-service"><span class="status">서비스중</span></span>
+                                  <span class="album-service"><span class="status green">서비스중</span></span>
                                   <span class="album-date">2021.10.07</span>
                                 </a>
                               </li>
@@ -268,6 +290,116 @@
               </article>
             </div>
           </div>
+
+          <!--script 예시-->
+          <script>
+            var ctx1 = document.getElementById('piechart1').getContext('2d');
+	          var ctx2 = document.getElementById('piechart2').getContext('2d');
+            var ctx3 = document.getElementById('barchart1').getContext('2d');
+            //Global 옵션
+            Chart.defaults.global.defaultFontFamily = "Pretendard";
+            Chart.defaults.global.defaultFontColor = 'black';
+            Chart.defaults.global.defaultFontSize = 14;
+
+            var data1 = {
+              labels: ["멜론", "Genie","FLO","YouTube","바이브"],
+                datasets: [
+                {
+                  fill: true,
+                  backgroundColor: ['#337dff', '#ff3636', '#ff8019','rgba(143, 196, 68, .9)','#ffd400', '#c230ff','#bbb'],
+                  data: [58, 9, 9, 12, 12]
+                }
+              ]
+            };
+            var data2 = {
+              labels: ["No Space J...", "이름이 길어...","No Space J...","그냥이렇게","이별은 이별"],
+                datasets: [
+                {
+                  fill: true,
+                  backgroundColor: ['#337dff', '#ff3636', '#ff8019','rgba(143, 196, 68, .9)','#ffd400', '#c230ff','#bbb'],
+                  data: [58, 9, 9, 12, 12]
+                }
+              ]
+            };            
+            var options = {   
+              legend : {
+                position: 'right',
+                fullWidth: false,
+                labels:{
+                    fontFamily: "'Pretendard', 'arial', 'Verdana', 'Dotum', 'AppleGothic', 'sans-serif'",
+                    fontStyle:'600',
+                    fontSize:14,
+                    boxWidth:8,
+                    padding: 10,
+                    usePointStyle:true,
+                    pointStyle:'circle',
+                    
+                  }
+
+              },
+              //rotation: -1 * Math.PI,
+              tooltips:{
+                enabled: true,
+                callbacks:{
+                  label: function(tooltipItem, data){
+                    var indice = tooltipItem.index;                 
+                    return  data.labels[indice] +': '+data.datasets[0].data[indice] + '%';
+                  }
+                }
+              },
+              plugins :{
+                datalabels: {
+                  color: '#fff',
+                  textAlign: 'center',
+                  formatter: function(value, ctx) {
+                    if (value > 0)
+                    {
+                      return value + '%';
+                    }else {
+                      return '';
+                    }
+                    
+                  }
+                }
+              },
+              
+            };
+            const barData = {
+              labels: ["1월","2월","3월","4월","5월","6월"],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [145000, 285000, 260000, 168000, 365000, 55000, 0],
+                backgroundColor: 'rgba(255, 159, 64, 0.9)',
+                barThickness:50,
+              }]
+            };
+            var homeChart1 = new Chart(ctx1, {
+              type: 'pie',
+              data: data1,
+              options: options
+            });	
+            var homeChart2 = new Chart(ctx2, {
+              type: 'pie',
+              data: data2,
+              options: options
+            });
+            var homeChart3 = new Chart(ctx3, {
+              type: 'bar',
+              data: barData,
+              options: {
+                legend: {display: false},
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    callback: function(value, index, values) {            
+                      return value.toLocaleString() + ' 원';          
+                    }
+                  }
+                }
+              }
+            })
+          </script>
+
           <!--footer-->
           <footer id="footer"><span class="copy mont">COPYRIGHT(C) 2024 MUSIC MONSTER. ALL RIGHTS RESERVED.</span></footer>    
         </div>        

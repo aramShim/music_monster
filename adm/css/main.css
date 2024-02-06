@@ -1,5 +1,6 @@
 @charset "utf-8";
-
+.content-wrap,
+.content {background: #ecf3fd;}
 .content .inner {max-width: 90%; margin: 0 auto; padding: 5% 0;}
 .dash-pending {display: flex; align-items: center; justify-content: space-between;}
 .profile-wrap {font-size: 22px; font-weight: 700;}
@@ -17,6 +18,7 @@
 .main-widget-wrap .item-header {border-bottom: 1px solid #f1f1f1; padding: 10px 0; align-items: center; justify-content: space-between;}
 .main-widget-wrap .item-header p {font-size: 18px; font-weight: 600}
 .main-widget-wrap .item-header a {font-size: .8em;}
+.main-widget-wrap .item-header.center {text-align: center; border-bottom: 0;}
 .main-number-wrap .item-body {text-align: right; padding-top: 18px;}
 .main-number-wrap .item-body .mont {font-size: 28px; font-weight: 600;}
 
@@ -26,13 +28,13 @@
 .main-data-body ul li a:hover {background: #f8f8f8;}
 .main-data-body ul li a span {display: inline-block;}
 
-.main-notice .notice-title { width: 90%;}
-.main-notice .notice-date {text-align: center; width: 10%;}
+.main-notice .notice-title { width: 85%;}
+.main-notice .notice-date {text-align: center; width: 15%;}
 
 .main-album-board .album-img {width: 5%;}
-.main-album-board .album-name {width: 60%;}
+.main-album-board .album-name {width: 50%;}
 .main-album-board .album-artist {width: 15%; text-align: center;}
-.main-album-board .album-service {width: 10%; text-align: center;}
-.main-album-board .album-date {width: 10%; text-align: center;}
+.main-album-board .album-service {width: 15%; text-align: center;}
+.main-album-board .album-date {width: 15%; text-align: center;}
 
 .main-album-board .album-img img {width: 80%;}

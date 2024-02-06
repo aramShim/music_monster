@@ -101,7 +101,7 @@
               <div class="content-title flex">
                 <h2>발매앨범 리스트</h2>
                 <div class="content-btn-wrap flex">
-                  <a href="" class="btn btn-sm btn-outline">신규등록</a>
+                  <a href="" class="btn btn-sm btn-outline btn-outline-bg">신규등록</a>
                   <div class="excelupload">
                     <input type="file" class="input_file" id="excelupload" accept=".xlsx" onchange="">
                     <label for="excelupload" class="btn btn-outline green btn-sm"><i class="icon-arrow86"></i> 일괄 엑셀업로드
@@ -183,10 +183,10 @@
                 </div>
                 <table>
                   <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
+                    <col width="50px">
+                    <col width="120px">
+                    <col width="80px">
+                    <col width="450px">
                     <col>
                     <col>
                     <col>
@@ -197,7 +197,7 @@
                   </colgroup>
                   <thead>
                     <tr>
-                      <th>
+                      <th class="no">
                         <label class="form-check-box check" for="allSelect">
                           <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
                           <span class="form-check-icon"></span>
@@ -218,17 +218,145 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>
+                      <td class="no">
                         <label class="form-check-box check" for="select1">
                           <input type="checkbox" id="select1" name="" title="선택" class="fill">
                           <span class="form-check-icon"></span>
                         </label>
                       </td>
-                      <td>A1000006</td>
-                      <td>
-                        <img src="../../../img/test-album1.jpg" alt="">
+                      <td><a href="album-view.html">A1000006</a></td>
+                      <td class="album-img">
+                        <img src="../../../img/test-album1.jpg" alt=""onclick="popup('album-img-popup.html', '앨범커버팝업','500','500')">
                       </td>
-                      <td>No Space Just a place 6</td>
+                      <td class="align-left"><a href="album-view.html">No Space Just a place 6</a></td>
+                      <td>스페이스잼</td>
+                      <td>더하기미디어</td>
+                      <td>사운드트랙</td>
+                      <td>2021.10.10</td>
+                      <td>2021.09.15</td>
+                      <td>발매대기</td>
+                      <td>미전송</td>
+                      <td>미전송</td>
+                    </tr>
+                    <!--권리종료일경우 tr에 class-->
+                    <tr class="tr-end-red">
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="album-view.html">A1000006</a></td>
+                      <td class="album-img">
+                        <img src="../../../img/test-album1.jpg" alt="" onclick="popup('album-img-popup.html', '앨범커버팝업','500','500')">
+                      </td>
+                      <td class="align-left"><a href="album-view.html">No Space Just a place 6</a></td>
+                      <td>스페이스잼</td>
+                      <td>더하기미디어</td>
+                      <td>사운드트랙</td>
+                      <td>2021.10.10</td>
+                      <td>2021.09.15</td>
+                      <td>권리종료</td>
+                      <td>미전송</td>
+                      <td>미전송</td>
+                    </tr>
+
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="album-view.html">A1000006</a></td>
+                      <td class="album-img">
+                        <img src="../../../img/test-album1.jpg" alt=""onclick="popup('album-img-popup.html', '앨범커버팝업','500','500')">
+                      </td>
+                      <td class="align-left"><a href="album-view.html">No Space Just a place 6</a></td>
+                      <td>스페이스잼</td>
+                      <td>더하기미디어</td>
+                      <td>사운드트랙</td>
+                      <td>2021.10.10</td>
+                      <td>2021.09.15</td>
+                      <td>발매대기</td>
+                      <td>미전송</td>
+                      <td>미전송</td>
+                    </tr>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="album-view.html">A1000006</a></td>
+                      <td class="album-img">
+                        <img src="../../../img/test-album1.jpg" alt=""onclick="popup('album-img-popup.html', '앨범커버팝업','500','500')">
+                      </td>
+                      <td class="align-left"><a href="album-view.html">No Space Just a place 6</a></td>
+                      <td>스페이스잼</td>
+                      <td>더하기미디어</td>
+                      <td>사운드트랙</td>
+                      <td>2021.10.10</td>
+                      <td>2021.09.15</td>
+                      <td>발매대기</td>
+                      <td>미전송</td>
+                      <td>미전송</td>
+                    </tr>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="album-view.html">A1000006</a></td>
+                      <td class="album-img">
+                        <img src="../../../img/test-album1.jpg" alt=""onclick="popup('album-img-popup.html', '앨범커버팝업','500','500')">
+                      </td>
+                      <td class="align-left"><a href="album-view.html">No Space Just a place 6</a></td>
+                      <td>스페이스잼</td>
+                      <td>더하기미디어</td>
+                      <td>사운드트랙</td>
+                      <td>2021.10.10</td>
+                      <td>2021.09.15</td>
+                      <td>발매대기</td>
+                      <td>미전송</td>
+                      <td>미전송</td>
+                    </tr>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="album-view.html">A1000006</a></td>
+                      <td class="album-img">
+                        <img src="../../../img/test-album1.jpg" alt=""onclick="popup('album-img-popup.html', '앨범커버팝업','500','500')">
+                      </td>
+                      <td class="align-left"><a href="album-view.html">No Space Just a place 6</a></td>
+                      <td>스페이스잼</td>
+                      <td>더하기미디어</td>
+                      <td>사운드트랙</td>
+                      <td>2021.10.10</td>
+                      <td>2021.09.15</td>
+                      <td>발매대기</td>
+                      <td>미전송</td>
+                      <td>미전송</td>
+                    </tr>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="album-view.html">A1000006</a></td>
+                      <td class="album-img">
+                        <img src="../../../img/test-album1.jpg" alt=""onclick="popup('album-img-popup.html', '앨범커버팝업','500','500')">
+                      </td>
+                      <td class="align-left"><a href="album-view.html">No Space Just a place 6</a></td>
                       <td>스페이스잼</td>
                       <td>더하기미디어</td>
                       <td>사운드트랙</td>
@@ -240,6 +368,23 @@
                     </tr>
                   </tbody>
                 </table>
+
+                <div class="adm-paging">
+                  <ul>
+                    <li class="page prev">                      
+                      <a class="disabled"></a>
+                    </li>
+                    <li>
+                      <a class="selected" href="" title="현재목록">1</a>
+                    </li>
+                    <li>
+                      <a class="" href="" title="">2</a>
+                    </li>
+                    <li class="page next">                      
+                      <a class=""></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
 
