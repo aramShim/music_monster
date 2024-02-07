@@ -94,6 +94,7 @@
               </div>
             </div>
         </div>
+        <!--//레프트메뉴-->
         <!--content-->
         <div class="content-wrap">
           <div class="content album-view">
@@ -117,15 +118,15 @@
                   <div class="album-data-wrap flex">
                     <div class="album-data album-data1">
                       <dl>
-                        <dt>앨범명(KOR)</dt>
+                        <dt>앨범명(KOR)<span class="require red">*</span></dt>
                         <dd>이별은 이별</dd>
                       </dl>
                       <dl>
-                        <dt>앨범명(ENG)</dt>
+                        <dt>앨범명(ENG)<span class="require red">*</span></dt>
                         <dd>Break Up</dd>
                       </dl>
                       <dl>
-                        <dt>앨범유형</dt>
+                        <dt>앨범유형<span class="require red">*</span></dt>
                         <dd>Single</dd>
                       </dl>
                       <dl>
@@ -133,15 +134,15 @@
                         <dd>--</dd>
                       </dl>
                       <dl>
-                        <dt>앨범장르</dt>
+                        <dt>앨범장르<span class="require red">*</span></dt>
                         <dd>Folk > Folk</dd>
                       </dl>
                       <dl>
-                        <dt>UCI 앨범코드</dt>
+                        <dt>UCI 앨범코드<span class="require red">*</span></dt>
                         <dd>100017039330</dd>
                       </dl>
                       <dl>
-                        <dt>UPC(바코드)</dt>
+                        <dt>UPC(바코드)<span class="require red">*</span></dt>
                         <dd>192641698278</dd>
                       </dl>
                       <dl>
@@ -159,11 +160,11 @@
                     </div>
                     <div class="album-data album-data2">
                       <dl>
-                        <dt>발매일</dt>
+                        <dt>발매일<span class="require red">*</span></dt>
                         <dd>2021.10.10 12:00</dd>
                       </dl>
                       <dl>
-                        <dt>등록일</dt>
+                        <dt>등록일<span class="require red">*</span></dt>
                         <dd>2021.10.01 12:35</dd>
                       </dl>
                       <dl>
@@ -175,11 +176,11 @@
                         <dd>--</dd>
                       </dl>
                       <dl>
-                        <dt>레이블명</dt>
+                        <dt>레이블명<span class="require red">*</span></dt>
                         <dd>큐오뮤직</dd>
                       </dl>
                       <dl>
-                        <dt>앨범아티스트</dt>
+                        <dt>앨범아티스트<span class="require red">*</span></dt>
                         <dd>Ultrabear, 하현구</dd>
                       </dl>
                       <dl>
@@ -188,11 +189,11 @@
                       </dl>
                       <dl>
                         <dt>보도자료</dt>
-                        <dd><a href="" download class="download-btn btn btn-outline btn-sm gray">보도자료.docx</a></dd>
+                        <dd><a href="" download class="download-btn btn btn-outline btn-outline-bg btn-xsm gray">보도자료.docx</a></dd>
                       </dl>
                       <dl>
                         <dt>발매자료</dt>
-                        <dd><a href="" download class="download-btn btn btn-outline btn-sm gray">발매자료.zip</a></dd>
+                        <dd><a href="" download class="download-btn btn btn-outline btn-xsm  btn-outline-bg gray">발매자료.zip</a></dd>
                       </dl>
                       <dl>
                         <dt>보유권리</dt>
@@ -230,7 +231,7 @@
                     <div class="board-list">
                       <div class="board-list-top flex">
                         <span class="status blue">CD 1</span>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-outline dark modal-right-btn" data-modal="#track-info">트랙상세보기</a>
+                        <a href="javascript:void(0);" class="btn btn-xsm btn-outline gray modal-btn btn-outline-bg" data-modal="#track-info">트랙 상세보기</a>
                       </div>
                       <table>
                         <colgroup>
@@ -258,20 +259,20 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr class="cursor-pointer-area modal-btn" data-modal="#track-info">
                             <td class="no">1</td>
-                            <td><a href="javascript:void(0);" class="modal-right-btn" data-modal="#track-info">이별은 이별</a></td>
+                            <td>이별은 이별</td>
                             <td>Break Up</td>
                             <td></td>
                             <td>ULTRABEAR, 하현구</td>
                             <td>Folk > Folk</td>
                             <td>A10000T001</td>
                             <td>KRM2P2042619</td>
-                            <td>O</td>
+                            <td><i class="icon-sign43"></i></td>
                           </tr>
-                          <tr>
+                          <tr class="cursor-pointer-area modal-btn" data-modal="#track-info">
                             <td class="no">2</td>
-                            <td><a href="javascript:void(0);" class="modal-right-btn" data-modal="#track-info">이별은 이별</a></td>
+                            <td>이별은 이별</td>
                             <td>Break Up</td>
                             <td>Instrumental</td>
                             <td>ULTRABEAR, 하현구</td>
@@ -285,34 +286,377 @@
                     </div>
                   </div>
                   <div id="tab4-02" style="display: none;">
-                    <p>tab2</p>
+                    <div class="board-list">
+                      <div class="board-list-top">
+                        <p>계약정보</p>
+                      </div>
+                      <table>
+                        <colgroup>
+                          <col width="60px">
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="no">번호</th>
+                            <th>권리자명</th>
+                            <th>권리자코드</th>
+                            <th>계약유형</th>
+                            <th>계약시작일</th>
+                            <th>계약종료일</th>
+                            <th>유통요율(국내)</th>
+                            <th>유통요율(해외)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="no">1</td>
+                            <td>칼라풀레코즈</td>
+                            <td>A000001</td>
+                            <td>투자</td>
+                            <td>2020.12.01</td>
+                            <td>2020.12.01</td>
+                            <td>80/85</td>
+                            <td>80/85</td>
+                          </tr>
+                          <tr>
+                            <td class="no">2</td>
+                            <td>칼라풀레코즈</td>
+                            <td>A000001</td>
+                            <td>투자</td>
+                            <td>2020.12.01</td>
+                            <td>2020.12.01</td>
+                            <td>80/85</td>
+                            <td>80/85</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div id="tab4-03" style="display: none;">
-                    <p>tab3</p>
+                    <div class="board-list">
+                      <div class="board-list-top flex">
+                        <p>서비스링크</p>                   
+                        <a href="javascript:void(0);" class="btn btn-xsm btn-outline modal-btn btn-outline-bg" data-modal="#service-link-add">링크생성</a>
+                      </div>
+                      <table>
+                        <colgroup>
+                          <col width="60px">
+                          <col width="300px">
+                          <col>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="no">번호</th>
+                            <th>서비스 플랫폼</th>
+                            <th>링크</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="no">1</td>
+                            <td>멜론</td>
+                            <td class="align-left"><a href="https://www.melon.com/album/detail.htm?albumId=10525599" target="_blank" title="멜론 바로가기">https://www.melon.com/album/detail.htm?albumId=10525599</a></td>
+                          </tr>
+                          <tr>
+                            <td class="no">2</td>
+                            <td>지니뮤직</td>
+                            <td class="align-left"><a href="https://www.genie.co.kr/detail/songInfo?xgnm=91462754" target="_blank" title="지니뮤직 바로가기">https://www.genie.co.kr/detail/songInfo?xgnm=91462754</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div id="tab4-04" style="display: none;">
                     <p>tab4</p>
                   </div>
                   <div id="tab4-05" style="display: none;">
-                    <p>tab5</p>
+                    <div class="board-list">
+                      <div class="board-list-top">
+                        <p>영상설정</p>
+                      </div>
+                      <table>
+                        <colgroup>
+                          <col width="60px">
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                          <col>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th class="no">번호</th>
+                            <th>영상유형</th>
+                            <th>트랙번호</th>
+                            <th>트랙명</th>
+                            <th>등록일</th>
+                            <th>ISRC</th>
+                            <th>영상파일</th>
+                            <th>승인서류</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="no">1</td>
+                            <td>M/V</td>
+                            <td>1/1</td>
+                            <td>이별은 이별</td>
+                            <td>2021.10.01</td>
+                            <td>2KRM123456789</td>
+                            <td><a href="" download class="btn btn-xsm btn-outline btn-outline-bg gray">이별은이별.mp4</a></td>
+                            <td><a href="" download class="btn btn-xsm btn-outline btn-outline-bg gray">뮤직비디오심의.docx</a></td></td>
+                          </tr>
+                          <tr>
+                            <td class="no">2</td>
+                            <td>티저</td>
+                            <td>1/1</td>
+                            <td>이별은 이별</td>
+                            <td>2021.10.01</td>
+                            <td>2KRM123456789</td>
+                            <td><a href="" download class="btn btn-xsm btn-outline btn-outline-bg gray">이별은이별(티저).mp4</a></td>
+                            <td><a href="" download class="btn btn-xsm btn-outline btn-outline-bg gray">뮤직비디오심의.docx</a></td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div id="tab4-06" style="display: none;">
-                    <p>tab6</p>
+                    <div class="board-list">
+                      <div class="board-list-top">
+                        <p>발매이력</p>
+                      </div>
+                      <table>
+                        <colgroup>
+                          <col width="300px">
+                          <col>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>날짜</th>
+                            <th>발매이력</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2021.10.10 10:12:30</td>
+                            <td class="align-left">등록</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">앨범정보 수정</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">발매공지(kakao M)</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">발매공지(지니뮤직)</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">발매공지(벅스뮤직)</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">발매공지(드림어스)</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">발매공지(드림어스)</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">발매공지(YG Plus)</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">DDX전송 New Release(Youtube)</td>
+                          </tr>
+                          <tr>
+                            <td>2021.10.10 10:01:30</td>
+                            <td class="align-left">DDX전송 New Release(TicTok)</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </section>
               </div>
-              
-
-
-
-
             </div>
           </div>
           <!--footer-->
           <footer id="footer"><span class="copy mont">COPYRIGHT(C) 2024 MUSIC MONSTER. ALL RIGHTS RESERVED.</span></footer>    
-        </div>        
+        </div>
+        <!--//content-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//layout-wrap-->
+  </div>
+
+  <!--트랙정보 modal (right modal)-->
+  <div id="track-info" class="modal modal-right">
+    <div class="modal-bg modal-close"></div>
+    <div class="modal-wrap">
+      <div class="modal-content">
+        <div class="modal-header flex">
+          <p>트랙상세정보</p>
+          <button type="button" class="modal-close"><i class="icon-sign03"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="track-more-data">
+            <dl>
+              <dt>트랙명(KOR)<span class="require red">*</span></dt>
+              <dd>이별은 이별</dd>
+            </dl>
+            <dl>
+              <dt>트랙명(ENG)<span class="require red">*</span></dt>
+              <dd>Break Up</dd>
+            </dl>
+            <dl>
+              <dt>트랙버전</dt>
+              <dd>--</dd>
+            </dl>
+            <dl>
+              <dt>아티스트<span class="require red">*</span></dt>
+              <dd>
+                <ul class="track-artist-list-wrap">
+                  <li>
+                    <span class="artist-name">ULTRABEAR</span>
+                    <span class="artist-role">메인아티스트</span>
+                  </li>
+                  <li>
+                    <span class="artist-name">하현구</span>
+                    <span class="artist-role">메인아티스트</span>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>트랙장르</dt>
+              <dd>Folk > Folk</dd>
+            </dl>
+            <dl>
+              <dt>ISRC</dt>
+              <dd>KRM2P2042619</dd>
+            </dl>
+            <dl>
+              <dt>트랙코드</dt>
+              <dd>A1000006T001</dd>
+            </dl>
+            <dl>
+              <dt>UCI코드</dt>
+              <dd>uci:i500-1000007039330.100054369405-1</dd>
+            </dl>
+            <dl>
+              <dt>플레이타임</dt>
+              <dd>03:29</dd>
+            </dl>
+            <dl>
+              <dt>참여 아티스트</dt>
+              <dd>
+                <ul class="artist-list-wrap">
+                  <li>
+                    <span class="artist-name">ULTRABEAR</span>
+                    <span class="artist-role">작사</span>
+                  </li>
+                  <li>
+                    <span class="artist-name">ULTRABEAR</span>
+                    <span class="artist-role">작곡</span>
+                  </li>
+                  <li>
+                    <span class="artist-name">ULTRABEAR</span>
+                    <span class="artist-role">편곡</span>
+                  </li>
+                  <li>
+                    <span class="artist-name">하현구</span>
+                    <span class="artist-role">편곡</span>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>대표곡 여부</dt>
+              <dd><i class="icon-sign43"></i></dd>
+            </dl>
+            <dl>
+              <dt>이용등급</dt>
+              <dd>--</dd>
+            </dl>
+            <dl>
+              <dt>권리보유</dt>
+              <dd>
+                <span>저작권 100%</span>
+                <span>인접권 100%</span>
+                <span>실연권 100%</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt>틱톡 노출구간</dt>
+              <dd>00:00~ 01:00</dd>
+            </dl>
+            <dl>
+              <dt>트랙명(표기)</dt>
+              <dd>이별은 이별</dd>
+            </dl>
+            <dl>
+              <dt>대표언어</dt>
+              <dd>한국어</dd>
+            </dl>
+            <dl>
+              <dt>음원파일</dt>
+              <dd>
+                <ul class="download-list">
+                  <li><a href="" download class="btn btn-xsm btn-outline-bg btn-outline">이별은이별.mp3</a></li>
+                  <li><a href="" download class="btn btn-xsm btn-outline-bg btn-outline">이별은이별.wav</a></li>
+                  <li><a href="" download class="btn btn-xsm btn-outline-bg btn-outline">이별은이별.flac</a></li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>가사</dt>
+              <dd>
+                <a href="" download class="btn btn-xsm btn-outline-bg btn-outline">이별은이별.txt</a>
+                <p class="lyrics-textarea">
+                  긴 하루 끝<br>
+                  작은 거울 앞에 서서<br>
+                  다 지나간 오늘을 떠올려<br>
+                  이제야 겨우 마주한 나<br>
+                  긴 하루 끝
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="adm-paging">
+            <ul class="track-paging">
+              <li class="page prev"><a class="disabled"></a></li>
+              <li><a class="selected" href="" title="CD1 Track 1"><span class="status blue">CD1</span> Track 1</a></li>
+              <li class="page next"><a class=""></a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
+
+  <!--서비스링크 링크 생성 팝업-->
+  <div id="service-link-add" class="modal">
+
+
+  </div>
+
+
 </body>
 </html>

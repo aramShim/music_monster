@@ -1,6 +1,7 @@
 $(document).ready(function () {
   mypageSelect();
   tab();
+  modal();
   
 });
 
@@ -36,4 +37,18 @@ function tab(){
 		$(tabgroup).children('div').hide();
 		$(target).show();  
 	})
+}
+
+function modal(){
+  const $modalBtn = $('.modal-btn');
+  const $modalClose = $('.modal-close');
+  $modalBtn.click(function(){
+    const $openModal = $(this).data('modal');
+    $('body').addClass('open');
+    $($openModal).addClass('open');
+  });
+  $modalClose.click(function(){
+    $('body').removeClass('open');
+    $(this).parents('.modal').removeClass('open');
+  })  
 }
