@@ -3,8 +3,8 @@
 
 /** ADMIN Layout **/
 * {box-sizing: border-box;}
-body {-webkit-overflow-scrolling: touch; }
-::-webkit-scrollbar {display: none;}
+body {overflow-x: hidden;}
+/* ::-webkit-scrollbar {display: none;} */
 .mont {font-family: 'Montserrat', sans-serif; } 
 .flex {display: flex !important;}
 
@@ -53,7 +53,7 @@ body {-webkit-overflow-scrolling: touch; }
 
 .content-wrap {display: flex; width: 100%; flex-flow: column;  background: #f8fafd;}
 .content {width: 100%; background: #f8fafd;}
-.content .inner {padding: 50px 80px;}
+.content .inner {padding: 50px 80px; max-width :2000px; margin: 0 auto;}
 
 .content-title {padding: 16px 0; position: sticky; top: 0; background: #f8fafd; z-index: 9;}
 .content-title.flex {align-items: center; justify-content: space-between;}
@@ -198,7 +198,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .album-view-wrap .album-img img {width: 100%;}
 
 .album-view-wrap .album-data-wrap {width: calc(100% - 450px);}
-.album-data {width: calc(100% / 3); padding: 10px 20px;}
+.album-data {width: calc(100% / 3); padding: 10px 0 10px 20px;}
 .album-data dl {display: flex; align-items: center; padding: 6px 0;}
 .album-data dl dt {width: 120px; color: var(--color-gray5)}
 .album-data3 dl {flex-flow: column; align-items: flex-start;}
@@ -234,4 +234,11 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .track-more-data .artist-list-wrap li {margin-bottom: 5px;}
 .track-more-data .artist-name {display: inline-block; min-width: 100px;}
 .track-more-data .download-list li {margin-bottom: 5px;}
-.lyrics-textarea {border: 1px solid #c9c9c9; border-radius: 5px; margin-top: 5px; padding: 10px 16px; width: 100%;}
+.lyrics-textarea {border: 1px solid #c9c9c9; border-radius: 5px; margin-top: 5px; padding: 10px 16px; width: 100%; max-height: 150px; overflow-y: auto;}
+
+.service-setting-list > p {font-weight: 600; padding: 10px 0;}
+.service-setting-list .service-platform {margin: 10px 0 20px; border: 1px solid #ccc; border-radius: 5px ; padding: 20px 40px;}
+.service-setting-list .service-platform dl + dl {margin-top: 20px;}
+.service-setting-list .service-platform dl dt {font-weight: 600; padding: 5px 0;}
+.service-setting-list .service-platform dl dd ul {gap: 20px;}
+.service-setting-list .service-platform dl dd ul li i {color: var(--color-blue1); vertical-align: middle; margin-right: 3px; display: inline-block;}

@@ -32,7 +32,8 @@
     
 
     <link rel="stylesheet" href="../../css/layout.css" type="text/css">
-    <script src="../../js/ui.js"></script>
+    <script src="../../../js/ui.js"></script>
+    <script src="../../js/adm-ui.js"></script>
 
 </head>
 <body>    
@@ -101,7 +102,7 @@
               <div class="content-title flex">
                 <h2>발매앨범 리스트</h2>
                 <div class="content-btn-wrap flex">
-                  <a href="" class="btn btn-sm btn-outline btn-outline-bg">신규등록</a>
+                  <a href="album-write.html" class="btn btn-sm btn-outline btn-outline-bg">신규등록</a>
                   <div class="excelupload">
                     <input type="file" class="input_file" id="excelupload" accept=".xlsx" onchange="">
                     <label for="excelupload" class="btn btn-outline green btn-sm btn-outline-bg"><i class="icon-arrow86"></i> 일괄 엑셀업로드
@@ -138,7 +139,11 @@
                               <option value="">최종수정일</option>
                             </select>
                           </div>
-                          <input type="text" name="date" id="date" class="v-datepicker datepicker-period adm-v-datepicker" autocomplete="off">
+                          <div class="form-range-group">
+                            <input type="text" class="v-datepicker start-date adm-v-datepicker" placeholder="시작일" autocomplete="off" data-toggle="datepicker">                            
+                            <div class="form-cell-char">~</div>                           
+                            <input type="text" class="v-datepicker end-date adm-v-datepicker" placeholder="종료일" autocomplete="off" data-toggle="datepicker">
+                          </div>
                         </dd>
                       </dl>
                       <dl class="search-items">

@@ -133,13 +133,13 @@ body.open {overflow: hidden;}
 /* sub ******************************************************************* */
 
 /* lnav */
-.sub-lnav {height: 80px;position: sticky;top: 80px;z-index: 5;background-color: #fff;transition: top 0.3s; } 
-.sub-lnav .lnav-inner {background-color: #fff;height: 80px;position: relative;overflow-X: auto;overflow-y: hidden;width: 100%;box-sizing: border-box; } 
+.sub-lnav {height: 60px; position: sticky;top: 80px;z-index: 5;background-color: #fff;transition: top 0.3s; } 
+.sub-lnav .lnav-inner {background-color: #fff;height: 60px;position: relative;overflow-X: auto;overflow-y: hidden;width: 100%;box-sizing: border-box; } 
 .sub-lnav .lnav-list {max-width: 1200px;margin: 0 auto;display: flex;box-sizing: border-box;white-space: nowrap; } 
 .sub-lnav li {margin-right: 28px; } 
 .sub-lnav li:first-child {margin-left: -10px; } 
 .sub-lnav li:last-child {margin-right: 0; } 
-.sub-lnav a {display: block;height: 80px;line-height: 80px;font-size: 16px;position: relative;padding: 0 10px;color: var(--color-gray2);font-weight: 500; } 
+.sub-lnav a {display: block;height: 60px;line-height: 60px;font-size: 16px;position: relative;padding: 0 10px;color: var(--color-gray2);font-weight: 500; } 
 .sub-lnav a:hover {color: var(--color-blue1); } 
 .sub-lnav .active a {color: var(--color-blue1);font-weight: 700; } 
 .sub-lnav .active a:after {display: block;content: '';height: 4px;background-color: var(--color-blue1);position: absolute;left: 10px;right: 10px;bottom: 0; } 

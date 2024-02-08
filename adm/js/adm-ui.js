@@ -1,19 +1,11 @@
 $(document).ready(function () {
-  mypageSelect();
+  
   tab();
-  modal();
+
   
 });
 
-function mypageSelect() {
-  const $langWrap = $(".mypage-hd");
-  $langWrap.children("button").on("click", function () {
-    $(this).parent().toggleClass("active");
-  });
-  $langWrap.on("mouseleave", function () {
-    $(this).removeClass("active");
-  });
-}
+
 
 function popup(url, name, width, height){
   var width = width;
@@ -39,16 +31,3 @@ function tab(){
 	})
 }
 
-function modal(){
-  const $modalBtn = $('.modal-btn');
-  const $modalClose = $('.modal-close');
-  $modalBtn.click(function(){
-    const $openModal = $(this).data('modal');
-    $('body').addClass('open');
-    $($openModal).addClass('open');
-  });
-  $modalClose.click(function(){
-    $('body').removeClass('open');
-    $(this).parents('.modal').removeClass('open');
-  })  
-}
