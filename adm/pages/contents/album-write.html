@@ -98,22 +98,13 @@
         <!--//레프트메뉴-->
         <!--content-->
         <div class="content-wrap">
-          <div class="content album-view">
+          <div class="content album-view album-write">
             <div class="inner">
               <div class="content-title flex">
                 <div class="album-title flex">
-                  <h2>이별은 이별</h2>
-                  <span>ULTRABEAR, 하현구</span>
-                  <span class="status blue">발매요청</span>
-                  <!--상태값 표시
-                    <span class="status blue">발매요청</span>
-                    <span class="status blue">보완요청</span>
-                    <span class="status green">서비스중</span>
-                    <span class="status gray">권리종료</span>                  
-                  -->
+                  <h2>앨범 등록</h2>                  
                 </div>
-                <div class="content-btn-wrap flex">
-                  
+                <div class="content-btn-wrap flex">                  
                   <a href="album-write.html" class="btn btn-sm">저장</a>
                 </div>
               </div>
@@ -121,103 +112,263 @@
               <div class="album-view-wrap">
                 <div class="flex">
                   <div class="album-img">
-                    <img src="../../../img/test-album1.jpg" alt="">
+                    <div class="file-custom">
+                      <label for="imageUpload" class="input-file-wrap">
+                          <span class=""><i class="icon-sign05"></i></span>
+                          <input id="imageUpload" type="file" accept="image/jpg, image/jpeg, image/png, image/bmp" name="files[]" multiple="" class="input-file imageUpload">
+                      </label>                                    
+                    </div>
                   </div>
                   <div class="album-data-wrap flex">
                     <div class="album-data album-data1">
                       <dl>
                         <dt>앨범명(KOR)<span class="require red">*</span></dt>
-                        <dd>이별은 이별</dd>
+                        <dd><input type="text" class="input-text" placeholder="앨범명(KOR)"></dd>
                       </dl>
                       <dl>
                         <dt>앨범명(ENG)<span class="require red">*</span></dt>
-                        <dd>Break Up</dd>
+                        <dd><input type="text" class="input-text" placeholder="앨범명(ENG)"></dd>
                       </dl>
                       <dl>
                         <dt>앨범유형<span class="require red">*</span></dt>
-                        <dd>Single</dd>
+                        <dd>
+                          <select name="" id="" class="adm-select">
+                            <option value="">선택</option>
+                            <option value="">Album</option>
+                            <option value="">Single</option>
+                            <option value="">EP</option>
+                            <option value="">Compliation</option>
+                          </select>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>앨범버전</dt>
-                        <dd>--</dd>
+                        <dd>
+                          <select name="" id="" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>앨범장르<span class="require red">*</span></dt>
-                        <dd>Folk > Folk</dd>
+                        <dd>
+                         
+                            <select name="" id="" class="adm-select">
+                              <option value="">선택</option>
+                              <option value="">대중음악</option>
+                              <option value="">POP</option>
+                              <option value="">알앤비</option>
+                              <option value="">재즈</option>
+                              <option value="">OST</option>
+                              <option value="">어린이</option>
+                              <option value="">클래식</option>
+                              <option value="">종교음악</option>
+                              <option value="">일렉트로니카</option>
+                              <option value="">월드뮤직</option>
+                              <option value="">뉴에이지</option>
+                              <option value="">기타</option>
+                            </select>
+                         
+                            <select name="" id="" class="adm-select">
+                              <option value="">트로트</option>
+                              <option value="">락</option>
+                              <option value="">알앤비/소울</option>
+                              <option value="">컨트리</option>
+                              <option value="">케이팝</option>
+                              <option value="">발라드</option>
+                              <option value="">포크</option>
+                              <option value="">랩/힙합</option>
+                              <option value="">댄스</option>
+                              <option value="">블루스</option>
+                              <option value="">인디</option>
+                            </select>
+                         
+                        </dd>
                       </dl>
                       <dl>
                         <dt>UCI 앨범코드<span class="require red">*</span></dt>
-                        <dd>100017039330</dd>
+                        <dd>
+                          <input type="text" class="input-text" placeholder="UCI 앨범코드">
+                          <button type="button" class="btn btn-xsm btn-outline btn-outline-bg">UCI 검색</button>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>UPC(바코드)<span class="require red">*</span></dt>
-                        <dd>192641698278</dd>
+                        <dd><input type="text" class="input-text" placeholder="UPC(바코드)"></dd>
                       </dl>
                       <dl>
                         <dt>자사앨범코드</dt>
-                        <dd>A100006</dd>
+                        <dd><input type="text" class="input-text" placeholder="자사앨범코드"></dd>
                       </dl>
                       <dl>
                         <dt>이용등급</dt>
-                        <dd>--</dd>
+                        <dd>
+                          <div class="flex">
+                            <label class="form-check-box check" for="adultonly">
+                              <input type="checkbox" id="adultonly" name="" title="19세 이하 서비스 금지" class="fill">
+                              <span class="form-check-icon">
+                                  <em>19세 이하 서비스 금지</em>
+                              </span>
+                            </label>
+                            <label class="form-check-box check" for="mainalbum">
+                              <input type="checkbox" id="mainalbum" name="" title="주요앨범" class="fill">
+                              <span class="form-check-icon">
+                                  <em>주요앨범</em>
+                              </span>
+                            </label>
+                          </div>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>주요앨범</dt>
-                        <dd>Yes</dd>
+                        <dd>
+                          <label class="form-check-box check" for="allAgree">
+                            <input type="checkbox" id="allAgree" name="" title="전체 동의" class="fill">
+                            <span class="form-check-icon">
+                                <em>Yes</em>
+                            </span>
+                          </label>
+                        </dd>
                       </dl>
                     </div>
                     <div class="album-data album-data2">
                       <dl>
                         <dt>발매일<span class="require red">*</span></dt>
-                        <dd>2021.10.10 12:00</dd>
+                        <dd><input type="text" class="v-datepicker adm-v-datepicker" data-toggle="datepicker"></dd>
                       </dl>
                       <dl>
                         <dt>등록일<span class="require red">*</span></dt>
-                        <dd>2021.10.01 12:35</dd>
+                        <dd><input type="text" class="v-datepicker adm-v-datepicker" data-toggle="datepicker"></dd>
                       </dl>
                       <dl>
                         <dt>서비스가능일</dt>
-                        <dd>2021.10.01</dd>
-                      </dl>
-                      <dl>
-                        <dt>수정일</dt>
-                        <dd>--</dd>
+                        <dd><input type="text" class="v-datepicker adm-v-datepicker" data-toggle="datepicker"></dd>
                       </dl>
                       <dl>
                         <dt>레이블명<span class="require red">*</span></dt>
-                        <dd>큐오뮤직</dd>
+                        <dd>
+                          <input type="text" class="input-text" placeholder="레이블명">
+                          <input type="text" class="input-text" placeholder="레이블명">
+                        </dd>
                       </dl>
                       <dl>
                         <dt>앨범아티스트<span class="require red">*</span></dt>
-                        <dd>Ultrabear, 하현구</dd>
+                        <dd class="artist-input-wrap">
+                          <div class="flex flex-3">
+                            <button type="button" class="data-input-search modal-btn" data-modal="#artistSearch">
+                              <span>아티스트명 검색</span>
+                              <i class="icon-icon08"></i>
+                            </button>
+                            <div class="data-input-select">
+                              <select name="" id="" class="adm-select">
+                                <option value="">역할 선택</option>
+                                <option value="">메인 아티스트</option>
+                                <option value="">피처링 아티스트</option>
+                                <option value="">프로듀서</option>
+                              </select>
+                            </div>
+                            <div class="artist-add-btn-wrap">
+                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg artist-add-btn"><i class="icon-sign05"></i></button>
+                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red artist-remove-btn"><i class="icon-sign06"></i></button>
+                            </div>
+                          </div>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>피처링아티스트</dt>
-                        <dd>--</dd>
+                        <dd class="artist-input-wrap">
+                          <div class="flex flex-3">
+                            <button type="button" class="data-input-search modal-btn" data-modal="#artistSearch">
+                              <span>아티스트명 검색</span>
+                              <i class="icon-icon08"></i>
+                            </button>
+                            <div class="data-input-select">
+                              <select name="" id="" class="adm-select">
+                                <option value="">역할 선택</option>
+                                <option value="">메인 아티스트</option>
+                                <option value="">피처링 아티스트</option>
+                                <option value="">프로듀서</option>
+                              </select>
+                            </div>
+                            <div class="artist-add-btn-wrap">
+                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg artist-add-btn"><i class="icon-sign05"></i></button>
+                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red artist-remove-btn"><i class="icon-sign06"></i></button>
+                            </div>
+                          </div>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>보도자료</dt>
-                        <dd><a href="" download class="download-btn btn btn-outline btn-outline-bg btn-xsm gray">보도자료.docx</a></dd>
+                        <dd>
+                          <label for="uploadMp3" class="file-upload-label">
+                            <div class="file-upload-text not-selected">
+                              <span></span>
+                              <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                            </div>
+                            <input type="file" class="file-upload-input input-file" id="uploadMp3">
+                          </label>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>발매자료</dt>
-                        <dd><a href="" download class="download-btn btn btn-outline btn-xsm  btn-outline-bg gray">발매자료.zip</a></dd>
+                        <dd>
+                          <label for="uploadMp3" class="file-upload-label">
+                            <div class="file-upload-text not-selected">
+                              <span></span>
+                              <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                            </div>
+                            <input type="file" class="file-upload-input input-file" id="uploadMp3">
+                          </label>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>보유권리</dt>
                         <dd>
-                          <span>인접100% / 저작100% / 실연100%</span>
+                          <div class="flex flex3 item-copyright">
+                            <div class="item">
+                              <label class="form-check-box check" for="copyright">
+                                <input type="checkbox" id="copyright" name="" title="저작권" class="fill" >
+                                <span class="form-check-icon">
+                                    <em>저작권</em>
+                                </span>
+                              </label>
+                              <input type="text" class="input-text wid60" placeholder="%">
+                            </div>
+                            <div class="item">
+                              <label class="form-check-box check" for="adjacent">
+                                <input type="checkbox" id="adjacent" name="" title="인접권" class="fill">
+                                <span class="form-check-icon">
+                                    <em>인접권</em>
+                                </span>
+                              </label>
+                              <input type="text" class="input-text wid60" placeholder="%">
+                            </div>
+                            <div class="item">
+                              <label class="form-check-box check" for="performance">
+                                <input type="checkbox" id="performance" name="" title="실연권" class="fill">
+                                <span class="form-check-icon">
+                                    <em>실연권</em>
+                                </span>
+                              </label>
+                              <input type="text" class="input-text wid60" placeholder="%">
+                            </div>
+
+                          </div>
                         </dd>
                       </dl>
                     </div>
                     <div class="album-data album-data3">
                       <dl>
                         <dt>앨범소개</dt>
-                        <dd class="data-textarea"></dd>
+                        <dd class="data-textarea">
+                          <textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="앨범에 관한 소개를 입력해주세요."></textarea>
+                        </dd>
                       </dl>
                       <dl>
                         <dt>참조사항</dt>
-                        <dd class="data-textarea"></dd>
+                        <dd class="data-textarea">
+                          <textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="특이사항 및 요청기재(EX. 서비스제외 국가 또는 제외 플랫폼, 검색어 요청, 아티스트명 수정 등)"></textarea>
+                        </dd>
                       </dl>
                     </div>
                   </div>
@@ -239,8 +390,9 @@
                     <div class="board-list">
                       <div class="board-list-top flex">
                         <span class="status blue">CD 1</span>
-                        <a href="javascript:void(0);" class="btn btn-xsm btn-outline gray modal-btn btn-outline-bg" data-modal="#track-info">트랙 상세보기</a>
+                        <a href="javascript:void(0);" class="btn btn-xsm btn-outline gray modal-btn btn-outline-bg" data-modal="#track-info">트랙 수정</a>
                       </div>
+                      <!--추가가되면 나올것들-->
                       <table>
                         <colgroup>
                           <col width="60px">
@@ -553,7 +705,56 @@
       <!--//container-->
     </div>
     <!--//layout-wrap-->
+    <!--아티스트 검색 모달-->
+  <div id="artistSearch" class="modal modal-center">
+    <div class="modal-bg modal-close"></div>
+    <div class="modal-wrap">
+      <div class="modal-content">
+        <div class="modal-header"><p>아티스트 검색</p></div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-input-search">
+              <div class="input-value"><input type="text" placeholder="아티스트를 검색해주세요."></div>
+              <div class="input-ui"><button type="button" class="btn-single-search"><i class="icon-icon08"></i></button></div>
+            </div>
+            <!--검색후 나오는 리스트-->
+            <div class="artist-search-list">
+              <ul>
+                <li>
+                  <div class="artist-nm"><span>S17717</span><p>이규현</p></div>
+                  <div class="go-artist-link">
+                    <a href=""><img src="../../../img/apple-music.svg" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-nm"><span>S137082</span><p>유니크노트(이규현)</p></div>
+                  <div class="go-artist-link">
+                    <a href=""><img src="../../../img/spotify.svg" alt=""></a>
+                    <a href=""><img src="../../../img/apple-music.svg" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="artist-nm"><span>S178634</span><p>신규현, 진대호, 이종준, 조하민</p></div>
+                </li>
+                <li>
+                  <div class="artist-nm"><span>S102010</span><p>규현</p></div>
+                </li>
+                <li>
+                  <div class="artist-nm"><span>S159142</span><p>이규현</p></div>
+                </li>
+              </ul>
+            </div>
+            <div class="form-submit-wrap">
+              <button type="button" class="btn btn-outline btn-sm modal-close">닫기</button>
+              <button type="button" class="btn btn-sm modal-btn" data-modal="#newArtist">신규 아티스트 추가</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+  
+
 
   <!--트랙정보 modal (right modal)-->
   <div id="track-info" class="modal modal-right">
@@ -568,15 +769,11 @@
           <div class="track-more-data">
             <dl>
               <dt>트랙명(KOR)<span class="require red">*</span></dt>
-              <dd>이별은 이별</dd>
+              <dd><input type="text" class="input-text" placholder="트랙명(KOR)"></dd>
             </dl>
             <dl>
               <dt>트랙명(ENG)<span class="require red">*</span></dt>
-              <dd>Break Up</dd>
-            </dl>
-            <dl>
-              <dt>트랙버전</dt>
-              <dd>--</dd>
+              <dd><input type="text" class="input-text" placholder="트랙명(ENG)"></dd>
             </dl>
             <dl>
               <dt>아티스트<span class="require red">*</span></dt>
@@ -703,12 +900,9 @@
       </div>
     </div>
   </div>
-
-  <!--서비스링크 링크 생성 팝업-->
-  <div id="service-link-add" class="modal">
-
-
   </div>
+
+  
 
 
 </body>

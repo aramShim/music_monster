@@ -3,7 +3,8 @@
 
 /** ADMIN Layout **/
 * {box-sizing: border-box;}
-body {overflow-x: hidden;}
+body {overflow: hidden;}
+body.open {}
 /* ::-webkit-scrollbar {display: none;} */
 .mont {font-family: 'Montserrat', sans-serif; } 
 .flex {display: flex !important;}
@@ -202,7 +203,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .album-data dl {display: flex; align-items: center; padding: 6px 0;}
 .album-data dl dt {width: 120px; color: var(--color-gray5)}
 .album-data3 dl {flex-flow: column; align-items: flex-start;}
-.album-data dl dd.data-textarea {min-height: 150px; border: 1px solid #ccc; width: 100%; border-radius: 5px;}
+.album-data dl dd.data-textarea {min-height: 150px; border: 1px solid #ccc; width: 100%; border-radius: 5px; overflow: hidden;}
 
 .album-view .tab-wrap {margin-top: 50px;}
 .album-view .board-list table {background: transparent; }
@@ -214,17 +215,35 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .modal.open {position: fixed;top: 0;left: 0;right: 0;bottom: 0; z-index: 9999; opacity:1; visibility: visible; height: auto;transition: all .6s ease;}
 
 .modal.open .modal-bg {width: 100%;height: 100%;background: rgba(0, 0, 0, .4); } 
+.modal .modal-header p {font-weight: 800; font-size: 20px;}
+
+.modal.modal-center .modal-wrap {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -30%);background: #fff;width: 400px;padding: 32px 40px;box-sizing: border-box;border-radius: 16px;transition: transform .3s ease;opacity: 0; } 
+.modal.modal-center.open .modal-wrap {transform: translate(-50%, -50%);transition: transform .3s ease;opacity: 1; } 
 
 .modal.modal-right .modal-wrap {position: absolute; top: 0; right: -100%; background: #fff; width: 70%; box-sizing: border-box;border-radius: 16px 0 0 16px; transition: all .6s ease; opacity:0;} 
 .modal.modal-right.open .modal-wrap {right: 0; transform: translateX(0%); transition: all .6s ease; opacity: 1;}
 
-.modal-header {position: sticky; top:0; left:0; padding: 20px 40px 10px 40px; height: 60px;}
-.modal-header p {font-weight: 800; font-size: 20px;}
-.modal-header.flex {justify-content: space-between;}
-.modal-body {height: calc(100vh - 110px); overflow-y: auto; }
-.modal-footer {position: sticky; bottom:0; left:0; padding: 10px; border-top: 1px solid #ccc; height: 50px;}
-.modal-footer .adm-paging {margin:0;}
-.modal-footer .adm-paging a.selected {font-size: 14px;}
+.modal.modal-right .modal-header {position: sticky; top:0; left:0; padding: 20px 40px 10px 40px; height: 60px;}
+.modal.modal-right .modal-header.flex {justify-content: space-between;}
+.modal.modal-right .modal-body {height: calc(100vh - 110px); overflow-y: auto; }
+.modal.modal-right .modal-footer {position: sticky; bottom:0; left:0; padding: 10px; border-top: 1px solid #ccc; height: 50px;}
+.modal.modal-right .modal-footer .adm-paging {margin:0;}
+.modal.modal-right .modal-footer .adm-paging a.selected {font-size: 14px;}
+
+/*아티스트검색 모달*/
+#artistSearch.modal .modal-wrap {width: 100%; max-width: 50%}
+.form-input-search {position: relative;}
+#artistSearch .form-input-search .input-value input {width: 100%;}
+#artistSearch .form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
+#artistSearch .form-submit-wrap {text-align: right;}
+#artistSearch .modal-header {margin-bottom: 20px;}
+.artist-search-list {margin-bottom: 20px; max-height: 360px; overflow: hidden auto;}
+.artist-search-list ul li {display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #a5a5a5;}
+.artist-search-list ul li .artist-nm span {font-size: 13px;}
+.artist-search-list ul li .artist-nm p {font-size: 18px;}
+.artist-search-list ul li .go-artist-link a {display: inline-flex; align-items: center; justify-content: center; width: 35px; height: 35px; background-color: #f7f7f7; border-radius: 50%; }
+.artist-search-list ul li .go-artist-link a img {width: 23px;}
+
 
 /*트랙상세정보 모달*/
 .track-more-data {padding: 20px 40px;}
@@ -242,3 +261,36 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .service-setting-list .service-platform dl dt {font-weight: 600; padding: 5px 0;}
 .service-setting-list .service-platform dl dd ul {gap: 20px;}
 .service-setting-list .service-platform dl dd ul li i {color: var(--color-blue1); vertical-align: middle; margin-right: 3px; display: inline-block;}
+
+/*이미지업로드*/
+.input-file-wrap span {display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 1px solid #c9c9c9; border-radius: 12px; cursor: pointer; color: #979797; transition: all .2s;}
+.input-file-wrap span:hover {border: 1px solid #000; color: #000;}
+.input-file-wrap span i {display: inline-block; font-size: 22px; }
+.input-file {position:absolute; width:0px; height:1px; padding:0; margin:-1px; overflow:hidden; border:none;}
+.file-custom {position: relative; padding-bottom: 160px;  }
+.file-custom .input-file-wrap {position: absolute; top: 0; left: 0; display:inline-block; width: 160px; height: 160px; vertical-align: middle;}
+.imagePreview {position: absolute;  top: 0; left: 0; width: 160px; height: 160px; background-color: #fff; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 12px; overflow: hidden;}
+.imagePreview img {max-width: 100%;}
+.imagePreview .remove-file {position: absolute; font-size: 0px; top: 10px; right: 10px; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #fff; cursor: pointer;}
+.imagePreview .remove-file i {font-size: 8px;}
+
+/*앨범등록*/
+.album-view.album-write .album-view-wrap .album-img {width: 200px;}
+.album-view.album-write .album-view-wrap .album-data-wrap {width: calc(100% - 200px); flex-wrap: wrap; gap: 10px;}
+.album-view.album-write .input-text {border-radius: 5px; background-color: rgba(255,255,255,.9)}
+.album-view.album-write .adm-select {width: auto;}
+.album-view.album-write .v-datepicker.adm-v-datepicker {background-color: #fff;}
+.album-view.album-write .artist-add-btn-wrap .btn {width: 40px;height: 40px; }
+.album-view.album-write .album-data {width: 49%;}
+.album-view.album-write .album-data3 {width: 100%;}
+.album-view.album-write .album-data dl dd {width: 100%;}
+.album-view.album-write .file-upload-label {height: 40px; border-radius: 5px; background-color: #fff;}
+
+.input-text.wid60 {width: 60px; margin-right: 20px;}
+.album-view.album-write .data-input-search {position: relative; border-radius: 5px; background-color: #fff; border: 1px solid #ccc; margin-right: 10px; padding: 0 20px; font-size: 15px;}
+.album-view.album-write .data-input-search i {color: var(--color-gray5); font-size: .8em; padding-left: 10px;}
+.album-view.album-write .data-input-search:hover {background-color: var(--color-gray9)}
+
+.artist-input-wrap .data-input-select {margin-right: 10px;}
+
+.textarea {width: 100%; border: 0;}
