@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <!--네이버 서치어드바이저-->
+    <meta content="" name="naver-site-verification">
+
+    <meta property="og:url" content="">
+    <meta property="og:title" content="MusicMonster">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="description" content="">  
+  
+    <title>뮤직몬스터</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/icon.css" type="text/css">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../../css/layout.css" type="text/css">
+
+    <!-- JS -->
+    <script src="../../js/jquery-3.6.4.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/ui.js"></script>
+
+    <!-- content script -->
+
+    <!-- content script -->
+    <link rel="stylesheet" href="../../css/aos.css" type="text/css">    
+
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/scrolloverflow.js"></script>
+    <script src="../../js/gsap.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="skip-nav">
+            <ul>
+                <li><a href="#container">본문 바로가기</a></li>
+                <li><a href="#gnav">주메뉴 바로가기</a></li>
+                <li><a href="#footer">푸터 바로가기</a></li>
+            </ul>
+        </div>
+        <header id="header">
+            <div class="header-inner">
+                <h1><a href="">뮤직몬스터</a></h1>
+                
+                <nav id="gnav">
+                    <ul class="gnav-list">
+                        <li><a href="../distribution/apply.html">앨범발매</a></li>
+                        <li><a href="../board/list.html">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav> 
+                <div class="header-util">
+                    <div class="login-hd">
+                        <a href="../login/login.html" class="btn btn-outline btn-login">로그인</a>
+                    </div>
+                    <div class="lang-wrap">
+                      <button class="btn-lang" type="button">외국어</button>
+                      <ul class="lang-options">
+                        <li><a class="selected" href="/?lang=ko">한국어</a></li>
+                        <li><a href="/?lang=en">English</a></li>
+                      </ul>
+                    </div>
+                    <div class="m-menu">                    
+                        <div id="js-toggle" class="toggle-menu">
+                            <div class="menu-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-gnav">
+                <h1><a href="">뮤직몬스터</a></h1>                
+                <nav class="m-gnav">
+                    <ul class="m-gnav-list">
+                        <li><a href="../distribution/apply.html">앨범발매</a></li>
+                        <li><a href="../board/list.html">공지사항</a></li>
+                        <li><a href="">서비스</a></li>
+                    </ul>
+                </nav>  
+                <button class="btn-menu-close" type="button" title="메뉴닫기"><i class="icon-sign03"></i></button>
+            </div>
+            
+                      
+        </header>
+        <div id="container" class="sub-container">
+            <h2 class="blind">추가정보</h2>
+                <div class="sub-contents">
+                <!-- 내용시작 -->
+                    <div class="sub-section sub-sec-pr">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h3 class="con-title">추가정보</h3>
+                            </div>
+                            <div class="page-body">
+                                <div class="join-wrap">
+                                    <div class="join-data-wrap">                                        
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">회원유형<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <select name="" id="">
+                                                        <option value="">개인</option>
+                                                        <option value="">사업자</option>
+                                                    </select>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">국가<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <select name="" id="">
+                                                        <option value="">대한민국</option>
+                                                        <option value="">미국</option>
+                                                        <option value="">중국</option>
+                                                        <option value="">일본</option>
+                                                    </select>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--사업자-->
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">권리사명<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="인증번호" placeholder="계약자명으로 사용될 수 있으니 정확히 입력해주시기 바랍니다." class="form-input form-vaildity" maxlength="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">사업자등록번호<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="사업자등록번호" placeholder="계약 시 사용될 수 있으니 정확히 입력해주시기 바랍니다." class="form-input form-vaildity" maxlength="50">
+                                                    </div>                                             
+                                                    <div class="input-ui">
+                                                        <button type="button" id="" class="btn-basic btn-500 btn-circle-100 btn-size-xs blue">중복확인</button>
+                                                    </div>                                                   
+                                                </div>
+                                                <div class="item-detail-info ">
+                                                    <div class="item-left">
+                                                        <div class="item-input-valid">
+                                                            <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>인증번호를 다시 확인하시고 입력하세요.</div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">대표명<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="인증번호" placeholder="계약 시 사용될 수 있으니 정확히 입력해주시기 바랍니다." class="form-input form-vaildity" maxlength="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/사업자-->
+
+
+                                        <!--개인-->
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">이름<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="인증번호" placeholder="계약자명으로 사용될 수 있으니 정확히 입력해주시기 바랍니다." class="form-input form-vaildity" maxlength="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/개인-->
+                                        
+
+                                        <!--공통-->
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">연락처<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="연락처" placeholder="" class="form-input form-vaildity" maxlength="50">
+                                                    </div>                                             
+                                                    <div class="input-ui">
+                                                        <button type="button" id="" class="btn-basic btn-500 btn-circle-100 btn-size-xs">인증번호</button>
+                                                    </div>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">인증번호<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="연락처" placeholder="" class="form-input form-vaildity" maxlength="50">
+                                                    </div>                                             
+                                                    <div class="input-ui">
+                                                        <button type="button" id="" class="btn-basic btn-500 btn-circle-100 btn-size-xs blue">확인</button>
+                                                    </div>                                                   
+                                                </div>
+                                                <div class="item-detail-info ">
+                                                    <div class="item-left">
+                                                        <div class="item-input-valid">
+                                                            <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>인증번호를 다시 확인하시고 입력하세요.</div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">이메일<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="이메일" placeholder="이메일을 입력해주세요." class="form-input form-vaildity" maxlength="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">우편번호<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="우편번호" placeholder="" class="form-input form-vaildity" maxlength="50">
+                                                    </div>                                             
+                                                    <div class="input-ui">
+                                                        <button type="button" id="" class="btn-basic btn-500 btn-circle-100 btn-size-xs blue">우편번호</button>
+                                                    </div>                                                   
+                                                </div>
+                                            </div>
+                                            <div class="item-detail-info ">
+                                                <div class="item-left">
+                                                    <div class="item-input-valid">
+                                                        <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>필수입력 사항입니다.</div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">주소<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="주소" class="form-input form-vaildity" maxlength="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-detail-info ">
+                                                <div class="item-left">
+                                                    <div class="item-input-valid">
+                                                        <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>필수입력 사항입니다.</div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-items vertical">
+                                            <div class="item-header">
+                                                <div class="item-header-label"><div class="form-input-label">상세주소<em class="font-color-util-needs">필수</em></div></div>
+                                            </div>
+                                            <div class="item-body grid">
+                                                <div class="item-detail">
+                                                    <div class="input-value cover">
+                                                        <input type="text" name="" id="" title="상세주소" placeholder="상세주소를 입력해주세요." class="form-input form-vaildity" maxlength="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-detail-info ">
+                                                <div class="item-left">
+                                                    <div class="item-input-valid">
+                                                        <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>필수입력 사항입니다.</div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                       
+                                        
+
+
+                                    </div>
+
+
+                                    <div class="btn-join">
+                                        <button type="button" onclick="location.href='join_success.html'" class="btn btn-size-100 ">등록</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <footer id="footer">
+                <div class="footer-inner">
+                    <div class="f-container">
+                        <ul class="f-link">
+                            <li><a href="personal.html"><b>개인정보 처리방침</b></a></li>
+                            <li><a href="serviceterm.html">서비스이용약관</a></li>
+                        </ul>                                
+                        <ul class="f-contact">
+                            <li><span>상호</span>뮤직몬스터</li>
+                            <li><span>대표이사</span>홍길동</li>
+                            <li><span>사업자번호</span>123-45-67890</li>
+                            <li><span>통신판매신고번호</span>2023-서울-0123</li>                    
+                        </ul>
+                        <ul class="f-contact">
+                            <li><span>주소</span>12345 서울특별시 종로구 황새울로 326 512타워 4층</li>
+                            <li><span>대표번호</span>02-123-4567</li>
+                            <li><span>고객문의</span>helpmusic@monster.co.kr</li>       
+                        </ul>
+                        <p class="f-copyright en">ⓒ2024 MUSIC MONSTER.Co.,Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div> 
+        <a class="go-top on" href="#wrap">TOP</a>       
+        
+    </div>
+</body>
+</html>

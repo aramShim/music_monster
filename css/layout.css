@@ -234,13 +234,17 @@ body.open {overflow: hidden;}
 
 /*회원가입*/
 .join-wrap {width: 540px;margin: 0 auto; } 
+.sns-join-wrap {text-align: center; margin-bottom: 30px; border-bottom: 1px dashed #dbdbdb; }
+.sns-join-wrap .sns-login-group {margin: 0; justify-content: center;}
+.sns-join-wrap .sns-login-group button {padding: 0 10px;}
 .font-color-util-needs {display: inline-flex;width: 4px;height: 4px;margin: 5px 0 0 4px;font-size: 0px;border-radius: 50%;background-color: #ec5962; } 
 .join-wrap .form-input-items+.form-input-items {margin-top: 16px; } 
 .form-input-items .item-header {position: relative;display: flex; } 
 .form-input-label {font-size: 18px;font-weight: 500;line-height: 28px;margin-bottom: 4px; } 
 .join-wrap .form-input {width: 100%;height: 56px;padding: 0 24px;border-radius: 10px; } 
 .join-wrap .input-ui {position: absolute;top: 50%;right: 24px;transform: translateY(-50%); } 
-.join-wrap .input-ui button {background-color: #e1e1e1;border-radius: 24px;padding: 10px 16px;font-size: 13px; } 
+.join-wrap .input-ui button {background-color: #e1e1e1;border-radius: 24px;padding: 10px 16px; font-size: 13px; font-weight: 600} 
+.join-wrap .input-ui button.blue {background-color: var(--color-blue); color: #fff;}
 .join-agreement {margin-top: 20px;padding-top: 20px;border-top: 1px dashed #dbdbdb; } 
 .join-wrap .btn-join {margin-top: 40px; } 
 .join-wrap .btn-join .btn {width: 100%;padding: 16px 0;justify-content: center;font-size: 18px; } 
