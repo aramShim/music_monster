@@ -259,7 +259,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .service-setting-list .service-platform {margin: 10px 0 20px; border: 1px solid #ccc; border-radius: 5px ; padding: 20px 40px;}
 .service-setting-list .service-platform dl + dl {margin-top: 20px;}
 .service-setting-list .service-platform dl dt {font-weight: 600; padding: 5px 0;}
-.service-setting-list .service-platform dl dd ul {gap: 20px;}
+.service-setting-list .service-platform dl dd ul.flex {gap: 20px; flex-wrap: wrap;}
 .service-setting-list .service-platform dl dd ul li i {color: var(--color-blue1); vertical-align: middle; margin-right: 3px; display: inline-block;}
 /*write*/
 .trackinfo-checkbox {padding-bottom: 16px;}
@@ -275,12 +275,22 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .track-more-data .file-list li.flex span {display: inline-block; width: 60px; }
 
 /*권리자 모달*/
-#contract-add.modal .modal-wrap {width: 100%; max-width: 50%}
-.form-input-search {position: relative;}
+#contract-add.modal .modal-wrap {width: 100%; max-width: 70%}
+#contract-add .form-input-search {margin-bottom: 20px;}
 #contract-add .form-input-search .input-value input {width: 100%;}
 #contract-add .form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
-#contract-add .form-submit-wrap {text-align: right;}
+#contract-add .form-submit-wrap {padding-top: 20px;text-align: right;}
 #contract-add .modal-header {margin-bottom: 20px;}
+.album-view.album-write #tab4-02 .data-input-search {height: 40px; margin-right: 0;width: 100%;}
+
+/*서비스국가 모달*/
+#service-choice.modal .modal-wrap {width: 100%; max-width: 70%}
+#service-choice .form-input-search {margin-bottom: 20px;}
+#service-choice .form-input-search .input-value input {width: 100%;}
+#service-choice .form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
+#service-choice .form-submit-wrap {padding-top: 20px;text-align: right;}
+#service-choice .modal-header {margin-bottom: 20px;}
+
 
 /*이미지업로드*/
 .input-file-wrap span {display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 1px solid #c9c9c9; border-radius: 12px; cursor: pointer; color: #979797; transition: all .2s;}

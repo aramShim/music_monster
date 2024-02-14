@@ -105,9 +105,9 @@
                                             </div>
                                             <div class="item-body grid">
                                                 <div class="item-detail">
-                                                    <select name="" id="">
-                                                        <option value="">개인</option>
-                                                        <option value="">사업자</option>
+                                                    <select name="" id="" onchange="selectDisplay(this)">
+                                                        <option value="individual">개인</option>
+                                                        <option value="entrepreneur">사업자</option>
                                                     </select>                                                   
                                                 </div>
                                             </div>
@@ -129,7 +129,7 @@
                                         </div>
 
                                         <!--사업자-->
-                                        <div class="form-input-items vertical">
+                                        <div class="form-input-items vertical entrepreneur" style="display: none;">
                                             <div class="item-header">
                                                 <div class="item-header-label"><div class="form-input-label">권리사명<em class="font-color-util-needs">필수</em></div></div>
                                             </div>
@@ -141,7 +141,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-input-items vertical">
+                                        <div class="form-input-items vertical entrepreneur" style="display: none;">
                                             <div class="item-header">
                                                 <div class="item-header-label"><div class="form-input-label">사업자등록번호<em class="font-color-util-needs">필수</em></div></div>
                                             </div>
@@ -154,7 +154,7 @@
                                                         <button type="button" id="" class="btn-basic btn-500 btn-circle-100 btn-size-xs blue">중복확인</button>
                                                     </div>                                                   
                                                 </div>
-                                                <div class="item-detail-info ">
+                                                <div class="item-detail-info">
                                                     <div class="item-left">
                                                         <div class="item-input-valid">
                                                             <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>인증번호를 다시 확인하시고 입력하세요.</div></div>
@@ -163,7 +163,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-input-items vertical">
+                                        <div class="form-input-items vertical entrepreneur" style="display: none;">
                                             <div class="item-header">
                                                 <div class="item-header-label"><div class="form-input-label">대표명<em class="font-color-util-needs">필수</em></div></div>
                                             </div>
@@ -179,7 +179,7 @@
 
 
                                         <!--개인-->
-                                        <div class="form-input-items vertical">
+                                        <div class="form-input-items vertical individual">
                                             <div class="item-header">
                                                 <div class="item-header-label"><div class="form-input-label">이름<em class="font-color-util-needs">필수</em></div></div>
                                             </div>

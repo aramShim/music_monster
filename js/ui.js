@@ -20,10 +20,10 @@ $(document).ready(function () {
   createInfoModify();
   Modal();
   
-  datePicker();
-  rangeDatePicker();
-  monthDatePicker();
-  yearDatePicker();
+  if($('[data-toggle="datepicker"]').length > 0) datePicker(); 
+  if($('.start-date').length > 0) rangeDatePicker();
+  if($('.month-date').length > 0)monthDatePicker();
+  if($('.year-date').length > 0) yearDatePicker();
 
   trToggle();
   
@@ -36,6 +36,17 @@ $(document).ready(function () {
 $(window).on("load", function () {
   scrollMove();
 });
+function selectDisplay(select){
+  var selectedValue = $(select).val();
+  console.log(selectedValue);
+  if(selectedValue === 'individual') {
+    $('.individual').show();
+    $('.entrepreneur').hide();
+  } else if(selectedValue === 'entrepreneur') {
+    $('.entrepreneur').show();
+    $('.individual').hide();
+  }
+}
 function fileRemove(a){
   $(a).parents('.file-upload-label .input-file').val('');
   $(a).parents('.file-upload-label').removeClass('selected');
