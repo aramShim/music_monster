@@ -1,10 +1,20 @@
 $(document).ready(function () {
   
   tab();
+  checkboxInput();
 
   
 });
 
+function checkboxInput(){
+  $('.onclick-input').click(function(){
+    if($(this).is(':checked')){
+      $(this).parents('label').next('.input-text').prop('disabled', false);
+    }else {
+      $(this).parents('label').next('.input-text').prop('disabled', true);
+    }
+  })
+}
 
 
 function popup(url, name, width, height){
