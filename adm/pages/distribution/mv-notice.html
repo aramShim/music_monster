@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <!--네이버 서치어드바이저-->
+    <meta content="" name="naver-site-verification">
+
+    <meta property="og:url" content="">
+    <meta property="og:title" content="MusicMonster">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="description" content="">  
+  
+    <title>뮤직몬스터</title>
+    <!-- 공통 CSS -->
+    <link rel="stylesheet" href="../../../css/icon.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/aos.css" type="text/css">    
+
+
+    <!-- 공통 JS -->
+    <script src="../../../js/jquery-3.6.4.min.js"></script>
+    <script src="../../../js/aos.js"></script>
+    <script src="../../../js/scrolloverflow.js"></script>
+
+    <!-- datepicker script -->
+    <link  href="../../../css/datepicker.min.css" rel="stylesheet">
+    <script src="../../../js/datepicker.min.js"></script>
+    
+
+    <link rel="stylesheet" href="../../css/layout.css" type="text/css">
+    <script src="../../../js/ui.js"></script>
+    <script src="../../js/adm-ui.js"></script>
+
+</head>
+<body>    
+  <div id="adm-wrap">
+    <div class="layout-wrap flex">
+      <!--header-->
+      <header id="header">
+        <div class="header">
+          <div class="adm-logo"><a href="/index.html"><img src="../../img/logo.svg" alt=""></a></div>
+          <nav class="adm-nav-list">
+              <ul class="flex">
+                  <li><a href="../contents/album.html">콘텐츠 관리</a></li>
+                  <li class="active"><a href="">발매관리</a></li>
+                  <li><a href="../calculate/balnace-list.html">정산관리</a></li>
+                  <li><a href="">사용자관리</a></li>
+              </ul>
+          </nav>
+          <div class="header-util">
+            <div class="mypage-hd">
+              <button type="button" class="btn-my"><i class="icon-person13"></i></button>
+              <ul class="mypage-options">
+                  <!-- <li><a href="pages/mypage/mypage.html">마이페이지</a></li> -->
+                  <li><a href="">로그아웃</a></li>
+              </ul>
+            </div>
+          </div> 
+          
+        </div>
+      </header>
+      <!--container-->
+      <div id="container" class="container">
+        <!--레프트메뉴-->
+        <div class="left-btn-wrap">
+          <div class="left-more-wrap">
+              <div class="left-btn">
+                  <div class="left-btn-list">
+                      <ul>
+                          <li>
+                              <a href="album.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"style="width: 24px; height: 24px; color: rgb(67, 72, 86); flex-shrink: 0; pointer-events: none;"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.61 2.645c1.585-.455 3.047 1.007 2.592 2.592l-4.024 14.005c-.67 2.334-3.788 2.778-5.068.72l-1.776-2.85a2 2 0 0 1 .287-2.474l3.79-3.79a1 1 0 0 0 .002-1.414A1 1 0 0 0 13 9.436l-3.79 3.79a2 2 0 0 1-2.473.287l-2.852-1.775c-2.057-1.281-1.613-4.399.721-5.07z" fill="#111"/></svg> 
+                                <span>DDEX 전송</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="release-notice.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; color: rgb(67, 72, 86); flex-shrink: 0; pointer-events: none;"><path d="M12.474 5.158v2.105H5.105v12.863h12.632v-7.6h2.105v7.369A2.11 2.11 0 0 1 17.737 22H5.105A2.11 2.11 0 0 1 3 19.895V7.263a2.11 2.11 0 0 1 2.105-2.105zm0 10.526v2.105H7.21v-2.105zm3.158-3.158v2.106H7.21v-2.106zm0-3.158v2.106H7.21V9.368zm3.157-5.263.987 2.171 2.171.987-2.17.987-.988 2.171-.986-2.171-2.171-.987 2.17-.987zM15.632 2l.657 1.447 1.448.658-1.448.658-.657 1.448-.658-1.448-1.448-.658 1.448-.658z" fill="rgb(67, 72, 86);"/></svg>
+                                <span>발매공지</span>
+                              </a>
+                          </li>
+                          <li class="active">
+                              <a href="mv-notice.html">
+                                <svg width="24" height="24" viewBox="-2 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-movie" style="width: 24px; height: 24px; color: rgb(67, 72, 86); flex-shrink: 0; pointer-events: none;"><path d="M6 15v3h8v-7H6zm-2-2v-2H2V9h2V7H2v6zm0 2H2v1a2 2 0 0 0 2 2zm14-2V7h-2v2h2v2h-2v2zm0 2h-2v3a2 2 0 0 0 2-2zm-4-8V2H6v7h8zm4-2V4a2 2 0 0 0-2-2v3zM4 5V2a2 2 0 0 0-2 2v1zm0-5h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4"/></svg>
+                                <span>M/V공지</span>
+                              </a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="content-wrap">
+          <div class="content">
+            <div class="inner">
+              <div class="content-title flex">
+                <h2>뮤직비디오 공지 리스트</h2>
+                <div class="content-btn-wrap flex">           
+                  <div class="btn-wrap">
+                    <a href="" class="btn btn-sm btn-outline btn-outline-bg">미리보기</a>
+                    <a href="" class="btn btn-sm btn-outline btn-outline-bg gray">신규공지</a>
+                    <a href="" class="btn btn-sm btn-outline btn-outline-bg gray">수정공지</a>                  
+                    <a href="" class="btn btn-sm">테이크다운</a>
+                  </div>    
+                </div>
+              </div>
+              <!--top search-->
+              <section class="ly-section">
+                <form id="search_frm" method="GET">
+                <input type="hidden" name="orderby_column" id="orderby_column" value="">
+                <input type="hidden" name="orderby_status" id="orderby_status" value="">
+                  <div class="list-search flex">
+                    <div class="search-wrap">
+                      <dl class="search-items">
+                        <dt>천송처</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">전체</option>
+                            <option value="">미공지앨범</option>
+                            <option value="">수정앨범</option>                            
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>날짜검색</dt>
+                        <dd class="flex">
+                          <div>
+                            <select name="shop" id="shop" class="adm-select">
+                              <option value="all">날짜 검색</option>
+                              <option value="">발매일</option>
+                              <option value="">앨범수정일</option>
+                              <option value="">최종전송일</option>
+                            </select>
+                          </div>
+                          <div class="form-range-group">
+                            <input type="text" class="v-datepicker start-date adm-v-datepicker" placeholder="시작일" autocomplete="off" data-toggle="datepicker">                            
+                            <div class="form-cell-char">~</div>                           
+                            <input type="text" class="v-datepicker end-date adm-v-datepicker" placeholder="종료일" autocomplete="off" data-toggle="datepicker">
+                          </div>
+                        </dd>
+                      </dl>                    
+                      <dl class="search-items">
+                        <dt>검색조건</dt>
+                        <dd class="flex">
+                          <select name="search_status" id="search_status" class="adm-select">
+                            <option value="">앨범명</option>
+                            <option value="">트랙명</option>
+                            <option value="">가수명</option>
+                            <option value="">기획사명</option>
+                          </select>
+                          <input type="text" name="word" id="word" class="input-text adm-input-text wid400" placeholder="검색어를 입력하세요." value="">
+                        </dd>
+                      </dl>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn btn-sm"> 검색</button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+
+              <!--board-list-->
+              <div class="board-list">
+                <div class="board-list-top right">
+                  
+                  <div class="board-list-num">
+                    <select name="" id="" class="adm-select">
+                      <option value="">30개보기</option>
+                      <option value="">50개보기</option>
+                      <option value="">100개보기</option>
+                      <option value="">300개보기</option>
+                    </select>
+                  </div>
+                </div>
+                <table>
+                  <colgroup>
+                    <col width="50px">
+                    <col width="120px">
+                    <col>
+                    <col>
+                    <col width="100px">
+                    <col>
+                    <col>
+                    <col>
+                    <col width="100px">
+                    <col>
+
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="no">
+                        <label class="form-check-box check" for="allSelect">
+                          <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </th>
+                      <th>앨범코드</th>
+                      <th>앨범명</th>
+                      <th>아티스트</th>
+                      <th>주요앨범</th>
+                      <th>발매일</th>
+                      <th>앨범수정일</th>
+                      <th>공지전송일자</th>
+                      <th>M/V</th>
+                      <th>전송처</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="release-view.html">A1000006</a></td>
+                      <td class="align-left"><a href="release-view.html">이별은 이별1</a></td>
+                      <td>울트라베어</td>
+                      <td><i class="icon-sign43"></i></td>
+                      <td>2021.10.10 12:00</td>
+                      <td>2021.10.08 12:00</td>
+                      <td>2021.10.08 12:00</td>
+                      <td><i class="icon-sign43"></i></td>
+                      <td>KKM GNM BGS FLO</td>
+                    </tr>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="release-view.html">A1000006</a></td>
+                      <td class="align-left"><a href="release-view.html">이별은 이별1</a></td>
+                      <td>울트라베어</td>
+                      <td></td>
+                      <td>2021.10.10 12:00</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td><a href="release-view.html">A1000006</a></td>
+                      <td class="align-left"><a href="release-view.html">이별은 이별1</a></td>
+                      <td>울트라베어</td>
+                      <td></td>
+                      <td>2021.10.10 12:00</td>
+                      <td>2021.10.08 12:00</td>
+                      <td>2021.10.08 12:00</td>
+                      <td></td>
+                      <td>KKM GNM BGS FLO</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="adm-paging">
+                  <ul>
+                    <li class="page prev">                      
+                      <a class="disabled"></a>
+                    </li>
+                    <li>
+                      <a class="selected" href="" title="현재목록">1</a>
+                    </li>
+                    <li>
+                      <a class="" href="" title="">2</a>
+                    </li>
+                    <li class="page next">                      
+                      <a class=""></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <!--footer-->
+          <footer id="footer"><span class="copy mont">COPYRIGHT(C) 2024 MUSIC MONSTER. ALL RIGHTS RESERVED.</span></footer>    
+        </div>        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
