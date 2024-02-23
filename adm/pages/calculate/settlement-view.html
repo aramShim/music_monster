@@ -46,9 +46,9 @@
           <nav class="adm-nav-list">
               <ul class="flex">
                   <li><a href="../contents/album.html">콘텐츠 관리</a></li>
-                  <li><a href="">발매관리</a></li>
-                  <li class="active"><a href="../calculate/balnace-list.html">정산관리</a></li>
-                  <li><a href="">사용자관리</a></li>
+                  <li><a href="../distribution/release-notice.html">발매관리</a></li>
+                  <li class="active"><a href="../calculate/settlement-list.html">정산관리</a></li>
+                  <li><a href="../user/seller-list.html">사용자관리</a></li>
               </ul>
           </nav>
           <div class="header-util">
@@ -72,7 +72,7 @@
                   <div class="left-btn-list">
                       <ul>
                           <li class="active">
-                              <a href="">
+                              <a href="settlement-list.html">
                                 <svg fill="#111" width="24" height="24" viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M17 21a1 1 0 0 1-1 1H8a1 1 0 0 1 0-2h8a1 1 0 0 1 1 1M4 20H3a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2m16-2h1a1 1 0 0 0 0-2h-1a1 1 0 0 0 0 2M4 16H3a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2m17 4h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2" style="fill:#2ca9bc"/><path d="M13.54 3.28A2 2 0 0 0 12 2.56a2 2 0 0 0-1.54.72L6.23 8.36A1 1 0 0 0 7 10h2v6H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-1v-6h2a1 1 0 0 0 .77-1.64Z" style="fill:#111"/></svg>
                                 <span>정산자료</span>
                               </a>
@@ -124,7 +124,8 @@
           <div class="content">
             <div class="inner">
               <div class="content-title flex">
-                <h2>정산자료 리스트</h2>
+                <h2>카카오엠</h2>
+                <span class="status gray">분배월 : 2021.06</span>
               </div>
               <!--top search-->
               <section class="ly-section">
@@ -132,35 +133,7 @@
                 <input type="hidden" name="orderby_column" id="orderby_column" value="">
                 <input type="hidden" name="orderby_status" id="orderby_status" value="">
                   <div class="list-search flex">
-                    <div class="search-wrap">
-                      <dl class="search-items">
-                        <dt>천송처</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">전체</option>
-                            <option value="">미공지앨범</option>
-                            <option value="">수정앨범</option>                            
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>날짜검색</dt>
-                        <dd class="flex">
-                          <div>
-                            <select name="shop" id="shop" class="adm-select">
-                              <option value="all">날짜 검색</option>
-                              <option value="">발매일</option>
-                              <option value="">앨범수정일</option>
-                              <option value="">최종전송일</option>
-                            </select>
-                          </div>
-                          <div class="form-range-group">
-                            <input type="text" class="v-datepicker start-date adm-v-datepicker" placeholder="시작일" autocomplete="off" data-toggle="datepicker">                            
-                            <div class="form-cell-char">~</div>                           
-                            <input type="text" class="v-datepicker end-date adm-v-datepicker" placeholder="종료일" autocomplete="off" data-toggle="datepicker">
-                          </div>
-                        </dd>
-                      </dl>                    
+                    <div class="search-wrap">                      
                       <dl class="search-items">
                         <dt>검색조건</dt>
                         <dd class="flex">
@@ -172,19 +145,21 @@
                           </select>
                           <input type="text" name="word" id="word" class="input-text adm-input-text wid400" placeholder="검색어를 입력하세요." value="">
                         </dd>
-                      </dl>
+                      </dl>              
                     </div>
                     <div>
-                      <button type="submit" class="btn btn-sm"> 등록</button>
+                      <button type="submit" class="btn btn-sm"> 검색</button>
                     </div>
                   </div>
                 </form>
               </section>
-
+             
               <!--board-list-->
               <div class="board-list">
-                <div class="board-list-top right">
-                  
+                <div class="board-list-top flex">
+                  <div class="board-list-btn">
+                    <button type="button" class="btn btn-outline btn-outline-bg btn-xsm red">선택삭제</button>
+                  </div>
                   <div class="board-list-num">
                     <select name="" id="" class="adm-select">
                       <option value="">30개보기</option>
@@ -195,17 +170,25 @@
                   </div>
                 </div>
                 <table>
+                  <!--
+                    선택/번호/분배월/OSP코드/OSP명/미디어타입/OSP정산월/OSP판매일/OSP사이트명/OSP서비스명/OSP상품명/요금구분(유/무료)/
+                    대분류(유/무선)/중분류(전송 방식)/서비스명/OSP곡명/OSP가수명/OSP앨범명/OSP곡코드/OSP앨범코드/CMS곡코드/CMS앨범코드/판매금액/출고가/정산금액/스트리밍수량/다운로드수량/복합상품수량/반품수량/재고수량/판매국가/판매화폐/정산화폐/원판매금액/인보이스금액/실연권료/저작권료/기타/업로드파일명/등록일/등록자ID/수정일시/수정자ID
+
+                    [Q].해당행의 팝업표시?
+                  -->
                   <colgroup>
                     <col width="50px">
+                    <col width="50px">
                     <col width="120px">
-                    <col>
-                    <col>
+                    <col width="120px">
+                    <col width="120px">
+                    <col width="120px">
+                    <col width="120px">
+                    <col width="120px">
                     <col width="100px">
-                    <col>
-                    <col>
-                    <col>
+                    <col width="">
+                    <col width="">
                     <col width="100px">
-                    <col>
 
                   </colgroup>
                   <thead>
@@ -216,15 +199,17 @@
                           <span class="form-check-icon"></span>
                         </label>
                       </th>
-                      <th>앨범코드</th>
-                      <th>앨범명</th>
-                      <th>아티스트</th>
-                      <th>주요앨범</th>
-                      <th>발매일</th>
-                      <th>앨범수정일</th>
-                      <th>공지전송일자</th>
-                      <th>M/V</th>
-                      <th>전송처</th>
+                      <th class="no">No</th>
+                      <th>분배월</th>
+                      <th>OSP코드</th>
+                      <th>OSP명</th>
+                      <th>미디어</th>
+                      <th>OSP정산월</th>
+                      <th>OSP판매월</th>
+                      <th>OSP사이트명</th>
+                      <th>OSP서비스명</th>
+                      <th>OSP상품명</th>
+                      <th>요금구분</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -235,51 +220,21 @@
                           <span class="form-check-icon"></span>
                         </label>
                       </td>
-                      <td><a href="release-view.html">A1000006</a></td>
-                      <td class="align-left"><a href="release-view.html">이별은 이별1</a></td>
-                      <td>울트라베어</td>
-                      <td><i class="icon-sign43"></i></td>
-                      <td>2021.10.10 12:00</td>
-                      <td>2021.10.08 12:00</td>
-                      <td>2021.10.08 12:00</td>
-                      <td><i class="icon-sign43"></i></td>
-                      <td>KKM GNM BGS FLO</td>
+                      <td>1</td>
+                      <td>2021.10</td>
+                      <td>OSP0001</td>
+                      <td>Genie Music</td>
+                      <td>Digital</td>
+                      <td>2021.10</td>
+                      <td>2021.10</td>
+                      <td>KT무선</td>
+                      <td>롱투유 무선(통과금)</td>
+                      <td></td>
+                      <td>유료</td>
                     </tr>
-                    <tr>
-                      <td class="no">
-                        <label class="form-check-box check" for="select1">
-                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </td>
-                      <td><a href="release-view.html">A1000006</a></td>
-                      <td class="align-left"><a href="release-view.html">이별은 이별1</a></td>
-                      <td>울트라베어</td>
-                      <td></td>
-                      <td>2021.10.10 12:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="no">
-                        <label class="form-check-box check" for="select1">
-                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </td>
-                      <td><a href="release-view.html">A1000006</a></td>
-                      <td class="align-left"><a href="release-view.html">이별은 이별1</a></td>
-                      <td>울트라베어</td>
-                      <td></td>
-                      <td>2021.10.10 12:00</td>
-                      <td>2021.10.08 12:00</td>
-                      <td>2021.10.08 12:00</td>
-                      <td></td>
-                      <td>KKM GNM BGS FLO</td>
-                    </tr>
+                    
                   </tbody>
+                  
                 </table>
 
                 <div class="adm-paging">
@@ -299,9 +254,6 @@
                   </ul>
                 </div>
               </div>
-
-
-
             </div>
           </div>
           <!--footer-->
