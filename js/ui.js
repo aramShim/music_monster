@@ -22,7 +22,7 @@ $(document).ready(function () {
   
   if($('[data-toggle="datepicker"]').length > 0) datePicker(); 
   if($('.start-date').length > 0) rangeDatePicker();
-  if($('.month-date').length > 0)monthDatePicker();
+  if($('.month-date').length > 0) monthDatePicker();
   if($('.year-date').length > 0) yearDatePicker();
 
   trToggle();

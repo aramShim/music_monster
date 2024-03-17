@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <!--네이버 서치어드바이저-->
+    <meta content="" name="naver-site-verification">
+
+    <meta property="og:url" content="">
+    <meta property="og:title" content="MusicMonster">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="description" content="">  
+  
+    <title>뮤직몬스터</title>
+    <!-- 공통 CSS -->
+    <link rel="stylesheet" href="../../../css/icon.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/aos.css" type="text/css">    
+
+
+    <!-- 공통 JS -->
+    <script src="../../../js/jquery-3.6.4.min.js"></script>
+    <script src="../../../js/aos.js"></script>
+    <script src="../../../js/scrolloverflow.js"></script>
+
+    <!-- datepicker script -->
+    <link  href="../../../css/datepicker.min.css" rel="stylesheet">
+    <script src="../../../js/datepicker.min.js"></script>
+    
+
+    <link rel="stylesheet" href="../../css/layout.css" type="text/css">
+    <script src="../../../js/ui.js"></script>
+    <script src="../../js/adm-ui.js"></script>
+
+</head>
+<body>    
+  <div id="adm-wrap">
+    <div class="layout-wrap flex">
+      <!--header-->
+      <header id="header">
+        <div class="header">
+          <div class="adm-logo"><a href="/index.html"><img src="../../img/logo.svg" alt=""></a></div>
+          <nav class="adm-nav-list">
+              <ul class="flex">
+                  <li><a href="../contents/album.html">콘텐츠 관리</a></li>
+                  <li><a href="../distribution/release-notice.html">발매관리</a></li>
+                  <li class="active"><a href="../calculate/settlement-list.html">정산관리</a></li>
+                  <li><a href="../user/seller-list.html">사용자관리</a></li>
+              </ul>
+          </nav>
+          <div class="header-util">
+            <div class="mypage-hd">
+              <button type="button" class="btn-my"><i class="icon-person13"></i></button>
+              <ul class="mypage-options">
+                  <!-- <li><a href="pages/mypage/mypage.html">마이페이지</a></li> -->
+                  <li><a href="">로그아웃</a></li>
+              </ul>
+            </div>
+          </div> 
+          
+        </div>
+      </header>
+      <!--container-->
+      <div id="container" class="container">
+        <!--레프트메뉴-->
+        <div class="left-btn-wrap">
+          <div class="left-more-wrap">
+              <div class="left-btn">
+                  <div class="left-btn-list">
+                      <ul>
+                          <li>
+                              <a href="settlement-list.html">
+                                <svg fill="#111" width="24" height="24" viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M17 21a1 1 0 0 1-1 1H8a1 1 0 0 1 0-2h8a1 1 0 0 1 1 1M4 20H3a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2m16-2h1a1 1 0 0 0 0-2h-1a1 1 0 0 0 0 2M4 16H3a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2m17 4h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2" style="fill:#2ca9bc"/><path d="M13.54 3.28A2 2 0 0 0 12 2.56a2 2 0 0 0-1.54.72L6.23 8.36A1 1 0 0 0 7 10h2v6H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-1v-6h2a1 1 0 0 0 .77-1.64Z" style="fill:#111"/></svg>
+                                <span>정산자료</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="data-registration.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 16.5c-.41 0-.75-.34-.75-.75v-7.5c0-.41.34-.75.75-.75s.75.34.75.75v7.5c0 .41-.34.75-.75.75M7.5 19c-.41 0-.75-.34-.75-.75V5.75c0-.41.34-.75.75-.75s.75.34.75.75v12.5c0 .41-.34.75-.75.75m4.5 2.5c-.41 0-.75-.34-.75-.75V3.25c0-.41.34-.75.75-.75s.75.34.75.75v17.5c0 .41-.34.75-.75.75m4.5-2.5c-.41 0-.75-.34-.75-.75V5.75c0-.41.34-.75.75-.75s.75.34.75.75v12.5c0 .41-.34.75-.75.75m4.5-2.5c-.41 0-.75-.34-.75-.75v-7.5c0-.41.34-.75.75-.75s.75.34.75.75v7.5c0 .41-.34.75-.75.75" fill="#111"/></svg>
+                                <span>음원자료 등록</span>
+                              </a>
+                          </li>
+                          <li class="active">
+                              <a href="data-registration2.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0" fill="#111"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m0-6a4 4 0 1 0 0-8 4 4 0 0 0 0 8" fill="#111"/></svg>
+                                <span>음반자료 등록</span>
+                              </a>
+                          </li>
+                          <li>
+                            <a href="code-mapping.html">
+                              <svg fill="#111" width="24" height="24" viewBox="0 0 100 100" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><path d="M73.12 43.75a6.88 6.88 0 1 1-6.12 10h-1.14c-6.74.08-9.11 2.12-12.88 9.18l-.22.4-.25.48C50.27 68 49 69.94 46.69 72c-3.24 2.84-7.42 4.29-12.94 4.29H33A6.88 6.88 0 1 1 33 70h1.14c6.86-.08 9.2-2.2 13.1-9.58l.25-.48a34.4 34.4 0 0 1 3.88-6.19H33a6.88 6.88 0 1 1 0-6.25h34a6.86 6.86 0 0 1 5.85-3.74Zm0-23.75A6.88 6.88 0 1 1 67 30H33a6.88 6.88 0 1 1 0-6.25h34A6.86 6.86 0 0 1 73.12 20"/></svg>
+                              <span>코드매핑</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="settlement-processing.html">
+                              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.75 3A3.25 3.25 0 0 1 21 6.25v11.5A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25A3.25 3.25 0 0 1 6.25 3zm0 1.5H6.25A1.75 1.75 0 0 0 4.5 6.25V13H9a.75.75 0 0 1 .743.648l.007.102a2.25 2.25 0 0 0 4.495.154l.005-.154A.75.75 0 0 1 15 13h4.5V6.25a1.75 1.75 0 0 0-1.606-1.744zm-11 5h10.5a.75.75 0 0 1 .102 1.493L17.25 11H6.75a.75.75 0 0 1-.102-1.493zh10.5zm0-3h10.5a.75.75 0 0 1 .102 1.493L17.25 8H6.75a.75.75 0 0 1-.102-1.493zh10.5z" fill="#212121"/></svg>
+                              <span>정산처리</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="settlement-result.html">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2H6a1 1 0 0 0-1 1v19l2.5-2 2 2 2.5-2 2.5 2 2-2 2.5 2V3a1 1 0 0 0-1-1M9 6h6m-6 4h6m-6 4h1" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                              <span>정산결과 조회</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="settlement-advance.html">
+                              <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path d="M40.228 21.494 30 11.267V8c0-2.2-1.8-4-4-4H10C7.8 4 6 5.8 6 8v23.955c0 2.2 1.8 4 4 4h3.992l.121.799c.621 4.105 4.012 7.201 7.888 7.201h20v-17c-.001-3.472-1.345-5.048-1.773-5.461M26 9.185a5.96 5.96 0 0 0-4.84 1.721 5.94 5.94 0 0 0-1.76 4.234 5.97 5.97 0 0 0 1.756 4.259L26 24.243v7.712h-7V8h7zM10 8h3v23.955h-3zm28 31.955H22c-1.915 0-3.605-1.633-3.933-3.799l-.03-.201H26c2.2 0 4-1.8 4-4v-3.712l2.12 2.12 2.829-2.828-4.663-4.663L25 17.587l-1.016-1.016a2 2 0 0 1-.584-1.424 1.97 1.97 0 0 1 .584-1.408c.423-.423 1.024-.6 1.604-.548.455.04.897.217 1.228.548L31 17.923l6.416 6.416-.072-.022.109.072c.131.197.547.948.547 2.566z"/></svg>
+                              <span>선급계약 관리</span>
+                            </a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="content-wrap">
+          <div class="content">
+            <div class="inner">
+              <div class="content-title flex">
+                <h2>음반 정산 자료 등록</h2>
+              </div>
+              <!--top search-->
+              <section class="ly-section">
+                <form id="search_frm" method="GET">
+                <input type="hidden" name="orderby_column" id="orderby_column" value="">
+                <input type="hidden" name="orderby_status" id="orderby_status" value="">
+                  <div class="list-search flex">
+                    <div class="search-wrap">
+                      
+                      <dl class="search-items">
+                        <dt>판매처</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                            <option value="">드림어스강남</option>
+                            <option value="">지니뮤직</option>                            
+                            <option value="">벅스</option>
+                            <option value="">Apple</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>분배월</dt>
+                        <dd>                          
+                          <input type="text" class="v-datepicker month-date adm-v-datepicker" placeholder="분배월" autocomplete="off">
+                        </dd>
+                      </dl>
+                      
+                      <dl class="search-items">
+                        <dt>첨부파일</dt>
+                        <dd>
+                          <label for="attachedfile" class="file-upload-label file-sm">
+                            <div class="file-upload-text not-selected">
+                              <span></span>
+                              <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                            </div>
+                            <input type="file" class="file-upload-input input-file" id="attachedfile">
+                          </label>
+                        </dd>
+                      </dl>              
+                    </div>
+                    <div>
+                      <button type="submit" class="btn btn-sm"> 등록</button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+              
+              <section class="ly-section mt10">
+                  <div class="list-search flex">
+                    <div class="search-wrap">                      
+                      <dl class="search-items">
+                        <dt>판매월</dt>
+                        <dd>
+                          <input type="text" class="v-datepicker month-date adm-v-datepicker" placeholder="판매월" autocomplete="off">
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>앨범명</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>가수명</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>음반코드</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>사이트명</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>판매금액</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>판매수량</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>반품수량</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <dl class="search-items">
+                        <dt>재고수량</dt>
+                        <dd>
+                          <select name="theme" id="theme" class="adm-select">
+                            <option value="">선택</option>
+                          </select>
+                        </dd>
+                      </dl>                       
+                    </div>
+
+                  </div>
+
+              </section>
+
+              <!--board-list-->
+              <div class="board-list">
+                <div class="board-list-top flex">
+                  <div class="board-list-btn">
+                    <button type="button" class="btn btn-outline btn-outline-bg btn-xsm red">선택삭제</button>
+                  </div>
+                  <div class="board-list-num">
+                    <select name="" id="" class="adm-select">
+                      <option value="">30개보기</option>
+                      <option value="">50개보기</option>
+                      <option value="">100개보기</option>
+                      <option value="">300개보기</option>
+                    </select>
+                  </div>
+                </div>
+                <table>
+                  <colgroup>
+                    <col width="50px">
+                    <col width="50px">
+                    <col width="120px">
+                    <col width="120px">
+                    <col width="120px">
+                    <col width="180px">
+                    <col width="200px">
+                    <col width="120px">
+                    <col width="100px">
+                    <col width="100px">
+                    <col width="100px">
+
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="no">
+                        <label class="form-check-box check" for="allSelect">
+                          <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </th>
+                      <th class="no">No</th>
+                      <th>판매월</th>
+                      <th>앨범명</th>
+                      <th>가수명</th>
+                      <th>음반코드</th>
+                      <th>사이트명</th>
+                      <th>판매금액</th>
+                      <th>판매수량</th>
+                      <th>반품수량</th>
+                      <th>재고수량</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td>1</td>
+                      <td>2021.10</td>
+                      <td>청담동며느리</td>
+                      <td>V.A.</td>
+                      <td>DN000001</td>
+                      <td>교보핫트랙스</td>
+                      <td>1,550,000</td>
+                      <td>155</td>
+                      <td></td>
+                      <td>2,520</td>
+                    </tr>
+                    <tr>
+                      <td class="no">
+                        <label class="form-check-box check" for="select1">
+                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                          <span class="form-check-icon"></span>
+                        </label>
+                      </td>
+                      <td>2</td>
+                      <td>2021.10</td>
+                      <td>청담동며느리</td>
+                      <td>V.A.</td>
+                      <td>DN000001</td>
+                      <td>교보핫트랙스</td>
+                      <td>-150,000</td>
+                      <td></td>
+                      <td>15</td>
+                      <td>2,535</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="board-list-bottom right">
+                  <div class="board-list-btn">
+                    <button type="button" class="btn btn-pos">등록</button>
+                  </div>
+                  
+                </div>
+
+                <div class="adm-paging">
+                  <ul>
+                    <li class="page prev">                      
+                      <a class="disabled"></a>
+                    </li>
+                    <li>
+                      <a class="selected" href="" title="현재목록">1</a>
+                    </li>
+                    <li>
+                      <a class="" href="" title="">2</a>
+                    </li>
+                    <li class="page next">                      
+                      <a class=""></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <!--footer-->
+          <footer id="footer"><span class="copy mont">COPYRIGHT(C) 2024 MUSIC MONSTER. ALL RIGHTS RESERVED.</span></footer>    
+        </div>        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -71,7 +71,7 @@
               <div class="left-btn">
                   <div class="left-btn-list">
                       <ul>
-                        <li class="active">
+                        <li>
                           <a href="settlement-list.html">
                             <svg fill="#111" width="24" height="24" viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M17 21a1 1 0 0 1-1 1H8a1 1 0 0 1 0-2h8a1 1 0 0 1 1 1M4 20H3a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2m16-2h1a1 1 0 0 0 0-2h-1a1 1 0 0 0 0 2M4 16H3a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2m17 4h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2" style="fill:#2ca9bc"/><path d="M13.54 3.28A2 2 0 0 0 12 2.56a2 2 0 0 0-1.54.72L6.23 8.36A1 1 0 0 0 7 10h2v6H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-1v-6h2a1 1 0 0 0 .77-1.64Z" style="fill:#111"/></svg>
                             <span>정산자료</span>
@@ -101,7 +101,7 @@
                             <span>정산처리</span>
                           </a>
                         </li>
-                        <li>
+                        <li class="active">
                           <a href="settlement-result.html">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2H6a1 1 0 0 0-1 1v19l2.5-2 2 2 2.5-2 2.5 2 2-2 2.5 2V3a1 1 0 0 0-1-1M9 6h6m-6 4h6m-6 4h1" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             <span>정산결과 조회</span>
@@ -124,58 +124,48 @@
           <div class="content">
             <div class="inner">
               <div class="content-title flex">
-                <h2>정산자료 등록</h2>
+                <h2>2021.02 정산자료 상세조회</h2>
+                <a href="album-write.html" class="btn btn-sm btn-outline btn-outline-bg green"><i class="icon-arrow77"></i> 엑셀다운로드</a>
               </div>
               <!--top search-->
               <section class="ly-section">
                 <form id="search_frm" method="GET">
-                <input type="hidden" name="orderby_column" id="orderby_column" value="">
-                <input type="hidden" name="orderby_status" id="orderby_status" value="">
                   <div class="list-search flex">
                     <div class="search-wrap">
-                      <dl class="search-items">
-                        <dt>지역구분</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">전체</option>
-                            <option value="">국내</option>
-                            <option value="">해외</option>                            
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>판매처</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">전체</option>
-                            <option value="">드림어스강남</option>
-                            <option value="">지니뮤직</option>                            
-                            <option value="">벅스</option>
-                            <option value="">Apple</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>분배월</dt>
-                        <dd>                          
-                          <input type="text" class="v-datepicker start-date adm-v-datepicker" placeholder="분배월" autocomplete="off" data-toggle="datepicker">                            
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>첨부파일</dt>
-                        <dd>
-                          <label for="attachedfile" class="file-upload-label file-sm">
-                            <div class="file-upload-text not-selected">
-                              <span></span>
-                              <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
-                            </div>
-                            <input type="file" class="file-upload-input input-file" id="attachedfile">
-                          </label>
-                        </dd>
-                      </dl>              
+                        <dl class="search-items">
+                            <dt>앨범 매칭</dt>
+                            <dd>
+                                <select name="theme" id="theme" class="adm-select">
+                                <option value="">전체</option>
+                                <option value="">미매칭 앨범</option>                         
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="search-items">
+                            <dt>OSP선택</dt>
+                            <dd>
+                                <select name="theme" id="theme" class="adm-select">
+                                    <option value="">전체</option>                          
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="search-items">
+                            <dt>검색조건</dt>
+                            <dd class="flex">
+                                <select name="search_status" id="search_status" class="adm-select">
+                                    <option value="">앨범명</option>
+                                    <option value="">트랙명</option>
+                                    <option value="">가수명</option>
+                                    <option value="">앨범코드</option>
+                                    <option value="">트랙코드</option>
+                                </select>
+                                <input type="text" name="word" id="word" class="input-text adm-input-text wid400" placeholder="검색어를 입력하세요." value="">
+                            </dd>
+                        </dl>
+                                
                     </div>
                     <div>
-                      <button type="submit" class="btn btn-sm"> 등록</button>
+                      <button type="submit" class="btn btn-sm"> 검색</button>
                     </div>
                   </div>
                 </form>
@@ -183,10 +173,7 @@
              
               <!--board-list-->
               <div class="board-list">
-                <div class="board-list-top flex">
-                  <div class="board-list-btn">
-                    <button type="button" class="btn btn-outline btn-outline-bg btn-xsm red">선택삭제</button>
-                  </div>
+                <div class="board-list-top right">
                   <div class="board-list-num">
                     <select name="" id="" class="adm-select">
                       <option value="">30개보기</option>
@@ -199,78 +186,60 @@
                 <table>
                   <colgroup>
                     <col width="50px">
-                    <col width="50px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="180px">
                     <col>
-                    <col width="120px">
-                    <col width="100px">
-                    <col width="180px">
-
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
                   </colgroup>
                   <thead>
                     <tr>
-                      <th class="no">
-                        <label class="form-check-box check" for="allSelect">
-                          <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </th>
                       <th class="no">No</th>
-                      <th>정산월</th>
-                      <th>판매월</th>
-                      <th>등록일</th>
-                      <th>판매처명</th>
-                      <th>파일명</th>
-                      <th>등록행수</th>
-                      <th>미매칭</th>
-                      <th>정산금액</th>
+                      <th>트랙코드</th>
+                      <th>분배월</th>
+                      <th>OSP코드</th>
+                      <th>OSP명</th>
+                      <th>미디어</th>
+                      <th>OSP정산월</th>
+                      <th>OSP판매월</th>
+                      <th>OSP사이트명</th>
+                      <th>OSP서비스명</th>
+                      <td>요금구분</td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="no">
-                        <label class="form-check-box check" for="select1">
-                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </td>
                       <td>1</td>
+                      <td>A1000006T001</td>
                       <td>2021.10</td>
-                      <td>2021.11</td>
-                      <td>2021.10.15</td>
-                      <td><a href="settlement-view.html" title="상세보기">드림어스강남</a></td>
-                      <td class="align-left"><a href="" download="download" class="btn btn-outline btn-xsm gray" title="다운로드">드림어스_monthly_settlment.xlsx</a></td>
-                      <td>125,000</td>
-                      <td>5,000</td>
-                      <td>6,547,896원</td>
+                      <td>OSP0001</td>
+                      <td>Genie Music</td>
+                      <td>Digital</td>
+                      <td>2021.10</td>
+                      <td>2021.10</td>
+                      <td>KT무선</td>
+                      <td>롱투유 무선(통과금)</td>
+                      <td>유료</td>
                     </tr>
                     <tr>
-                      <td class="no">
-                        <label class="form-check-box check" for="select1">
-                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </td>
-                      <td>1</td>
-                      <td>2021.10</td>
-                      <td>2021.11</td>
-                      <td>2021.10.15</td>
-                      <td><a href="settlement-view.html" title="상세보기">지니뮤직</a></td>
-                      <td class="align-left"><a href="" download="download" class="btn btn-outline btn-xsm gray" title="다운로드">지니_D_2021_07_LP_00011.틴지니 LGT_SA 거래내역_전체 내역_20210827.csv</a></td>
-                      <td>125,000</td>
-                      <td>5,000</td>
-                      <td>6,547,896원</td>
+                        <td>2</td>
+                        <td>A1000006T001</td>
+                        <td>2021.10</td>
+                        <td>OSP0001</td>
+                        <td>Genie Music</td>
+                        <td>Digital</td>
+                        <td>2021.10</td>
+                        <td>2021.10</td>
+                        <td>KT무선</td>
+                        <td>롱투유 무선(통과금)</td>
+                        <td>유료</td>
                     </tr>
                   </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="9"><strong>합계</strong></td>
-                      <td colspan="1"><strong>926,191,584원</strong></td>
-                    </tr>
-                  </tfoot>
+                  
                 </table>
 
                 <div class="adm-paging">

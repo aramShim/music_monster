@@ -9,6 +9,7 @@ body.open {}
 .mont {font-family: 'Montserrat', sans-serif; } 
 .flex {display: flex !important;}
 hr {display: block; margin: 40px 0; width: 100%; height: 1px; border: 1px dashed #ccc;}
+.mt10 {margin-top: 10px;}
 
 .board-list tfoot td {background-color: var(--color-blue-bg);}
 
@@ -119,7 +120,7 @@ footer {background-color: #fff; margin-top: auto; text-align: center; padding: 1
 }
 
 .input-text.adm-input-text {height: 40px; border-radius: 5px;}
-.v-datepicker.adm-v-datepicker {height: 40px; border-radius: 5px; background-position: right 13px top 8px;}
+.v-datepicker.adm-v-datepicker {height: 40px; border-radius: 5px; background-position: right 13px top 8px; background-color: #fff;}
 
 /*search-wrap*/
 .list-search {padding: 18px 30px;}
@@ -129,7 +130,8 @@ footer {background-color: #fff; margin-top: auto; text-align: center; padding: 1
 dl.search-items dt{display: block; padding-bottom: 3px;font-size: 14px; color: #5d5d5d;}
 dl.search-items, 
 dl.search-items dd {display: inline-block; vertical-align: text-top;}
-dl.search-items + dl.search-items {margin-left: 30px;}
+dl.search-items {margin-right: 30px;}
+dl.search-items:last-child {margin-right: 0px;}
 dl.search-items dd.flex {gap: 10px;}
 
 .list-date{padding: 18px 30px;}
@@ -160,6 +162,11 @@ dl.date-items dd b {font-size: 1.2em; vertical-align: middle;}
 .board-list td.align-left {text-align: left;}
 .board-list td.album-img img {width: 80%;}
 .board-list td a:hover{color:var(--color-blue1);}
+
+.board-list-bottom { padding: 10px 0;}
+.board-list-bottom.flex {align-items: baseline; justify-content: space-between;}
+.board-list-bottom > p {font-weight: 600}
+.board-list-bottom.right {text-align: right;}
 
 .ly-section {border: 1px solid #c1c1c1; overflow: hidden; border-radius: 10px; background: #fff;}
 
@@ -237,10 +244,10 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 /*아티스트검색 모달*/
 #artistSearch.modal .modal-wrap {width: 100%; max-width: 50%}
 .form-input-search {position: relative;}
-#artistSearch .form-input-search .input-value input {width: 100%;}
-#artistSearch .form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
-#artistSearch .form-submit-wrap {text-align: right;}
-#artistSearch .modal-header {margin-bottom: 20px;}
+.modal-center .form-input-search .input-value input {width: 100%;}
+.modal-center .form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
+.modal-center .form-submit-wrap {text-align: right;}
+.modal-center .modal-header {margin-bottom: 20px;}
 .artist-search-list {margin-bottom: 20px; max-height: 360px; overflow: hidden auto;}
 .artist-search-list ul li {display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #a5a5a5;}
 .artist-search-list ul li .artist-nm span {font-size: 13px;}
@@ -331,3 +338,17 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .textarea {width: 100%; border: 0;}
 
 .file-upload-label {height: 40px; border-radius: 5px; background-color: #fff;}
+
+/*선급*/
+.grid-layout-21.flex {width: calc(100% );flex-wrap: wrap;/* gap: 10px; */}
+.grid-layout-21 .input-text {border-radius: 5px; background-color: rgba(255,255,255,.9)}
+.grid-layout-21 .data-layout {width: 49%;}
+.grid-layout-21 .data-layout.data3 {width: 100%;}
+.grid-layout-21 .data-layout dl dd {width: 100%;}
+
+.data-layout dl {display: flex; align-items: center; padding: 6px 0;}
+.data-layout dl dt {width: 120px; color: var(--color-gray5)}
+.data-layout.data3 dl {flex-flow: column; align-items: flex-start;}
+.data-layout dl dd.data-textarea {min-height: 150px; border: 1px solid #ccc; width: 100%; border-radius: 5px; overflow: hidden;}
+
+#album-search.modal.modal-center .modal-wrap {width: 1000px;}
