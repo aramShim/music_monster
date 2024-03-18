@@ -31,11 +31,17 @@ $(document).ready(function () {
   cdAdd();
 
   customUploadButton();
+  if($('.colresiable').length > 0){colResiable();}
 });
 
 $(window).on("load", function () {
   scrollMove();
 });
+function colResiable(){
+  $('.colresiable').colResizable({
+    resizeMode:'overflow'
+  })
+}
 function selectDisplay(select){
   var selectedValue = $(select).val();
   console.log(selectedValue);
