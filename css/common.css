@@ -197,7 +197,7 @@ a.btn-pos {padding: 10px 20px; }
 a.btn-lg {font-size: 18px; padding: 20px; } 
 
 .btn-sm,
-a.btn-sm {font-size: 14px;padding: 10px 12px; } 
+a.btn-sm {font-size: 14px;padding: 10px 12px; max-height: 40px;} 
 
 .btn-xsm,
 a.btn-xsm {font-size: 14px; padding: 6px 12px;}

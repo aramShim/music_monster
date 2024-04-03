@@ -10,6 +10,7 @@ body.open {}
 .flex {display: flex !important;}
 hr {display: block; margin: 40px 0; width: 100%; height: 1px; border: 1px dashed #ccc;}
 .mt10 {margin-top: 10px;}
+.mr10 {margin-right: 10px;}
 
 .board-list tfoot td {background-color: var(--color-blue-bg);}
 
@@ -352,3 +353,6 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .data-layout dl dd.data-textarea {min-height: 150px; border: 1px solid #ccc; width: 100%; border-radius: 5px; overflow: hidden;}
 
 #album-search.modal.modal-center .modal-wrap {width: 1000px;}
+
+/*판매처등록*/
+.seller-wrap.album-view.album-write .input-text {width: 80%;}
