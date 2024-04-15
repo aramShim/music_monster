@@ -4,7 +4,6 @@
 /** ADMIN Layout **/
 * {box-sizing: border-box;}
 body {overflow: hidden;}
-body.open {}
 /* ::-webkit-scrollbar {display: none;} */
 .mont {font-family: 'Montserrat', sans-serif; } 
 .flex {display: flex !important;}
