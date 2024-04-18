@@ -158,9 +158,9 @@ dl.date-items dd b {font-size: 1.2em; vertical-align: middle;}
 .board-list table tr.tr-end-red {background: var(--color-red-bg);}
 .board-list table tr.cursor-pointer-area:hover {cursor: pointer; background-color: #f6f6f6; }
 .board-list table tr.cursor-pointer-area.active {background-color: var(--color-blue-bg);}
-.board-list thead th{height:52px; box-sizing:border-box; padding:13px 20px; text-align:center; border-bottom:1px solid var(--color-gray8); font-weight:700; color:var(--color-gray1); font-size:14px; line-height:1.71em;}
-.board-list td{ box-sizing:border-box; padding:12px 10px; text-align:center; border-bottom:1px solid var(--color-gray9); font-size:15px; line-height:1.71em;}
-.board-list th.no,.board-list td.no {padding: 18px 0;}
+.board-list thead th{height:52px; box-sizing:border-box; padding:8px 20px; text-align:center; border-bottom:1px solid var(--color-gray8); font-weight:700; color:var(--color-gray1); font-size:14px; line-height:1.71em;}
+.board-list td{ box-sizing:border-box; padding:8px 10px; text-align:center; border-bottom:1px solid var(--color-gray9); font-size:15px; line-height:1.71em;}
+.board-list th.no,.board-list td.no {padding: 8px 0;}
 /* .board-list td.album-img {padding: 18px 0;} */
 .board-list td.align-left {text-align: left;}
 .board-list td.album-img img {width: 80%;}
@@ -169,7 +169,7 @@ dl.date-items dd b {font-size: 1.2em; vertical-align: middle;}
 .board-list table.table-row { min-width: 100%; table-layout:fixed; border-top:1px solid var(--color-gray9);}
 .board-list table.table-row { width: 100%; }
 .board-list table.table-row th { border-bottom: 1px solid var(--color-gray9); border-right: 1px solid var(--color-gray9); padding: 4px 20px; box-sizing: border-box; font-size: 14px; background-color: var(--color-gray-bg)}
-.board-list table.table-row td {padding: 4px 20px; vertical-align: middle; border-bottom: 1px solid var(--color-gray9); background-color: #fff;}
+.board-list table.table-row td {padding: 8px 10px; vertical-align: middle; border-bottom: 1px solid var(--color-gray9); background-color: #fff;}
 
 .board-list-bottom { padding: 10px 0;}
 .board-list-bottom.flex {align-items: baseline; justify-content: space-between;}
@@ -362,7 +362,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 #album-search.modal.modal-center .modal-wrap {width: 1000px;}
 
 /*판매처등록*/
-.seller-wrap.album-view.album-write .input-text {width: 80%;}
+/* .seller-wrap.album-view.album-write .input-text {width: 80%;} */
 
 /*사용자관리 - 코드관리*/
 .code-list-wrap {gap: 20px; align-items: flex-start; }

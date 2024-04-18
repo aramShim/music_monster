@@ -143,111 +143,184 @@
                     <div class="board-list">
                       <div class="board-list-top flex">
                         <p>대분류</p>
-                        <button type="button" class="btn btn-sm btn-outline btn-outline-bg">추가</button>     
+                        <div class="top-btn">
+                          <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">선택 미노출</button>
+                          <button type="button" class="btn btn-sm btn-outline btn-outline-bg">추가</button> 
+                        </div>
+                            
                       </div>
                       <table>
                         <colgroup>
+                          <col width="60px">
                           <col>
                           <col>
                           <col width="150px">
-                          <col width="150px">
+                          <col width="100px">
+                          <col width="100px">
                         </colgroup>
                         <thead>
                           <tr>
+                            <th class="no">
+                              <label class="form-check-box check" for="allSelect">
+                                <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </th>
                             <th>장르명(한글)</th>
                             <th>장르명(영문)</th>
                             <th>코드</th>
+                            <th>노출여부</th>
                             <th>관리</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="어린이"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="Child music"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G001"></td>
+                            <td>노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area active">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="클래식"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="Classic"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G002"></td>                            
+                            <td>노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="일렉트로니카"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="Electronica"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G003"></td>
+                            <td>노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="기타"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="etc."></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G004"></td>
+                            <td>미노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="재즈"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="Jazz"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G005"></td>
+                            <td>노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="테스트명"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="test name"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G006"></td>
+                            <td>노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="대중음악"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="K-Pop"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G007"></td>
+                            <td>미노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="뉴에이지"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="New Age"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G008"></td>
-                            <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
+                            <td>노출</td>
+                            <td>                              
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" placeholder="장르명(한글)"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" placeholder="장르명(영문)"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" placeholder="코드"></td>
+                            <td></td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" placeholder="장르명(한글)"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" placeholder="장르명(영문)"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" placeholder="코드"></td>
-                            <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
+                            <td></td>
+                            <td>                              
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
@@ -261,58 +334,95 @@
                   <div class="wid50 backwhite po-sticky">
                     <div class="board-list">
                       <div class="board-list-top flex">
-                        <p>대분류</p>
-                        <button type="button" class="btn btn-sm btn-outline btn-outline-bg">추가</button>     
+                        <p>소분류</p>
+                        <div class="top-btn">
+                          <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">선택 미노출</button>
+                          <button type="button" class="btn btn-sm btn-outline btn-outline-bg">추가</button> 
+                        </div>
+                            
                       </div>
                       <table>
                         <colgroup>
+                          <col width="60px">
                           <col>
                           <col>
                           <col width="150px">
-                          <col width="150px">
+                          <col width="100px">
+                          <col width="100px">
                         </colgroup>
                         <thead>
                           <tr>
+                            <th class="no">
+                              <label class="form-check-box check" for="allSelect">
+                                <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </th>
                             <th>장르명(한글)</th>
                             <th>장르명(영문)</th>
                             <th>코드</th>
+                            <th>노출여부</th>
                             <th>관리</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="동요"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="Children's Song"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G001001"></td>
-                            <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
-                            </td>
-                          </tr>
-                          <tr class="cursor-pointer-area active">
-                            <td><input type="text" class="input-text adm-input-text wid100" value="자장가"></td>
-                            <td><input type="text" class="input-text adm-input-text wid100" value="Classic"></td>
-                            <td><input type="text" class="input-text adm-input-text wid100" value="G001002"></td>                            
-                            <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
+                            <td>노출</td>
+                            <td>                              
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
+                            <td><input type="text" class="input-text adm-input-text wid100" value="자장가"></td>
+                            <td><input type="text" class="input-text adm-input-text wid100" value="Classic"></td>
+                            <td><input type="text" class="input-text adm-input-text wid100" value="G001002"></td>
+                            <td>미노출</td>
+                            <td>
+                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
+                            </td>
+                          </tr>
+                          <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="태교"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="Electronica"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G001003"></td>
+                            <td>노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
                           <tr class="cursor-pointer-area">
+                            <td class="no">
+                              <label class="form-check-box check" for="select1">
+                                <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                                <span class="form-check-icon"></span>
+                              </label>
+                            </td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="동화"></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="etc."></td>
                             <td><input type="text" class="input-text adm-input-text wid100" value="G001004"></td>
+                            <td>노출</td>
                             <td>
-                              <button type="button" class="btn btn-xsm btn-outline btn-outline-bg gray">미노출</button>
                               <button type="button" class="btn btn-xsm btn-outline btn-outline-bg red">삭제</button>
                             </td>
                           </tr>
