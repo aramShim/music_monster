@@ -88,6 +88,7 @@ fieldset legend {width: 0;height: 0;overflow: hidden; }
 
 input {vertical-align: middle; appearance: none; -webkit-appearance: none;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;outline: none; } 
 input[type="text"] {height: 40px;line-height: 38px;text-indent: 14px;background-color: #fff;border: 1px solid #c9c9c9;border-radius: 12px; }
+input[type="number"] {height: 40px;line-height: 38px;text-indent: 14px;background-color: #fff;border: 1px solid #c9c9c9;border-radius: 12px; }
 input[type="password"] {height: 40px;line-height: 38px;text-indent: 14px;letter-spacing: 10px;background-color: #fff;border: 1px solid #c9c9c9;border-radius: 12px; }
 input[type="file"] {height: 40px;line-height: 38px;text-indent: 14px;background-color: #fff; } 
 input[type="submit"],
@@ -331,6 +332,32 @@ input.v-datepicker {background: url(../img/layout/icon-datepicker-ui-thumb.svg) 
 .paging-content .paging-list>li a:hover:after {opacity: 1; } 
 .paging-content .paging-list>li a.actived {color: #3361cd; } 
 .paging-content .paging-list>li a.actived:after {opacity: 1; } 
+
+.wid400p {width: 400px;}
+.wid150p {width: 150px;}
+.wid100p {width: 100px;}
+.wid80p {width: 80px;}
+.wid60p {width: 60px;}
+.wid40p {width: 40px;}
+.wid100 {width: 100%;}
+.wid95 {width: 95%;}
+.wid90 {width: 90%;}
+.wid85 {width: 85%;}
+.wid80 {width: 80%;}
+.wid75 {width: 75%;}
+.wid70 {width: 70%;}
+.wid65 {width: 65%;}
+.wid60 {width: 60%;}
+.wid55 {width: 55%;}
+.wid50 {width: 50%;}
+.wid45 {width: 45%;}
+.wid40 {width: 40%;}
+.wid35 {width: 35%;}
+.wid30 {width: 30%;}
+.wid25 {width: 25%;}
+.wid20 {width: 20%;}
+.wid15 {width: 15%;}
+.wid10 {width: 10%;}
 /* mobile ****************************************************************************************************************************************** */
 
 @media all and (max-width:1023px) {.m-w5 {width: 5%; } 
