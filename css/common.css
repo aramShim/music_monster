@@ -358,6 +358,18 @@ input.v-datepicker {background: url(../img/layout/icon-datepicker-ui-thumb.svg) 
 .wid20 {width: 20%;}
 .wid15 {width: 15%;}
 .wid10 {width: 10%;}
+
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.mt50 {margin-top: 50px;}
+.mt20 {margin-top: 20px;}
+.mr10 {margin-right: 10px;}
+.ml10 {margin-left: 10px;}
+.ml20 {margin-left: 20px;}
+.mb10 {margin-bottom: 10px;}
+.mb20 {margin-bottom: 20px;}
+.mb50 {margin-bottom: 50px;}
+
 /* mobile ****************************************************************************************************************************************** */
 
 @media all and (max-width:1023px) {.m-w5 {width: 5%; } 
