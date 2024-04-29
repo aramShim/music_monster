@@ -387,3 +387,4 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .contract-more-data dl dt {width: 200px; background: #f1f1f1; padding: 8px 16px;}
 .contract-more-data dl dd {padding: 8px 16px; width: calc(100% - 200px); }
 .contract-more-data dl dd select {width: auto;}
+.contract-more-data dl dd .form-range-group {margin-left: 0;}
