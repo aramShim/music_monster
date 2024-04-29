@@ -388,3 +388,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .contract-more-data dl dd {padding: 8px 16px; width: calc(100% - 200px); }
 .contract-more-data dl dd select {width: auto;}
 .contract-more-data dl dd .form-range-group {margin-left: 0;}
+
+/*서비스 국가설정*/
+.state-wrap {max-height: 60vh; overflow-y: auto;}
+.sub-state {padding-left: 26px; max-height: 324px; overflow-y: auto;}
