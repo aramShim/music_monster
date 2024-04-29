@@ -391,4 +391,4 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 
 /*서비스 국가설정*/
 .state-wrap {max-height: 60vh; overflow-y: auto;}
-.sub-state {padding-left: 26px; max-height: 324px; overflow-y: auto;}
+.sub-state {padding-left: 26px; max-height: 324px; overflow-y: auto; display: none;}
