@@ -3237,10 +3237,7 @@
           if ($(this).is(':checked')) {
               // 상위 li 요소의 하위 sub-state 요소에 클래스 on 추가
               parentLi.find('.sub-state').addClass('on');
-          } else {
-              // 체크 해제된 경우 클래스 on 제거
-              //parentLi.find('.sub-state').removeClass('on');
-          }
+          } 
       });
       $('.state-region button').click(function(e){
         console.log(1);

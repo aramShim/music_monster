@@ -303,7 +303,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .album-view.album-write #tab4-02 .data-input-search {height: 40px; margin-right: 0;width: 100%;}
 
 /*서비스국가 모달*/
-#service-choice.modal .modal-wrap {width: 100%; max-width: 70%}
+#service-choice.modal .modal-wrap {width: 100%; max-width: 40%; min-width: 650px;}
 #service-choice .form-input-search {margin-bottom: 20px;}
 #service-choice .form-input-search .input-value input {width: 100%;}
 #service-choice .form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
