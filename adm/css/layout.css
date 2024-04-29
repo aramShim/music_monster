@@ -391,4 +391,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 
 /*서비스 국가설정*/
 .state-wrap {max-height: 60vh; overflow-y: auto;}
-.sub-state {padding-left: 26px; max-height: 324px; overflow-y: auto; display: none;}
+.sub-state {position: relative; margin-left: 26px; max-height: 324px; overflow-y: auto; display: none; border: 1px dashed #c9c9c9; padding: 10px 16px; margin-bottom: 20px; border-radius: 5px;}
+.sub-state.on {display: block;}
+.state-region {position: relative; width: 98%; }
+.state-region button {position: absolute; top: 3px; right: 10px; font-size: 10px;}

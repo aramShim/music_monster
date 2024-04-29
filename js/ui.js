@@ -357,7 +357,10 @@ function Modal(){
     const $openModal = $(this).data('modal');
     $('body').addClass('open');
     $($openModal).addClass('open');
+    
+
   });
+ 
   $modalClose.click(function(){
     $('body').removeClass('open');
     $(this).parents('.modal').removeClass('open');

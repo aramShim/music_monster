@@ -727,7 +727,7 @@
               <!--검색후 나오는 리스트-->
               <div class="state-wrap">
                 <ul class="continent">
-                  <li>
+                  <li class="state-region">
                     <span>
                       <label class="form-check-box check" for="service-asia">
                         <input type="checkbox" id="service-asia" name="" title="아시아" class="fill" >
@@ -736,6 +736,7 @@
                         </span>
                       </label>
                     </span>
+                    <button type="button"><i class="icon-arrow16"></i></button>
                     <ul class="sub-state">
                       <li>
                         <span>
@@ -1296,7 +1297,7 @@
                     </ul>
                   </li>
 
-                  <li>
+                  <li class="state-region">
                     <span>
                       <label class="form-check-box check" for="service-africa">
                         <input type="checkbox" id="service-africa" name="" title="아프리카" class="fill" >
@@ -1305,6 +1306,7 @@
                         </span>
                       </label>
                     </span>
+                    <button type="button"><i class="icon-arrow16"></i></button>
                     <ul class="sub-state">
                       <li>
                         <span>
@@ -1903,7 +1905,7 @@
 
                     </ul>
                   </li>
-                  <li>
+                  <li class="state-region">
                     <span>
                       <label class="form-check-box check" for="service-europe">
                         <input type="checkbox" id="service-europe" name="" title="유럽" class="fill" >
@@ -1912,6 +1914,7 @@
                         </span>
                       </label>
                     </span>
+                    <button type="button"><i class="icon-arrow16"></i></button>
                     <ul class="sub-state">
                       <li>
                         <span>
@@ -2409,7 +2412,7 @@
                     </ul>
                   </li>
 
-                  <li>
+                  <li class="state-region">
                     <span>
                       <label class="form-check-box check" for="service-namerica">
                         <input type="checkbox" id="service-namerica" name="" title="북아메리카" class="fill" >
@@ -2418,6 +2421,7 @@
                         </span>
                       </label>
                     </span>
+                    <button type="button"><i class="icon-arrow16"></i></button>
                     <ul class="sub-state">
                       <li>
                         <span>
@@ -2702,7 +2706,7 @@
                     </ul>
                   </li>
 
-                  <li>
+                  <li class="state-region">
                     <span>
                       <label class="form-check-box check" for="service-samerica">
                         <input type="checkbox" id="service-samerica" name="" title="남아메리카" class="fill" >
@@ -2711,6 +2715,7 @@
                         </span>
                       </label>
                     </span>
+                    <button type="button"><i class="icon-arrow16"></i></button>
                     <ul class="sub-state">
                       <li>
                         <span>
@@ -2887,7 +2892,7 @@
 
                   
 
-                  <li>
+                  <li class="state-region">
                     <span>
                       <label class="form-check-box check" for="service-oceania">
                         <input type="checkbox" id="service-oceania" name="" title="오세아니아" class="fill" >
@@ -2896,6 +2901,7 @@
                         </span>
                       </label>
                     </span>
+                    <button type="button"><i class="icon-arrow16"></i></button>
                     <ul class="sub-state">
                       <li>
                         <span>
@@ -3220,6 +3226,35 @@
 
   </div>
   <!--//adm-wrap-->
+
+  <script>
+    $(document).ready(function(){
+      // input checkbox 변경 이벤트 리스너 등록
+      $('.state-region input[type="checkbox"]').change(function(){
+          // 체크된 input checkbox의 상위 li 요소를 찾습니다.
+          var parentLi = $(this).closest('li');
+          // 체크된 경우
+          if ($(this).is(':checked')) {
+              // 상위 li 요소의 하위 sub-state 요소에 클래스 on 추가
+              parentLi.find('.sub-state').addClass('on');
+          } else {
+              // 체크 해제된 경우 클래스 on 제거
+              //parentLi.find('.sub-state').removeClass('on');
+          }
+      });
+      $('.state-region button').click(function(e){
+        console.log(1);
+        var parentLi = $(this).closest('li');
+        if(parentLi.find('.sub-state').hasClass('on')){
+          parentLi.find('.sub-state').removeClass('on');
+        }else {
+          parentLi.find('.sub-state').addClass('on');
+        }
+      })
+  });
+        
+    
+  </script>
 
 </body>
 </html>
