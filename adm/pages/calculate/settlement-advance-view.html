@@ -80,13 +80,13 @@
                           <li>
                               <a href="data-registration.html">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 16.5c-.41 0-.75-.34-.75-.75v-7.5c0-.41.34-.75.75-.75s.75.34.75.75v7.5c0 .41-.34.75-.75.75M7.5 19c-.41 0-.75-.34-.75-.75V5.75c0-.41.34-.75.75-.75s.75.34.75.75v12.5c0 .41-.34.75-.75.75m4.5 2.5c-.41 0-.75-.34-.75-.75V3.25c0-.41.34-.75.75-.75s.75.34.75.75v17.5c0 .41-.34.75-.75.75m4.5-2.5c-.41 0-.75-.34-.75-.75V5.75c0-.41.34-.75.75-.75s.75.34.75.75v12.5c0 .41-.34.75-.75.75m4.5-2.5c-.41 0-.75-.34-.75-.75v-7.5c0-.41.34-.75.75-.75s.75.34.75.75v7.5c0 .41-.34.75-.75.75" fill="#111"/></svg>
-                                <span>음원자료 등록</span>
+                                <span>음원정산자료</span>
                               </a>
                           </li>
                           <li>
                               <a href="data-registration2.html">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0" fill="#111"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m0-6a4 4 0 1 0 0-8 4 4 0 0 0 0 8" fill="#111"/></svg>
-                                <span>음반자료 등록</span>
+                                <span>음반정산자료</span>
                               </a>
                           </li>
                           <li>
@@ -187,8 +187,13 @@
                 <section id="js-tab-group04" class="tabgroup js-tabgroup">
                   <div id="tab4-01" style="display: block;">
                     <div class="board-list">
-                        <div class="board-list-top">
+                        <div class="board-list-top flex">
                             <p>상계대상앨범 리스트</p>
+                            <div>
+                              <a href="javascript:void(0);" class="btn btn-xsm btn-outline modal-btn btn-outline-bg" data-modal="#track-info">신규선택</a>
+                              <a href="javascript:void(0);" class="btn btn-xsm btn-outline gray modal-btn btn-outline-bg" data-modal="#track-info">선택제외</a>
+                            </div>
+
                         </div>
                       <table>
                         <colgroup>
@@ -229,7 +234,9 @@
                             <td><a href="javascript:void(0)" class="modal-btn" data-modal="#album-search">이별은 이별</a></td>
                             <td>울트라베어</td>
                             <td>2021-10-10</td>
-                            <td><button type="button" class="red"><i class="icon-sign06"></i></button></td>
+                            <td>
+                              <button type="button" class="btn btn-outline btn-outline-bg btn-xsm red btn-square"><i class="icon-sign06"></i></button>
+                            </td>
                           </tr>
                           <tr>
                             <td class="no">
@@ -243,7 +250,9 @@
                             <td>이별은 이별</td>
                             <td>울트라베어</td>
                             <td>2021-10-10</td>
-                            <td><button type="button" class="red"><i class="icon-sign06"></i></button></td>
+                            <td>
+                              <button type="button" class="btn btn-outline btn-outline-bg btn-xsm red btn-square"><i class="icon-sign06"></i></button>
+                            </td>
                           </tr>
                         </tbody>
                       </table>

@@ -80,13 +80,13 @@
                           <li>
                               <a href="data-registration.html">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 16.5c-.41 0-.75-.34-.75-.75v-7.5c0-.41.34-.75.75-.75s.75.34.75.75v7.5c0 .41-.34.75-.75.75M7.5 19c-.41 0-.75-.34-.75-.75V5.75c0-.41.34-.75.75-.75s.75.34.75.75v12.5c0 .41-.34.75-.75.75m4.5 2.5c-.41 0-.75-.34-.75-.75V3.25c0-.41.34-.75.75-.75s.75.34.75.75v17.5c0 .41-.34.75-.75.75m4.5-2.5c-.41 0-.75-.34-.75-.75V5.75c0-.41.34-.75.75-.75s.75.34.75.75v12.5c0 .41-.34.75-.75.75m4.5-2.5c-.41 0-.75-.34-.75-.75v-7.5c0-.41.34-.75.75-.75s.75.34.75.75v7.5c0 .41-.34.75-.75.75" fill="#111"/></svg>
-                                <span>음원자료 등록</span>
+                                <span>음원정산자료</span>
                               </a>
                           </li>
                           <li class="active">
                               <a href="data-registration2.html">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0" fill="#111"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m0-6a4 4 0 1 0 0-8 4 4 0 0 0 0 8" fill="#111"/></svg>
-                                <span>음반자료 등록</span>
+                                <span>음반정산자료</span>
                               </a>
                           </li>
                           <li>
@@ -124,133 +124,9 @@
           <div class="content">
             <div class="inner">
               <div class="content-title flex">
-                <h2>음반 정산 자료 등록</h2>
+                <h2>음반 정산 자료</h2>
+                <button type="button" class="btn btn-sm modal-btn" data-modal="#dataForm2">음반 정산 등록</button>
               </div>
-              <!--top search-->
-              <section class="ly-section">
-                <form id="search_frm" method="GET">
-                <input type="hidden" name="orderby_column" id="orderby_column" value="">
-                <input type="hidden" name="orderby_status" id="orderby_status" value="">
-                  <div class="list-search flex">
-                    <div class="search-wrap">
-                      
-                      <dl class="search-items">
-                        <dt>판매처</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                            <option value="">드림어스강남</option>
-                            <option value="">지니뮤직</option>                            
-                            <option value="">벅스</option>
-                            <option value="">Apple</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>분배월</dt>
-                        <dd>                          
-                          <input type="text" class="v-datepicker month-date adm-v-datepicker" placeholder="분배월" autocomplete="off">
-                        </dd>
-                      </dl>
-                      
-                      <dl class="search-items">
-                        <dt>첨부파일</dt>
-                        <dd>
-                          <label for="attachedfile" class="file-upload-label file-sm">
-                            <div class="file-upload-text not-selected">
-                              <span></span>
-                              <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
-                            </div>
-                            <input type="file" class="file-upload-input input-file" id="attachedfile">
-                          </label>
-                        </dd>
-                      </dl>              
-                    </div>
-                    <div>
-                      <button type="submit" class="btn btn-sm"> 등록</button>
-                    </div>
-                  </div>
-                </form>
-              </section>
-              
-              <section class="ly-section mt10">
-                  <div class="list-search flex">
-                    <div class="search-wrap">                      
-                      <dl class="search-items">
-                        <dt>판매월</dt>
-                        <dd>
-                          <input type="text" class="v-datepicker month-date adm-v-datepicker" placeholder="판매월" autocomplete="off">
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>앨범명</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>가수명</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>음반코드</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>사이트명</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>판매금액</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>판매수량</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>반품수량</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>
-                      <dl class="search-items">
-                        <dt>재고수량</dt>
-                        <dd>
-                          <select name="theme" id="theme" class="adm-select">
-                            <option value="">선택</option>
-                          </select>
-                        </dd>
-                      </dl>                       
-                    </div>
-
-                  </div>
-
-              </section>
 
               <!--board-list-->
               <div class="board-list">
@@ -342,13 +218,6 @@
                   </tbody>
                 </table>
 
-                <div class="board-list-bottom right">
-                  <div class="board-list-btn">
-                    <button type="button" class="btn btn-pos">등록</button>
-                  </div>
-                  
-                </div>
-
                 <div class="adm-paging">
                   <ul>
                     <li class="page prev">                      
@@ -368,12 +237,136 @@
               </div>
 
 
-
             </div>
           </div>
           <!--footer-->
           <footer id="footer"><span class="copy mont">COPYRIGHT(C) 2024 MUSIC MONSTER. ALL RIGHTS RESERVED.</span></footer>    
         </div>        
+      </div>
+    </div>
+  </div>
+
+  <!--음반 정산 등록 -->
+  <div id="dataForm2" class="modal modal-right">
+    <div class="modal-bg modal-close"></div>
+    <div class="modal-wrap">
+      <div class="modal-content">
+        <form id="search_frm" method="GET">
+          <div class="modal-header flex">
+            <p>음반정산자료 등록</p>
+            <button type="button" class="modal-close"><i class="icon-sign03"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="dataform-more track-more-data">                        
+              <dl>
+                <dt>판매처</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                    <option value="">드림어스강남</option>
+                    <option value="">지니뮤직</option>                            
+                    <option value="">벅스</option>
+                    <option value="">Apple</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>분배월</dt>
+                <dd>                          
+                  <input type="text" class="v-datepicker month-date adm-v-datepicker" placeholder="분배월" autocomplete="off">
+                </dd>
+              </dl>
+              
+              <dl>
+                <dt>첨부파일</dt>
+                <dd>
+                  <label for="attachedfile" class="file-upload-label file-sm">
+                    <div class="file-upload-text not-selected">
+                      <span></span>
+                      <button type="button" onclick="fileRemove(this)"><i class="icon-sign07"></i></button>
+                    </div>
+                    <input type="file" class="file-upload-input input-file" id="attachedfile">
+                  </label>
+                </dd>
+              </dl>
+              <dl>
+                <dt>판매월</dt>
+                <dd>
+                  <input type="text" class="v-datepicker month-date adm-v-datepicker" placeholder="판매월" autocomplete="off">
+                </dd>
+              </dl>
+              <dl>
+                <dt>앨범명</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>가수명</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>음반코드</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>사이트명</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>판매금액</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>판매수량</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>반품수량</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>재고수량</dt>
+                <dd>
+                  <select name="theme" id="theme" class="adm-select">
+                    <option value="">선택</option>
+                  </select>
+                </dd>
+              </dl>
+
+            </div>
+          </div>
+          <div class="modal-footer right">
+            <button type="submit" class="btn btn-sm"> 등록</button>
+          </div>
+        </form>
+
       </div>
     </div>
   </div>

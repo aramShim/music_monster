@@ -203,6 +203,12 @@ a.btn-sm {font-size: 14px;padding: 10px 12px; max-height: 40px;}
 .btn-xsm,
 a.btn-xsm {font-size: 14px; padding: 6px 12px;}
 
+.btn-square,
+a.btn-square {width: 30px; height: 30px; justify-content: center; padding: 0; }
+
+.btn.btn-square i[class*="icon-"],
+a.btn.btn-square i[class*="icon-"] {padding: 0;}
+
 .btn.btn-outline.btn-outline-bg {background-color: var(--color-blue-bg);}
 .btn.btn-outline.btn-outline-bg.green {background-color: var(--color-green-bg);}
 .btn.btn-outline.btn-outline-bg.red {background-color: var(--color-red-bg);}

@@ -158,9 +158,9 @@ dl.date-items dd b {font-size: 1.2em; vertical-align: middle;}
 .board-list table tr.tr-end-red {background: var(--color-red-bg);}
 .board-list table tr.cursor-pointer-area:hover {cursor: pointer; background-color: #f6f6f6; }
 .board-list table tr.cursor-pointer-area.active {background-color: var(--color-blue-bg);}
-.board-list thead th{height:52px; box-sizing:border-box; padding:8px 20px; text-align:center; border-bottom:1px solid var(--color-gray8); font-weight:700; color:var(--color-gray1); font-size:14px; line-height:1.71em;}
-.board-list td{ box-sizing:border-box; padding:8px 10px; text-align:center; border-bottom:1px solid var(--color-gray9); font-size:15px; line-height:1.71em;}
-.board-list th.no,.board-list td.no {padding: 8px 0;}
+.board-list thead th{height:52px; box-sizing:border-box; padding:8px 10px; text-align:center; border-bottom:1px solid var(--color-gray8); font-weight:700; color:var(--color-gray1); font-size:14px; line-height:1.71em;}
+.board-list td{ box-sizing:border-box; padding:4px 10px; text-align:center; border-bottom:1px solid var(--color-gray9); font-size:15px; line-height:1.71em;}
+.board-list th.no,.board-list td.no {padding: 4px 0;}
 /* .board-list td.album-img {padding: 18px 0;} */
 .board-list td.align-left {text-align: left;}
 .board-list td.album-img img {width: 80%;}
@@ -236,7 +236,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .modal.open .modal-bg {width: 100%;height: 100%;background: rgba(0, 0, 0, .4); } 
 .modal .modal-header p {font-weight: 800; font-size: 20px;}
 
-.modal.modal-center .modal-wrap {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -30%);background: #fff;width: 400px;padding: 32px 40px;box-sizing: border-box;border-radius: 16px;transition: transform .3s ease;opacity: 0; } 
+.modal.modal-center .modal-wrap {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -60%);background: #fff;width: 400px;padding: 32px 40px;box-sizing: border-box;border-radius: 16px;transition: transform .3s ease;opacity: 0; } 
 .modal.modal-center.open .modal-wrap {transform: translate(-50%, -50%);transition: transform .3s ease;opacity: 1; } 
 
 .modal.modal-right .modal-wrap {position: absolute; top: 0; right: -100%; background: #fff; width: 80%; box-sizing: border-box;border-radius: 16px 0 0 16px; transition: all .6s ease; opacity:0;} 
@@ -248,7 +248,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .modal.modal-right .modal-footer {position: sticky; bottom:0; left:0; padding: 10px; border-top: 1px solid #ccc; height: 50px; display: flex; align-items: center; justify-content: space-between;}
 .modal.modal-right .modal-footer .adm-paging {margin:0;}
 .modal.modal-right .modal-footer .adm-paging a.selected {font-size: 14px;}
-
+.modal.modal-right .modal-footer.right {justify-content: flex-end;}
 /*아티스트검색 모달*/
 #artistSearch.modal .modal-wrap {width: 100%; max-width: 50%}
 .form-input-search {position: relative;}
@@ -310,6 +310,12 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 #service-choice .form-submit-wrap {padding-top: 20px;text-align: right;}
 #service-choice .modal-header {margin-bottom: 20px;}
 
+/*정산등록 모달*/
+#dataForm.modal .modal-wrap {width: 100%; max-width: 50%;}
+.dataform-more dl {display: inline-flex; margin-bottom: 5px; width: 49%;}
+.dataform-more dl dt {width: 160px; background: #f1f1f1; padding: 8px; text-align: center;}
+.dataform-more dl dd {padding: 2px 16px; width: 100%; }
+#dataForm2.modal .modal-wrap {width: 100%; max-width: 50%;}
 
 /*이미지업로드*/
 .input-file-wrap span {display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 1px solid #c9c9c9; border-radius: 12px; cursor: pointer; color: #979797; transition: all .2s;}
