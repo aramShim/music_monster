@@ -128,117 +128,226 @@
               </div>
               <!--top search-->
               <section class="ly-section">
-                
+                <div class="list-search flex">
+                  <div class="search-wrap">
+                    
+                    <dl class="search-items">
+                      <dt>판매처</dt>
+                      <dd>
+                        <select name="theme" id="theme" class="adm-select">
+                          <option value="">전체</option>
+                          <option value="">드림어스강남</option>
+                          <option value="">지니뮤직</option>                            
+                          <option value="">벅스</option>
+                          <option value="">Apple</option>
+                        </select>
+                      </dd>
+                    </dl>
+                    <dl class="search-items">
+                      <dt>분배월</dt>
+                      <dd>                          
+                        <input type="text" class="v-datepicker start-date adm-v-datepicker" placeholder="분배월" autocomplete="off" data-toggle="datepicker">                            
+                      </dd>
+                    </dl>
+                    <dl class="search-items">
+                      <dt>매칭수준</dt>
+                      <dd>
+                        <label class="form-check-box check mr10" for="song-name">
+                          <input type="checkbox" id="song-name" name="" title="선택" class="fill">
+                          <span class="form-check-icon"><em>곡명</em></span>
+                        </label>
+                        <label class="form-check-box check mr10" for="album-name">
+                          <input type="checkbox" id="album-name" name="" title="선택" class="fill">
+                          <span class="form-check-icon"><em>앨범명</em></span>
+                        </label>
+                        <label class="form-check-box check mr10" for="artist-name">
+                          <input type="checkbox" id="artist-name" name="" title="선택" class="fill">
+                          <span class="form-check-icon"><em>가수명</em></span>
+                        </label>
+                        <label class="form-check-box check" for="code-name">
+                          <input type="checkbox" id="code-name" name="" title="선택" class="fill">
+                          <span class="form-check-icon"><em>코드</em></span>
+                        </label>
+                      </dd>
+                    </dl>
+                    <dl class="search-items">
+                        <dt>기준항목</dt>
+                        <dd class="flex">
+                          <select name="" id="" class="adm-select">
+                            <option value="">G</option>
+                          </select>
+                          <select name="" id="" class="adm-select">
+                            <option value="">E</option>
+                          </select>
+                          <select name="" id="" class="adm-select">
+                            <option value="">F</option>
+                          </select>
+                          <select name="" id="" class="adm-select">
+                            <option value="">Q</option>
+                          </select>
+                        </dd>
+                      </dl>
+                    </dl>              
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-sm"> 검색</button>
+                    <!-- <button type="submit" class="btn btn-sm"> 매핑등록</button> -->
+                  </div>
+                </div>
               </section>
              
               <!--board-list-->
               <div class="board-list">
-                <div class="board-list-top flex">
+                <div class="board-list-top right">
                   <div class="board-list-btn">
-                    <button type="button" class="btn btn-outline btn-outline-bg btn-xsm red">선택삭제</button>
-                  </div>
-                  <div class="board-list-num">
-                    <select name="" id="" class="adm-select">
-                      <option value="">30개보기</option>
-                      <option value="">50개보기</option>
-                      <option value="">100개보기</option>
-                      <option value="">300개보기</option>
-                    </select>
+                    <button type="button" class="btn btn-outline btn-outline-bg btn-xsm ">매핑등록</button>
                   </div>
                 </div>
                 <table>
                   <colgroup>
                     <col width="50px">
-                    <col width="50px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="180px">
                     <col>
-                    <col width="120px">
-                    <col width="100px">
-                    <col width="180px">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
 
                   </colgroup>
                   <thead>
                     <tr>
-                      <th class="no">
-                        <label class="form-check-box check" for="allSelect">
-                          <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </th>
                       <th class="no">No</th>
-                      <th>정산월</th>
-                      <th>판매월</th>
-                      <th>등록일</th>
-                      <th>판매처명</th>
-                      <th>파일명</th>
-                      <th>등록행수</th>
-                      <th>미매칭</th>
-                      <th>정산금액</th>
+                      <th>트랙코드</th>
+                      <th>트랙명</th>
+                      <th>앨범명</th>
+                      <th>A</th>
+                      <th>B</th>
+                      <th>C</th>
+                      <th>D</th>
+                      <th>E</th>
+                      <th>F</th>
+                      <th>G</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="no">
-                        <label class="form-check-box check" for="select1">
-                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </td>
                       <td>1</td>
+                      <td>A001T002</td>
+                      <td>리틀포레스트(Inst.)</td>
+                      <td>리틀포레스트</td>
                       <td>2021.10</td>
-                      <td>2021.11</td>
-                      <td>2021.10.15</td>
-                      <td><a href="settlement-view.html" title="상세보기">드림어스강남</a></td>
-                      <td class="align-left"><a href="" download="download" class="btn btn-outline btn-xsm gray" title="다운로드">드림어스_monthly_settlment.xlsx</a></td>
-                      <td>125,000</td>
-                      <td>5,000</td>
-                      <td>6,547,896원</td>
+                      <td>2021.09</td>
+                      <td>MelOn</td>
+                      <td>melon스트리밍</td>
+                      <td>리틀포레스트</td>
+                      <td>강우경</td>
+                      <td>리틀포레스트</td>
                     </tr>
                     <tr>
-                      <td class="no">
-                        <label class="form-check-box check" for="select1">
-                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </td>
-                      <td>1</td>
+                      <td>2</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                       <td>2021.10</td>
-                      <td>2021.11</td>
-                      <td>2021.10.15</td>
-                      <td><a href="settlement-view.html" title="상세보기">지니뮤직</a></td>
-                      <td class="align-left"><a href="" download="download" class="btn btn-outline btn-xsm gray" title="다운로드">지니_D_2021_07_LP_00011.틴지니 LGT_SA 거래내역_전체 내역_20210827.csv</a></td>
-                      <td>125,000</td>
-                      <td>5,000</td>
-                      <td>6,547,896원</td>
+                      <td>2021.09</td>
+                      <td>MelOn</td>
+                      <td>melon스트리밍</td>
+                      <td>리틀포레스트</td>
+                      <td>강우경</td>
+                      <td>리틀포레스트(Inst.)</td>
                     </tr>
                   </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="9"><strong>합계</strong></td>
-                      <td colspan="1"><strong>926,191,584원</strong></td>
-                    </tr>
-                  </tfoot>
+                  
                 </table>
 
-                <div class="adm-paging">
-                  <ul>
-                    <li class="page prev">                      
-                      <a class="disabled"></a>
-                    </li>
-                    <li>
-                      <a class="selected" href="" title="현재목록">1</a>
-                    </li>
-                    <li>
-                      <a class="" href="" title="">2</a>
-                    </li>
-                    <li class="page next">                      
-                      <a class=""></a>
-                    </li>
-                  </ul>
+              </div>
+
+              <div class="board-list mt20">
+                <div class="board-list-top right">
+                  <div class="board-search-wrap ">
+                    <div class="form-input-search ">                          
+                      <div class="input-value">
+                        <div class="select-size-sm">
+                          <select name="" id="" class="adm-select">
+                            <option value="">트랙명</option>
+                            <option value="">앨범명</option>
+                            <option value="">아티스트</option>
+                            <option value="">코드</option>
+                          </select>
+                          <input type="text" class="input-text adm-input-text wid40" placeholder="검색어를 입력해주세요."/>
+                        </div>
+                      </div>
+                      <div class="input-ui">
+                        <button type="button" class="btn-single-search">
+                          <i class="icon-icon08"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <table>
+                  <colgroup>
+                    <col width="50px">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="no">No</th>
+                      <th>트랙코드</th>
+                      <th>트랙명</th>
+                      <th>앨범명</th>
+                      <th>A</th>
+                      <th>B</th>
+                      <th>C</th>
+                      <th>D</th>
+                      <th>E</th>
+                      <th>F</th>
+                      <th>G</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>A001T002</td>
+                      <td>리틀포레스트(Inst.)</td>
+                      <td>리틀포레스트</td>
+                      <td>2021.10</td>
+                      <td>2021.09</td>
+                      <td>MelOn</td>
+                      <td>melon스트리밍</td>
+                      <td>리틀포레스트</td>
+                      <td>강우경</td>
+                      <td>리틀포레스트</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>2021.10</td>
+                      <td>2021.09</td>
+                      <td>MelOn</td>
+                      <td>melon스트리밍</td>
+                      <td>리틀포레스트</td>
+                      <td>강우경</td>
+                      <td>리틀포레스트(Inst.)</td>
+                    </tr>
+                  </tbody>
+                  
+                </table>
+
               </div>
 
 

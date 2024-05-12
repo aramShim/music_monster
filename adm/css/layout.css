@@ -252,9 +252,9 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 /*아티스트검색 모달*/
 #artistSearch.modal .modal-wrap {width: 100%; max-width: 50%}
 .form-input-search {position: relative;}
-.modal-center .form-input-search .input-value input {width: 100%;}
-.modal-center .form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
-.modal-center .form-submit-wrap {text-align: right;}
+.form-input-search .input-value input {width: 100%;}
+.form-input-search .input-ui {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
+.form-submit-wrap {text-align: right;}
 .modal-center .modal-header {margin-bottom: 20px;}
 .artist-search-list {margin-bottom: 20px; max-height: 360px; overflow: hidden auto;}
 .artist-search-list ul li {display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #a5a5a5;}

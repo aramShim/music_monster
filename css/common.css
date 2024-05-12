@@ -114,6 +114,7 @@ select {position: relative;display: inline-block;min-width: 120px;width: 100%;he
 .select-size-md .select {width: 240px;height: 48px;padding: 0 24px;line-height: 46px;background-position: right 16px center; } 
 .select-size-sm .select {width: auto;min-width: 160px;height: 48px;padding: 0 24px;/*color:#4d4d4d; */
 line-height: 46px;background-position: right 16px center; } 
+.select-size-sm .adm-select {width: auto;min-width: 160px; } 
 
 select.form-vaildity.error {border-color: var(--color-red); } 
 
@@ -339,31 +340,31 @@ input.v-datepicker {background: url(../img/layout/icon-datepicker-ui-thumb.svg) 
 .paging-content .paging-list>li a.actived {color: #3361cd; } 
 .paging-content .paging-list>li a.actived:after {opacity: 1; } 
 
-.wid400p {width: 400px;}
-.wid150p {width: 150px;}
-.wid100p {width: 100px;}
-.wid80p {width: 80px;}
-.wid60p {width: 60px;}
-.wid40p {width: 40px;}
-.wid100 {width: 100%;}
-.wid95 {width: 95%;}
-.wid90 {width: 90%;}
-.wid85 {width: 85%;}
-.wid80 {width: 80%;}
-.wid75 {width: 75%;}
-.wid70 {width: 70%;}
-.wid65 {width: 65%;}
-.wid60 {width: 60%;}
-.wid55 {width: 55%;}
-.wid50 {width: 50%;}
-.wid45 {width: 45%;}
-.wid40 {width: 40%;}
-.wid35 {width: 35%;}
-.wid30 {width: 30%;}
-.wid25 {width: 25%;}
-.wid20 {width: 20%;}
-.wid15 {width: 15%;}
-.wid10 {width: 10%;}
+.wid400p {width: 400px !important; }
+.wid150p {width: 150px !important;}
+.wid100p {width: 100px !important;}
+.wid80p {width: 80px !important;}
+.wid60p {width: 60px !important;}
+.wid40p {width: 40px !important;}
+.wid100 {width: 100% !important;}
+.wid95 {width: 95% !important;}
+.wid90 {width: 90% !important;}
+.wid85 {width: 85% !important;}
+.wid80 {width: 80% !important;}
+.wid75 {width: 75% !important;}
+.wid70 {width: 70% !important;}
+.wid65 {width: 65% !important;}
+.wid60 {width: 60% !important;}
+.wid55 {width: 55% !important;}
+.wid50 {width: 50% !important;}
+.wid45 {width: 45% !important;}
+.wid40 {width: 40% !important;}
+.wid35 {width: 35% !important;}
+.wid30 {width: 30% !important;}
+.wid25 {width: 25% !important;}
+.wid20 {width: 20% !important;}
+.wid15 {width: 15% !important;}
+.wid10 {width: 10% !important;}
 
 .mt10 {margin-top: 10px;}
 .mt20 {margin-top: 20px;}
