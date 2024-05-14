@@ -25,6 +25,7 @@
     <script src="../../../js/jquery-3.6.4.min.js"></script>
     <script src="../../../js/aos.js"></script>
     <script src="../../../js/scrolloverflow.js"></script>
+    <script src="../../../js/colResizable-1.6.min.js"></script>
 
     <!-- datepicker script -->
     <link  href="../../../css/datepicker.min.css" rel="stylesheet">
@@ -169,73 +170,165 @@
                     </select>
                   </div>
                 </div>
-                <table>
-                  <!--
-                    선택/번호/분배월/OSP코드/OSP명/미디어타입/OSP정산월/OSP판매일/OSP사이트명/OSP서비스명/OSP상품명/요금구분(유/무료)/
-                    대분류(유/무선)/중분류(전송 방식)/서비스명/OSP곡명/OSP가수명/OSP앨범명/OSP곡코드/OSP앨범코드/CMS곡코드/CMS앨범코드/판매금액/출고가/정산금액/스트리밍수량/다운로드수량/복합상품수량/반품수량/재고수량/판매국가/판매화폐/정산화폐/원판매금액/인보이스금액/실연권료/저작권료/기타/업로드파일명/등록일/등록자ID/수정일시/수정자ID
+                <div class="colresiable-wrap">
+                  <table class="colresiable">
+                    <!--
+                      선택/번호/분배월/OSP코드/OSP명/미디어타입/OSP정산월/OSP판매일/OSP사이트명/OSP서비스명/OSP상품명/요금구분(유/무료)/
+                      대분류(유/무선)/중분류(전송 방식)/서비스명/OSP곡명/OSP가수명/OSP앨범명/OSP곡코드/OSP앨범코드/CMS곡코드/CMS앨범코드/
+                      판매금액/출고가/정산금액/스트리밍수량/다운로드수량/복합상품수량/반품수량/재고수량/판매국가/판매화폐/정산화폐/원판매금액/인보이스금액/실연권료/저작권료/기타/업로드파일명/등록일/등록자ID/수정일시/수정자ID
 
-                    [Q].해당행의 팝업표시?
-                  -->
-                  <colgroup>
-                    <col width="50px">
-                    <col width="50px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="120px">
-                    <col width="100px">
-                    <col width="">
-                    <col width="">
-                    <col width="100px">
-
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th class="no">
-                        <label class="form-check-box check" for="allSelect">
-                          <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </th>
-                      <th class="no">No</th>
-                      <th>분배월</th>
-                      <th>OSP코드</th>
-                      <th>OSP명</th>
-                      <th>미디어</th>
-                      <th>OSP정산월</th>
-                      <th>OSP판매월</th>
-                      <th>OSP사이트명</th>
-                      <th>OSP서비스명</th>
-                      <th>OSP상품명</th>
-                      <th>요금구분</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="no">
-                        <label class="form-check-box check" for="select1">
-                          <input type="checkbox" id="select1" name="" title="선택" class="fill">
-                          <span class="form-check-icon"></span>
-                        </label>
-                      </td>
-                      <td>1</td>
-                      <td>2021.10</td>
-                      <td>OSP0001</td>
-                      <td>Genie Music</td>
-                      <td>Digital</td>
-                      <td>2021.10</td>
-                      <td>2021.10</td>
-                      <td>KT무선</td>
-                      <td>롱투유 무선(통과금)</td>
-                      <td></td>
-                      <td>유료</td>
-                    </tr>
+                      [Q].해당행의 팝업표시 : osp 곡명, osp 가수명, osp 앨범명
+                    -->
+                    <colgroup>
+                      <col width="50px">
+                      <col width="50px">
+                      <col width="120px">
+                      <col width="120px">
+                      <col width="120px">
+                      <col width="120px">
+                      <col width="120px">
+                      <col width="120px">
+                      <col width="100px">
+                      <col width="200px">
+                      <col width="200px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                      <col width="100px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="no">
+                          <label class="form-check-box check" for="allSelect">
+                            <input type="checkbox" id="allSelect" name="" title="선택" class="fill">
+                            <span class="form-check-icon"></span>
+                          </label>
+                        </th>
+                        <th class="no">No</th>
+                        <th>분배월</th>
+                        <th>OSP코드</th>
+                        <th>OSP명</th>
+                        <th>미디어</th>
+                        <th>OSP정산월</th>
+                        <th>OSP판매월</th>
+                        <th>OSP사이트명</th>
+                        <th>OSP서비스명</th>
+                        <th>OSP상품명</th>
+                        <th>요금구분</th>
+                        <th>유/무선</th>
+                        <th>전송방식</th>
+                        <th>서비스명</th>
+                        <th>OSP곡명</th>
+                        <th>OSP가수명</th>
+                        <th>OSP앨범명</th>
+                        <th>OSP곡코드</th>
+                        <th>OSP앨범코드</th>
+                        <th>CMS앨범코드</th>
+                        <th>판매금액</th>
+                        <th>출고가</th>
+                        <th>정산금액</th>
+                        <th>스트리밍수량</th>
+                        <th>다운로드수량</th>
+                        <th>복합상품수량</th>
+                        <th>반품수량</th>
+                        <th>재고수량</th>
+                        <th>판매국가</th>
+                        <th>판매화폐</th>
+                        <th>정산화폐</th>
+                        <th>원판매금액</th>
+                        <th>인보이스금액</th>
+                        <th>실연권료</th>
+                        <th>저작권료</th>
+                        <th>기타</th>
+                        <th>업로드파일명</th>
+                        <th>등록일</th>
+                        <th>등록자ID</th>
+                        <th>수정일시</th>
+                        <th>수정자ID</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="no">
+                          <label class="form-check-box check" for="select1">
+                            <input type="checkbox" id="select1" name="" title="선택" class="fill">
+                            <span class="form-check-icon"></span>
+                          </label>
+                        </td>
+                        <td>1</td>
+                        <td>2021.10</td>
+                        <td>OSP0001</td>
+                        <td>Genie Music</td>
+                        <td>Digital</td>
+                        <td>2021.10</td>
+                        <td>2021.10</td>
+                        <td>KT무선</td>
+                        <td>롱투유 무선(통과금)</td>
+                        <td></td>
+                        <td>유료</td>
+                        <td>유선</td>
+                        <td></td>
+                        <td></td>
+                        <td><button type="button" class="modal-btn underline" title="정보보기" data-modal="#ospInfo">OSP곡명</button></td>
+                        <td><button type="button" class="modal-btn underline" title="정보보기" data-modal="#ospInfo">OSP가수명</button></td>
+                        <td><button type="button" class="modal-btn underline" title="정보보기" data-modal="#ospInfo">OSP앨범명</button></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
                     
-                  </tbody>
-                  
-                </table>
+                  </table>
+                </div>
 
                 <div class="adm-paging">
                   <ul>
@@ -259,6 +352,42 @@
           <!--footer-->
           <footer id="footer"><span class="copy mont">COPYRIGHT(C) 2024 MUSIC MONSTER. ALL RIGHTS RESERVED.</span></footer>    
         </div>        
+      </div>
+    </div>
+  </div>
+<!--osp정보팝업-->
+  <div id="ospInfo" class="modal modal-center">
+    <div class="modal-bg modal-close"></div>
+    <div class="modal-wrap">
+      <div class="modal-content">
+        <div class="modal-header"><p>OSP정보</p></div>
+        <div class="modal-body">
+          <!--검색후 나오는 리스트-->
+          <div class="board-list mt10">
+              <table class="table-row">
+                  <colgroup>
+                    <col width="150px">
+                    <col>
+                    <col width="150px">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>분배월</th>
+                      <td>2021.10</td>
+                      <th>OSP코드</th>
+                      <td>OSP0001</td>
+                    </tr>
+                    <tr>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+          <div class="form-submit-wrap mt10">
+            <button type="button" class="btn btn-outline btn-sm modal-close">닫기</button>
+          </div>          
+        </div>
       </div>
     </div>
   </div>

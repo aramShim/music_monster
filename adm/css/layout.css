@@ -58,7 +58,7 @@ hr {display: block; margin: 40px 0; width: 100%; height: 1px; border: 1px dashed
 .container .left-btn ul li:not(:last-child) a {margin-bottom: 8px;}
 .container .left-btn ul li a span {font-size: 14px; display: inline-block; width: 80%; padding-top: 3px; text-align: center; line-height: 1.2;}
 
-.content-wrap {display: flex; width: 100%; flex-flow: column;  background: #f8fafd;}
+.content-wrap {display: flex; width: calc(100% - 82px); flex-flow: column;  background: #f8fafd;}
 .content {width: 100%; background: #f8fafd;}
 .content .inner {padding: 25px 50px; max-width :2000px; margin: 0 auto;}
 
@@ -177,6 +177,13 @@ dl.date-items dd b {font-size: 1.2em; vertical-align: middle;}
 .board-list-bottom.right {text-align: right;}
 
 .ly-section {border: 1px solid #c1c1c1; overflow: hidden; border-radius: 10px; background: #fff;}
+
+.colresiable-wrap {overflow: auto hidden; }
+.board-list table.colresiable th,
+.board-list table.colresiable td {border-right: 1px solid var(--color-gray9);}
+.board-list table.colresiable td.aleft {text-align: left; /*text-indent: 10px;*/}
+.board-list table.colresiable th:last-child,
+.board-list table.colresiable td:last-child {border-right: 0;}
 
 /*paging*/
 .adm-paging{margin-top:60px;}
@@ -316,6 +323,9 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .dataform-more dl dt {width: 160px; background: #f1f1f1; padding: 8px; text-align: center;}
 .dataform-more dl dd {padding: 2px 16px; width: 100%; }
 #dataForm2.modal .modal-wrap {width: 100%; max-width: 50%;}
+
+/*osp정보 모달*/
+#ospInfo.modal .modal-wrap {width: 100%; max-width: 50%;}
 
 /*이미지업로드*/
 .input-file-wrap span {display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 1px solid #c9c9c9; border-radius: 12px; cursor: pointer; color: #979797; transition: all .2s;}

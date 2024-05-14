@@ -2,10 +2,16 @@ $(document).ready(function () {
   
   tab();
   checkboxInput();
+  if($('.colresiable').length > 0){colResiable();}
 
   
 });
-
+function colResiable(){
+  $('.colresiable').colResizable({
+    resizeMode:'overflow',
+    minWidth: 50
+  })
+}
 function checkboxInput(){
   $('.onclick-input').click(function(){
     if($(this).is(':checked')){
