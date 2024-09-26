@@ -1,6 +1,6 @@
 @charset "utf-8";
 .content-wrap,
-.content {background: #ecf3fd;}
+.content {background: #ecf3fd; width: 100%;}
 .content .inner {max-width: 90%; margin: 0 auto; padding: 5% 0;}
 .dash-pending {display: flex; align-items: center; justify-content: space-between;}
 .profile-wrap {font-size: 22px; font-weight: 700;}
