@@ -348,11 +348,14 @@ body.open {overflow: hidden;}
 .board-search-wrap .form-group .grid-layout-cell {align-items: center;padding-bottom: 24px;margin-bottom: 24px;border-bottom: 1px solid #efefef; }
 .board-search-wrap .form-group .grid-layout-cell:last-child {padding-bottom: 0;margin-bottom: 0;border-bottom: 0; }
 .board-search-wrap .form-input-items {align-items: center; }
-.board-search-wrap .form-input-items .item-header {width: 100px; }
+.board-search-wrap .form-input-items .item-header {width: 70px; }
 .board-search-wrap .form-input-items .item-body .input-value select {height: 48px;line-height: 46px; }
 .board-search-wrap .form-input-items.horizontal .form-btns-input {display: flex;align-items: center; }
 .board-search-wrap .form-input-items.horizontal .form-btns-input .input-value {flex: auto; }
 .board-search-wrap .form-input-items.horizontal .form-btns-input .input-value+.input-ui {flex: 0 0 auto;margin-left: 8px; }
+
+.board-search-wrap input[type="text"] {height: 48px; padding: 0 24px; line-height: 46px;}
+.tag-item + .tag-item {display: inline-block; margin-left: 5px;}
 
 /*정산관리*/
 .detail-wrap .basic-data-group {margin-bottom: 30px;}
