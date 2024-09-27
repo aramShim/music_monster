@@ -123,11 +123,13 @@ footer {background-color: #fff; margin-top: auto; text-align: center; padding: 1
 
 .input-text.adm-input-text {height: 40px; border-radius: 5px;}
 .v-datepicker.adm-v-datepicker {height: 40px; border-radius: 5px; background-position: right 13px top 8px; background-color: #fff;}
+.wid400p {width:400px; }
+.wid100 {width: 100%;}
 
 /*search-wrap*/
 .list-search {padding: 18px 30px;}
-.list-search.flex {justify-content: space-between; align-items: center;}
-.list-search .btn.btn-sm {padding: 8px 32px;}
+.list-search.flex {justify-content: space-between; align-items: flex-end;}
+.list-search .btn.btn-sm {padding: 8px 16px;}
 
 dl.search-items dt{display: block; padding-bottom: 3px;font-size: 14px; color: #5d5d5d;}
 dl.search-items, 
@@ -332,9 +334,9 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .input-file-wrap span:hover {border: 1px solid #000; color: #000;}
 .input-file-wrap span i {display: inline-block; font-size: 22px; }
 .input-file {position:absolute; width:0px; height:1px; padding:0; margin:-1px; overflow:hidden; border:none;}
-.file-custom {position: relative; padding-bottom: 160px;  }
+.file-custom {position: relative; padding-bottom: 100%;  }
 .file-custom .input-file-wrap {position: absolute; top: 0; left: 0; display:inline-block; width: 160px; height: 160px; vertical-align: middle;}
-.imagePreview {position: absolute;  top: 0; left: 0; width: 160px; height: 160px; background-color: #fff; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 12px; overflow: hidden;}
+.imagePreview {position: absolute;  top: 0; left: 0; width: 100%px; height: 160px; background-color: #fff; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 12px; overflow: hidden;}
 .imagePreview img {max-width: 100%;}
 .imagePreview .remove-file {position: absolute; font-size: 0px; top: 10px; right: 10px; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #fff; cursor: pointer;}
 .imagePreview .remove-file i {font-size: 8px;}
@@ -389,7 +391,7 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .backwhite {background: #fff; border: 1px solid #000;  padding: 20px 30px;}
 
 .artist-view-wrap > .flex {gap: 20px; align-items: flex-start;}
-.artist-view-wrap .file-custom .input-file-wrap {width: 500px; height: 500px;}
+.artist-view-wrap .file-custom .input-file-wrap {width: 100%; height: 100%;}
 
 /*권리자등록*/
 
@@ -411,3 +413,12 @@ ul[class*="tab-type"] a {display: flex; align-items: center; justify-content: ce
 .sub-state.on {display: block;}
 .state-region {position: relative; width: 98%; }
 .state-region button {position: absolute; top: 3px; right: 10px; font-size: 10px;}
+
+/*영상등록*/
+.video-search-crawling {margin-top: 16px; padding: 18px 30px; border: 1px solid #c1c1c1;border-radius: 10px;}
+.video-search-crawling dl {align-items: center;}
+.video-search-crawling dl + dl {padding-top: 10px;}
+.video-search-crawling dl dt {width: 100px;}
+.video-search-crawling dl dd {flex-grow:1;}
+.video-search-crawling dl.music-list {margin-top: 10px; border-top: 1px dashed #c1c1c1;}
+.video-search-crawling dl.music-list .artist-add-btn-wrap {display: inline-block;}
