@@ -125,168 +125,103 @@
                 
               </div>
               <div class="page-body">
-                <div class="apply-wrap">
-                  <div class="apply-data-wrap">
-                    <div class="data-sort-wrap">
-                      <div class="data-sort-group flex">
-                        <div class="sort-left">
-                          <div class="select-size-sm">
-                            <select name="" id="" class="select">
-                              <option value="">상태</option>
-                              <option value="">승인대기</option>
-                              <option value="">승인완료</option>
-                              <option value="">승인보류</option>
-                            </select> 
+                <div class="music-write-wrap">
+                  <div class="data-wrap">
+                    <div class="form-input-items vertical">
+                      <div class="item-header">
+                          <div class="item-header-label"><div class="form-input-label">유튜브 영상 메타정보</div></div>
+                      </div>
+                      <div class="item-body grid">
+                          <div class="item-detail">
+                              <div class="input-value cover">
+                                  <input type="text" name="" id="" placeholder="유튜브영상 메타정보를 입력해주세요. " class="form-input form-vaildity" maxlength="50">
+                              </div>                                              
+                              <div class="input-ui">
+                                  <button type="button" id="" class="btn-basic btn-500 btn-circle-100 btn-size-xs blue">검색</button>
+                              </div>                                                    
                           </div>
-                        </div>
-                        <div class="sort-right">
-                          <div class="form-input-search">                          
-                            <div class="input-value">
-                              <div class="select-size-sm">
-                                <select name="" id="" class="select">
-                                  <option value="">앨범명</option>
-                                  <option value="">아티스트명</option>
-                                  <option value="">레이블명</option>
-                                </select>                            
-                                <input type="text" placeholder="검색어를 입력해주세요."/>
+                          <div class="item-detail-info ">
+                              <div class="item-left">
+                                  <div class="item-input-valid">
+                                      <div style="display:block;"><div class="font-color-util-error"><i class="icon-sign49"></i>유효한 정보가 아닙니다. 다시 확인하시고 입력하세요.</div></div>
+                                  </div>
                               </div>
-                            </div>
-                            <div class="input-ui">
-                              <button type="button" class="btn-single-search">
-                                <i class="icon-icon08"></i>
-                              </button>
-                            </div>
                           </div>
-                        </div>
                       </div>
                     </div>
-                    <div class="basic-data-group">
-                      <div class="board-list-wrap">
-                        <div class="board-list">
-                          <table>
-                            <colgroup>
-                              <col style="width: 10%" />
-                              <col style="width: 50%" />
-                              <col style="width: 20%" />
-                              <col style="width: 10%" />
-                              <col style="width: 10%" />
-                            </colgroup>
-                            <thead>
-                              <tr>
-                                <th scope="col">
-                                    <label class="form-check-box check" for="applyselect1">
-                                        <input type="checkbox" id="applyselect1" name="" title="선택" class="fill">
-                                        <span class="form-check-icon"></span>
-                                    </label>
-                                </th>
-                                <th scope="col">앨범명/아티스트명</th>
-                                <th scope="col">레이블명</th>
-                                <th scope="col">등록일</th>
-                                <th scope="col">상태</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="cursor-pointer-area">
-                                <td>
-                                  <span class="td-col">
-                                    <label class="form-check-box check" for="applyselect2">
-                                        <input type="checkbox" id="applyselect2" name="" title="선택" class="fill">
-                                        <span class="form-check-icon"></span>
-                                    </label>
-                                  </span>
-                                </td>
-                                <td>
-                                  <div class="td-col aleft album-artist">
-                                    <div class="album-img">
-                                      <img src="../../img/test-album1.jpg" alt="테스트" />
-                                    </div>
-                                    <div class="album-nm">
-                                      <strong class="al-title">사표를 던지다</strong>
-                                      <span class="al-artist">강우경</span>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td><span class="td-col">칼라풀레코즈</span></td>
-                                <td><span class="td-col al-date">2023.05.09</span></td>
-                                <td>
-                                  <span class="td-col"><span class="status gray">승인대기</span></span>
-                                </td>
-                              </tr>
-                              <tr class="cursor-pointer-area">
-                                <td>
-                                  <span class="td-col">
-                                    <label class="form-check-box check" for="applyselect3">
-                                        <input type="checkbox" id="applyselect3" name="" title="선택" class="fill">
-                                        <span class="form-check-icon"></span>
-                                    </label>
-                                  </span>
-                                </td>
-                                <td>
-                                  <div class="td-col aleft album-artist">
-                                    <div class="album-img">
-                                      <img src="../../img/test-album1.jpg" alt="테스트" />
-                                    </div>
-                                    <div class="album-nm">
-                                      <strong class="al-title">사표를 던지다</strong>
-                                      <span class="al-artist">강우경</span>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td><span class="td-col">칼라풀레코즈</span></td>
-                                <td><span class="td-col al-date">2023.05.09</span></td>
-                                <td>
-                                  <span class="td-col"><span class="status red">승인보류</span></span>
-                                </td>
-                              </tr>
-                              <tr class="cursor-pointer-area">
-                                <td>
-                                  <span class="td-col">
-                                    <label class="form-check-box check" for="allAgree">
-                                        <input type="checkbox" id="allAgree" name="" title="전체 동의" class="fill">
-                                        <span class="form-check-icon"></span>
-                                    </label>
-                                  </span>
-                                </td>
-                                <td>
-                                  <div class="td-col aleft album-artist">
-                                    <div class="album-img">
-                                      <img src="../../img/test-album1.jpg" alt="테스트" />
-                                    </div>
-                                    <div class="album-nm">
-                                      <strong class="al-title">사표를 던지다</strong>
-                                      <span class="al-artist">강우경</span>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td><span class="td-col">칼라풀레코즈</span></td>
-                                <td><span class="td-col al-date">2023.05.09</span></td>
-                                <td>
-                                  <span class="td-col"><span class="status blue">승인완료</span></span>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                  </div>
+                  <div class="data-wrap crawling-result">
+                    <div class="form-input-items vertical">
+                      <div class="item-header">
+                          <div class="item-header-label"><div class="form-input-label">영상제목</div></div>
                       </div>
-                      <div class="boarder-paging">
-                        <div class="paging-wrap">
-                          <div class="paging-content">
-                            <a href="" class="btn-first">처음</a>
-                            <a href="" class="btn-prev">이전</a>
-                            <ol class="paging-list">
-                              <li><a href="" class="actived">1</a></li>
-                              <li><a href="">2</a></li>
-                              <li><a href="">3</a></li>
-                              <li><a href="">4</a></li>
-                              <li><a href="">5</a></li>
-                              <li><a href="">6</a></li>
-                            </ol>
-                            <a href="" class="btn-next">다음</a>
-                            <a href="" class="btn-last">끝</a>
+                      <div class="item-body grid">
+                          <div class="item-detail">
+                              <div class="input-value cover">
+                                  <input type="text" name="" id="" class="form-input form-vaildity" maxlength="50">
+                              </div>                                                   
                           </div>
-                        </div>
                       </div>
                     </div>
+                    <div class="form-input-items vertical">
+                      <div class="item-header">
+                          <div class="item-header-label"><div class="form-input-label">채널명</div></div>
+                      </div>
+                      <div class="item-body grid">
+                          <div class="item-detail">
+                              <div class="input-value cover">
+                                  <input type="text" name="" id="" class="form-input form-vaildity" maxlength="50">
+                              </div>                                                   
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-input-items vertical">
+                      <div class="item-header">
+                          <div class="item-header-label"><div class="form-input-label">등록일</div></div>
+                      </div>
+                      <div class="item-body grid">
+                          <div class="item-detail">
+                              <div class="input-value cover">
+                                  <input type="text" name="" id="" class="form-input form-vaildity" maxlength="50">
+                              </div>                                                   
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-input-items vertical">
+                      <div class="item-header">
+                          <div class="item-header-label"><div class="form-input-label">태그</div></div>
+                      </div>
+                      <div class="item-body grid">
+                          <div class="item-detail">
+                              <div class="input-value cover">
+                                  <input type="text" name="" id="" class="form-input form-vaildity" maxlength="50">
+                              </div>                                                   
+                          </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="data-wrap btn-setting-wrap">
+                    <div class="form-input-items vertical">
+                      <div class="item-header">
+                          <div class="item-header-label"><div class="form-input-label">삽입곡</div></div>
+                      </div>
+                      <div class="item-body grid">
+                          <div class="item-detail flex">
+                              <div class="input-value cover" style="flex-grow: 1;">
+                                  <input type="text" name="" id="" class="form-input form-vaildity" maxlength="50">
+                              </div>
+                              <div class="btn-add-wrap">
+                                <button type="button" class="btn btn-outline btn-icon btn-sm"><i class="icon-sign21"></i></button>
+                                <button type="button" class="btn btn-outline btn-icon btn-sm red"><i class="icon-sign22"></i></button>
+                              </div>                                                 
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="btn-full-wrap">
+                    <button type="button" onclick="location.href='join_success.html'" class="btn btn-size-100 ">등록</button>
                   </div>
                 </div>
               </div>

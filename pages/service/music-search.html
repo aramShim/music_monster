@@ -225,23 +225,6 @@
                               <option value="">최신등록순</option>
                             </select> 
                           </div>
-                          <!-- <div class="form-input-search">                          
-                            <div class="input-value">
-                              <div class="select-size-sm">
-                                <select name="" id="" class="select">
-                                  <option value="">앨범명</option>
-                                  <option value="">아티스트명</option>
-                                  <option value="">레이블명</option>
-                                </select>                            
-                                <input type="text" placeholder="검색어를 입력해주세요."/>
-                              </div>
-                            </div>
-                            <div class="input-ui">
-                              <button type="button" class="btn-single-search">
-                                <i class="icon-icon08"></i>
-                              </button>
-                            </div>
-                          </div> -->
                         </div>
                       </div>
                     </div>
@@ -251,9 +234,9 @@
                           <table>
                             <colgroup>
                               <col style="width: 10%" />
-                              <col style="width: 40%" />
+                              <col style="width: 50%" />
                               <col style="width: 20%" />
-                              <col style="width: 30%" />
+                              <col style="width: 10%" />
                               
                             </colgroup>
                             <thead>
@@ -269,22 +252,27 @@
                               <tr class="cursor-pointer-area">
                                 <td><span class="td-col">10</span></td>
                                 <td>
-                                  <div class="td-col aleft album-artist">
+                                  <div class="td-col aleft album-artist" onlick="window.location();">  
                                     <div class="album-img">
                                       <img src="../../img/test-album1.jpg" alt="테스트" />
                                     </div>
-                                    <div class="album-nm">
+                                    <div class="album-nm">                                      
                                       <strong class="al-title">사표를 던지다</strong>
                                       <span class="al-artist">강우경</span>
+                                      <div class="tag-wrap">
+                                        <span class="status blue tag-item">#댄스</span>
+                                        <span class="status blue tag-item">#사운드트랙</span>
+                                        <span class="status blue tag-item">#경쾌한</span>
+                                        <span class="status blue tag-item">#힐링</span>
+                                      </div>
                                     </div>
-                                  </div>
+                                  <div>
                                 </td>
                                 <td><span class="td-col">KRMM92011111</span></td>
                                 
                                 <td>
                                   <span class="td-col">
-                                    <span class="status blue tag-item">#댄스</span>
-                                    <span class="status blue tag-item">#사운드</span>
+                                    <a href="music-write.html" class="btn btn-sm btn-outline dark">등록</a>
                                   </span>
                                 </td>
                               </tr>
