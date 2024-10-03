@@ -150,7 +150,7 @@ body.open {overflow: hidden;}
 .sub-txt {font-size: 18px;line-height: 1.44em;color: var(--color-gray5); } 
 .sub-section {padding: 80px 0; } 
 .sub-section>.inner {max-width: 1200px;margin: 0 auto; } 
-.sub-section .sec-title {text-align: center;margin-bottom: 80px; } 
+.sub-section .sec-title {text-align: center;margin-bottom: 50px; } 
 .sub-contents .sub-section:last-child {padding-bottom: 160px; } 
 
 /*공지사항 list-wrap*/
@@ -488,6 +488,19 @@ tr.toggle-wrap ul.flex li {flex: 1; text-align: center;padding: 16px 0;}
 
 .btn-full-wrap {margin-top: 40px;}
 .btn-full-wrap .btn {width: 100%; padding: 16px 0; justify-content: center; font-size: 18px;}
+
+/*방송심의대행*/
+.process-wrap h3 {font-size: 32px; font-weight: 700}
+.download-list { margin-top: 16px;}
+.download-list ul {display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;}
+.download-list li {display: flex; align-items: center; justify-content: center; width: 100%; height: 108px; background: url(../img/bg_document.png) no-repeat center / 100% 100%; font-weight:700; font-size: 18px;}
+.download-list li a {display: flex; width:100%; height: 100%; align-items: center; justify-content: center;}
+.process-info {margin-top:16px; border-radius: 10px; border: 1px solid #868686; padding: 20px 30px;}
+.process-info.process-bg {background: #f9fafb; border: 0;}
+.process-info li {position: relative; padding-left: 10px;}
+.process-info li:not(.gubun):before {content:""; width: 3px; height: 3px; border-radius: 50%; background: #252525; position: absolute; top: 10px; left: 0;}
+.process-info li.gubun {height: 18px;}
+.process-info li.gubun:before {content:'';display: block; width: 100%;  border-top: 1px dashed #ccc; position: absolute; top:7px; left:0;} 
 
 
 /* mobile ******************************************************************* */
