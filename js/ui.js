@@ -303,7 +303,7 @@ function btnPosition() {
       bottom = bottom_origin;
     }
 
-    $btn.css("bottom", bottom);
+    $('.side-right').css("bottom", bottom);
   }
 }
 
