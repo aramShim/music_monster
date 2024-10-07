@@ -490,6 +490,7 @@ tr.toggle-wrap ul.flex li {flex: 1; text-align: center;padding: 16px 0;}
 .btn-full-wrap .btn {width: 100%; padding: 16px 0; justify-content: center; font-size: 18px;}
 
 /*방송심의대행*/
+.deliberation-wrap {background: url(../img/mumon.png) no-repeat right 126px bottom 0px / 200px auto;}
 .process-wrap h3 {font-size: 32px; font-weight: 700}
 .download-list { margin-top: 16px;}
 .download-list ul {display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;}
